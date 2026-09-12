@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import base64
 import collections
 import concurrent.futures
 import dataclasses
@@ -665,6 +666,119 @@ class Crawler:
                 f"{self.bytes / 1e6:>7.1f} MB",
                 err=True,
             )
+
+
+# Seeds
+
+SERP_UA = (
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/126.0.0.0 Safari/537.36"
+)
+
+SERP_ENDPOINTS = (
+    "https://html.duckduckgo.com/html/?q={}",
+    "https://lite.duckduckgo.com/lite/?q={}",
+    "https://old-search.marginalia.nu/search?query={}",
+)
+
+SERP_NOISE = (
+    "duckduckgo.com",
+    "marginalia.nu",
+    "marginalia-search.com",
+    "bing.com",
+    "microsoft.com",
+    "msn.com",
+    "google.com",
+    "youtube.com",
+    "web.archive.org",
+    "creativecommons.org",
+    "ip2location.com",
+    "twitter.com",
+    "x.com",
+)
+
+SERP_ATTEMPTS = 5
+
+SERP_RETRY_WAIT = 2.0
+
+SERP_MIN_RESULTS = 5
+
+
+def unwrap(link: str) -> str:
+    """
+    A result URL freed from whichever click-tracker the engine wrapped it in
+    """
+    parts = urllib.parse.urlsplit(link)
+    query = urllib.parse.parse_qs(parts.query)
+    if "uddg" in query:
+        return query["uddg"][0]
+    if parts.path == "/url" and query.get("q"):
+        return query["q"][0]
+    target = (query.get("u") or [""])[0]
+    if target.startswith("a1"):
+        payload = target[2:].replace(" ", "+")
+        try:
+            return base64.urlsafe_b64decode(payload + "=" * (-len(payload) % 4)).decode(
+                "utf-8", "replace"
+            )
+        except (ValueError, UnicodeDecodeError):
+            return link
+    return link
+
+
+def harvest(
+    body: bytes, base_url: str, charset: str | None, sites: set[str], count: int
+) -> dict[str, str]:
+    """
+    The usable result URLs on one search-result page, one per superdomain
+    """
+    found: dict[str, str] = {}
+    for link in extract_links(body, base_url, charset):
+        canonical = normalize(unwrap(link))
+        if canonical is None:
+            continue
+        host = urllib.parse.urlsplit(canonical).hostname or ""
+        site = superdomain(host)
+        if site in sites or site in found:
+            continue
+        if any(host.endswith(noise) for noise in SERP_NOISE):
+            continue
+        found[site] = canonical
+        if len(found) >= count:
+            break
+    # print(found)
+    return found
+
+
+def search(query: str, count: int, timeout: float) -> list[str]:
+    """
+    Seed URLs for a query, from whichever engine will answer
+    """
+    found: list[str] = []
+    spare: list[str] = []
+    sites: set[str] = set()
+    for endpoint in SERP_ENDPOINTS:
+        if len(found) >= count:
+            break
+        for attempt in range(SERP_ATTEMPTS):
+            if attempt:                         # not 0th attempt
+                time.sleep(SERP_RETRY_WAIT)
+            response = fetch(
+                endpoint.format(urllib.parse.quote_plus(query)),
+                user_agent=SERP_UA,
+                timeout=timeout,
+            )
+            if not response.ok or response.body is None:
+                break
+            page = harvest(
+                response.body, response.final_url, response.charset, sites, count
+            )
+            sites.update(page)
+            if len(page) >= SERP_MIN_RESULTS:
+                found.extend(page.values())
+                break
+            spare.extend(page.values())
+    return (found + spare)[:count]
 
 
 # CLI 

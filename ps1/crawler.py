@@ -1,33 +1,34 @@
 #!/usr/bin/env python3
 
 import dataclasses
+import html.parser
 import ssl
 import textwrap
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import urllib.robotparser
 
 import click
 import tldextract
 
-_tld = tldextract.TLDExtract(include_psl_private_domains=True)
+TLD = tldextract.TLDExtract(include_psl_private_domains=True)
 
+# Fetching
 
-#  Fetching 
 MAX_BYTES = 5 * 1024 * 1024
 
 CHUNK_BYTES = 64 * 1024
+
+DEADLINE_FACTOR = 3
 
 _SSL_CONTEXT = ssl.create_default_context()
 
 
 def is_http_url(url: str) -> bool:
-    """True for the only two schemes we are ever willing to open.
-
-    urllib will happily open file:// and ftp://, so a hyperlink could otherwise
-    make us read the local disk. URL normalization applies the same rule, so it
-    lives here in one place rather than as two prefix tests that drift.
+    """
+    To only open http/https and avoid file://, ftp:// and more
     """
     try:
         return urllib.parse.urlsplit(url).scheme in ("http", "https")
@@ -37,8 +38,9 @@ def is_http_url(url: str) -> bool:
 
 @dataclasses.dataclass
 class FetchResult:
-    """The outcome of one download attempt. Never an exception -- a request
-    that failed is still a result, because the log has to record it."""
+    """
+    The outcome of one download attempt, success or failure
+    """
 
     url: str
     final_url: str
@@ -58,105 +60,95 @@ class FetchResult:
         return self.status == 200
 
 
-class _RedirectRecorder(urllib.request.HTTPRedirectHandler):
-    """Remembers the hops so every URL in the chain can be marked seen.
-
-    Holds per-request state, so build a fresh one per fetch rather than
-    sharing an opener across threads.
+class FetchAttempt(urllib.request.HTTPRedirectHandler):
+    """
+    Per-fetch state: the URL, the clock, and the redirect hops taken
     """
 
-    def __init__(self):
+    def __init__(self, url: str):
+        self.url = url
+        self.started = time.monotonic()
         self.chain: list[str] = []
 
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         self.chain.append(newurl)
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
-
-def _read_capped(response, max_bytes: int) -> tuple[bytes, bool]:
-    """Read up to max_bytes, in chunks. Returns (body, was_truncated)."""
-    chunks, total = [], 0
-    while total <= max_bytes:
-        chunk = response.read(min(CHUNK_BYTES, max_bytes + 1 - total))
-        if not chunk:
-            break
-        chunks.append(chunk)
-        total += len(chunk)
-    body = b"".join(chunks)
-    return (body[:max_bytes], True) if total > max_bytes else (body, False)
+    def result(self, **kw) -> FetchResult:
+        kw.setdefault("final_url", self.url)
+        return FetchResult(
+            url=self.url,
+            elapsed=time.monotonic() - self.started,
+            redirects=tuple(self.chain),
+            **kw,
+        )
 
 
 def fetch(
     url, *, user_agent, timeout, accept=("text/html",), max_bytes=MAX_BYTES
 ) -> FetchResult:
-    """Download one URL. Returns a FetchResult for every outcome, including
-    failures -- callers check .status and .error rather than catching.
-
-    The body is read only when the response Content-Type is in `accept`;
-    anything else is identified from the headers and the connection dropped
-    without downloading it. Fetching robots.txt means passing
-    accept=("text/plain",).
     """
-    started = time.monotonic()
-    recorder = _RedirectRecorder()
-
-    def result(**kw):
-        kw.setdefault("final_url", url)
-        return FetchResult(
-            url=url,
-            elapsed=time.monotonic() - started,
-            redirects=tuple(recorder.chain),
-            **kw,
-        )
+    Download one URL and describe the outcome as a FetchResult
+    """
+    attempt = FetchAttempt(url)
 
     if not is_http_url(url):
-        return result(error="unsupported scheme")
+        return attempt.result(error="unsupported scheme")
 
     try:
         request = urllib.request.Request(
             url,
             headers={
                 "User-Agent": user_agent,
-                "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.1",
-                "Accept-Encoding": "identity",
+                "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.1",  # priority of returned values html, xhtml 0.9 and anything else 0.1
+                "Accept-Encoding": "identity", # to avoid gzipping
             },
         )
         opener = urllib.request.build_opener(
-            recorder, urllib.request.HTTPSHandler(context=_SSL_CONTEXT)
+            attempt, urllib.request.HTTPSHandler(context=_SSL_CONTEXT)
         )
         with opener.open(request, timeout=timeout) as response:
             content_type = response.headers.get_content_type()
-            if content_type in accept:
-                body, truncated = _read_capped(response, max_bytes)
-                size = len(body)
-            else:
-                body, truncated, size = None, False, response.length or 0
-            return result(
+            if content_type not in accept:
+                return attempt.result(
+                    final_url=response.geturl(),
+                    status=response.status,
+                    reason=response.reason or None,
+                    content_type=content_type,
+                    size=response.length or 0,
+                )
+            deadline = attempt.started + DEADLINE_FACTOR * timeout
+            chunks, total, ran_long = [], 0, False
+            while total <= max_bytes:
+                chunk = response.read(min(CHUNK_BYTES, max_bytes + 1 - total))
+                if not chunk:
+                    break
+                chunks.append(chunk)
+                total += len(chunk)
+                if time.monotonic() > deadline:
+                    ran_long = True
+                    break
+            body = b"".join(chunks)
+            return attempt.result(
                 final_url=response.geturl(),
                 status=response.status,
                 reason=response.reason or None,
                 content_type=content_type,
                 charset=response.headers.get_content_charset(),
-                body=body,
-                size=size,
-                truncated=truncated,
+                body=body[:max_bytes],
+                size=min(total, max_bytes),
+                truncated=ran_long or total > max_bytes,
             )
     except urllib.error.HTTPError as exc:
         with exc:
-            return result(
+            return attempt.result(
                 final_url=exc.url,
                 status=exc.code,
                 reason=exc.reason,
                 content_type=exc.headers.get_content_type(),
             )
-    except urllib.error.URLError as exc:
-        reason = exc.reason
-        name = (
-            type(reason).__name__ if isinstance(reason, BaseException) else "URLError"
-        )
-        return result(error=f"{name}: {reason}")
     except Exception as exc:
-        return result(error=f"{type(exc).__name__}: {exc}")
+        return attempt.result(error=repr(exc))
 
 
 # CLI 

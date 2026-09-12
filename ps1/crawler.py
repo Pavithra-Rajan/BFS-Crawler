@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 
+import collections
 import dataclasses
+import functools
 import html.parser
+import posixpath
 import re
 import ssl
 import textwrap
@@ -222,6 +225,79 @@ def extract_links(html: bytes, base_url: str, charset: str | None = None) -> lis
             seen.add(url)
             links.append(url)
     return links
+
+
+# URL normalization
+
+DEFAULT_PORTS = {"http": 80, "https": 443}
+
+MAX_URL_LENGTH = 512
+
+MAX_PATH_SEGMENTS = 12
+
+URL_WHITESPACE = str.maketrans({c: None for c in "\t\n\r\f\v\x00"} | {" ": "%20"})
+
+INDEX_NAMES = frozenset(
+    """index.html index.htm index.shtml index.php index.jsp index.asp index.aspx
+       default.html default.htm default.asp main.html main.htm""".split()
+)
+
+SKIP_EXTENSIONS = frozenset(
+    """jpg jpeg png gif bmp svg svgz webp ico tif tiff heic
+       pdf ps eps doc docx xls xlsx ppt pptx odt ods odp rtf epub mobi djvu
+       zip gz tgz bz2 xz 7z rar tar jar war exe dmg iso bin msi deb rpm apk
+       mp3 mp4 avi mov wmv flv mkv webm ogg oga ogv wav m4a m4v aac opus mid
+       css js mjs json jsonld xml rss atom csv tsv txt md yaml yml sql
+       ttf otf woff woff2 eot swf class dll so dylib torrent ics vcf""".split()
+)
+
+
+def normalize(url: str) -> str | None:
+    """
+    The canonical form of a URL, or None if the crawler must not follow it
+    """
+    url = url.strip().translate(URL_WHITESPACE)
+    if not is_http_url(url) or len(url) > MAX_URL_LENGTH or "cgi" in url.lower():
+        return None
+    try:
+        parts = urllib.parse.urlsplit(url)
+        host, port = parts.hostname, parts.port
+    except ValueError:
+        return None
+    if not host or "." not in host:
+        return None
+
+    netloc = host if port in (None, DEFAULT_PORTS[parts.scheme]) else f"{host}:{port}"
+    path = parts.path or "/"
+    if "/." in path:
+        directory = path.endswith("/")
+        path = posixpath.normpath(path)
+        if directory and not path.endswith("/"):
+            path += "/"
+    segments = path.split("/")
+    last = segments[-1].lower()
+    if last in INDEX_NAMES and not parts.query:
+        segments[-1] = ""
+    elif "." in last and last.rsplit(".", 1)[1] in SKIP_EXTENSIONS:
+        return None
+
+    named = [s for s in segments if s]
+    if len(named) > MAX_PATH_SEGMENTS:
+        return None
+    if named and max(collections.Counter(named).values()) >= 3:
+        return None
+    return urllib.parse.urlunsplit(
+        (parts.scheme, netloc, "/".join(segments), parts.query, "")
+    )
+
+
+@functools.lru_cache(maxsize=200_000)
+def superdomain(host: str) -> str:
+    """
+    The registrable domain a host sits under: canada.wikipedia.org -> wikipedia.org
+    """
+    # print(TLD(host).top_domain_under_public_suffix or host)
+    return TLD(host).top_domain_under_public_suffix or host
 
 
 # CLI 

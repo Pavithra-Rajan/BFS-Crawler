@@ -2,6 +2,7 @@
 
 import dataclasses
 import html.parser
+import re
 import ssl
 import textwrap
 import time
@@ -149,6 +150,78 @@ def fetch(
             )
     except Exception as exc:
         return attempt.result(error=repr(exc))
+
+
+# Parsing
+
+META_CHARSET = re.compile(rb"""<meta[^>]+charset\s*=\s*["']?\s*([\w.:-]+)""", re.I)  # regex that has <meta and charset with spaces around and quotes. Case insensitive
+
+LINK_TAGS = ("a", "area")
+
+
+def decode_html(html: bytes, charset: str | None = None) -> str:
+    """
+    Decode a page to text, preferring the server's charset, and never raising
+    """
+    declared = META_CHARSET.search(html[:4096])
+    for candidate in (
+        charset,
+        declared.group(1).decode("ascii", "ignore") if declared else None,
+        "utf-8",
+    ):
+        if candidate:
+            try:
+                return html.decode(candidate)
+            except (LookupError, UnicodeDecodeError):
+                continue
+    return html.decode("utf-8", errors="replace")
+
+
+class LinkParser(html.parser.HTMLParser):
+    """
+    Collect raw href values, plus the document's <base href> if it has one
+    """
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.hrefs: list[str] = []
+        self.base: str | None = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag not in LINK_TAGS and tag != "base":
+            return
+        href = dict(attrs).get("href")
+        if not href or not href.strip():
+            return
+        if tag == "base":
+            if self.base is None:
+                self.base = href.strip()
+        else:
+            self.hrefs.append(href.strip())
+
+
+def extract_links(html: bytes, base_url: str, charset: str | None = None) -> list[str]:
+    """
+    The absolute URLs an HTML document links to, in document order
+    """
+    parser = LinkParser()
+    try:
+        parser.feed(decode_html(html, charset))
+        parser.close()
+    except Exception:
+        pass
+
+    base = urllib.parse.urljoin(base_url, parser.base) if parser.base else base_url
+    seen, links = set(), []
+    for href in parser.hrefs:
+        try:
+            url = urllib.parse.urljoin(base, href)
+        except ValueError:
+            continue
+        if url not in seen:
+            seen.add(url)
+            links.append(url)
+    return links
 
 
 # CLI 

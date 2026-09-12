@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
 
 import collections
+import concurrent.futures
 import dataclasses
+import datetime
 import functools
+import heapq
 import html.parser
+import itertools
+import math
 import posixpath
 import re
 import ssl
 import textwrap
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -298,6 +304,367 @@ def superdomain(host: str) -> str:
     """
     # print(TLD(host).top_domain_under_public_suffix or host)
     return TLD(host).top_domain_under_public_suffix or host
+
+
+# Crawling
+
+MAX_FRONTIER = 500_000
+
+MAX_LINKS_PER_PAGE = 300
+
+BACKOFF_FACTOR = 10
+
+BACKOFF_CODES = (429, 503)
+
+ATTEMPT_LIMIT = 4
+
+LOG_COLUMNS = (
+    "time url status bytes secs page_prio domain_prio depth note parent".split()
+)
+
+
+@dataclasses.dataclass
+class Visit:
+    """
+    What a worker thread hands back to the coordinator for one URL
+    """
+
+    result: FetchResult
+    links: list[str]
+    delay: float
+    parse_secs: float
+    blocked: bool = False
+
+
+class Crawler:
+    """
+    A frontier, a thread pool, and a log file
+    """
+
+    def __init__(
+        self,
+        *,
+        pages=1000,
+        threads=16,
+        delay=1.0,
+        timeout=10.0,
+        max_depth=10,
+        user_agent="CS6913-Crawler/0.1",
+        log_path="crawl.log",
+        progress_every=200,
+    ):
+        self.pages = pages
+        self.threads = threads
+        self.delay = delay
+        self.timeout = timeout
+        self.max_depth = max_depth
+        self.user_agent = user_agent
+        self.log_path = log_path
+        self.progress_every = progress_every
+
+        self.heap: list[tuple[int, float, int, str, str]] = []
+        self.parked: dict[str, list] = {}
+        self.waking: list[tuple[float, str]] = []
+        self.tiebreak = itertools.count()
+        self.seen: set[str] = set()
+        self.done: set[str] = set()
+        self.host_pages: collections.Counter = collections.Counter()
+        self.super_pages: collections.Counter = collections.Counter()
+        self.super_hosts: dict[str, set[str]] = {}
+        self.ready_at: dict[str, float] = {}
+
+        self.robots: dict[str, tuple[urllib.robotparser.RobotFileParser, float]] = {}
+        self.robots_lock = threading.Lock()
+
+        self.crawled = 0
+        self.attempts = 0
+        self.bytes = 0
+        self.status_counts: collections.Counter = collections.Counter()
+        self.fetch_secs: list[float] = []
+        self.parse_secs = 0.0
+        self.stalls = 0
+        self.dropped = 0
+        self.blocked = 0
+        self.backoffs = 0
+
+    def scores(self, url: str) -> tuple[float, float]:
+        """
+        (page priority, domain priority) for a URL, from the crawl so far
+        """
+        host = urllib.parse.urlsplit(url).hostname or ""
+        parent = superdomain(host)
+        subdomains = len(self.super_hosts.get(parent, ())) or 1
+        page = 1.0 / math.log2(2 + self.host_pages[host])
+        domain = 1.0 / math.log2(2 + self.super_pages[parent] / subdomains)
+        return page, domain
+
+    @property
+    def queued(self) -> int:
+        """
+        URLs waiting in the frontier, runnable or parked
+        """
+        return len(self.heap) + sum(len(items) for items in self.parked.values())
+
+    def push(self, url: str, depth: int, parent: str = "") -> bool:
+        """
+        Offer a discovered URL to the frontier; False if it was rejected
+        """
+        canonical = normalize(url)
+        if canonical is None or depth > self.max_depth or canonical in self.seen:
+            return False
+        if len(self.heap) >= MAX_FRONTIER:
+            self.dropped += 1
+            return False
+        self.seen.add(canonical)
+        page, domain = self.scores(canonical)
+        heapq.heappush(
+            self.heap,
+            (depth, -(page + domain), next(self.tiebreak), canonical, parent),
+        )
+        return True
+
+    def pop(self, now: float):
+        """
+        The best URL that is safe to fetch right now, or None
+        """
+        while self.waking and self.waking[0][0] <= now:
+            for item in self.parked.pop(heapq.heappop(self.waking)[1], ()):
+                heapq.heappush(self.heap, item)
+        while self.heap:
+            depth, stale, seq, url, parent = heapq.heappop(self.heap)
+            page, domain = self.scores(url)
+            fresh = -(page + domain)
+            if fresh > stale and self.heap and (depth, fresh) > self.heap[0][:2]:
+                heapq.heappush(self.heap, (depth, fresh, seq, url, parent))
+                continue
+            host = urllib.parse.urlsplit(url).hostname or ""
+            ready = max(
+                self.ready_at.get(host, 0.0), self.ready_at.get(superdomain(host), 0.0)
+            )
+            if ready > now:
+                if host not in self.parked:
+                    self.parked[host] = []
+                    heapq.heappush(self.waking, (ready, host))
+                self.parked[host].append((depth, fresh, seq, url, parent))
+                continue
+            return url, depth, page, domain, host, parent
+        self.stalls += 1
+        return None
+
+    def allowed(self, url: str) -> tuple[bool, float]:
+        """
+        Whether this origin's robots.txt permits the URL, and the delay it wants
+        """
+        parts = urllib.parse.urlsplit(url)
+        origin = f"{parts.scheme}://{parts.netloc}"
+        entry = self.robots.get(origin)
+        if entry is None:
+            response = fetch(
+                origin + "/robots.txt",
+                user_agent=self.user_agent,
+                timeout=self.timeout,
+                accept=("text/plain",),
+                max_bytes=512 * 1024,
+            )
+            rules = urllib.robotparser.RobotFileParser()
+            if response.ok and response.body is not None:
+                rules.parse(decode_html(response.body, response.charset).splitlines())
+            elif response.status in (401, 403) or (response.status or 0) >= 500:
+                rules.disallow_all = True
+            else:
+                rules.allow_all = True
+            entry = (rules, rules.crawl_delay(self.user_agent) or 0.0)
+            with self.robots_lock:
+                entry = self.robots.setdefault(origin, entry)
+        rules, crawl_delay = entry
+        return rules.can_fetch(self.user_agent, url), crawl_delay
+
+    def visit(self, url: str) -> Visit:
+        """
+        Fetch and parse one URL on a pool thread
+        """
+        permitted, crawl_delay = self.allowed(url)
+        delay = max(self.delay, crawl_delay)
+        if not permitted:
+            return Visit(
+                FetchResult(url=url, final_url=url, error="robots.txt disallows"),
+                [],
+                delay,
+                0.0,
+                blocked=True,
+            )
+
+        result = fetch(url, user_agent=self.user_agent, timeout=self.timeout)
+        links, parse_secs = [], 0.0
+        if result.ok and result.body is not None:
+            started = time.monotonic()
+            links = extract_links(result.body, result.final_url, result.charset)
+            parse_secs = time.monotonic() - started
+        result.body = None
+        return Visit(result, links, delay, parse_secs)
+
+    def run(self, seeds) -> dict:
+        """
+        Crawl until the page budget is met or the frontier runs dry
+        """
+        for url in seeds:
+            self.push(url, 0)
+        started = time.monotonic()
+        pool = concurrent.futures.ThreadPoolExecutor(self.threads, "fetch")
+        inflight: dict[concurrent.futures.Future, tuple] = {}
+
+        with open(self.log_path, "w", encoding="utf-8", buffering=1 << 16) as log:
+            log.write("\t".join(LOG_COLUMNS) + "\n")
+            try:
+                while (
+                    self.crawled < self.pages
+                    and self.attempts < self.pages * ATTEMPT_LIMIT
+                    and (inflight or self.heap or self.parked)
+                ):
+                    while (
+                        len(inflight) < self.threads
+                        and self.crawled + len(inflight) < self.pages
+                    ):
+                        now = time.monotonic()
+                        candidate = self.pop(now)
+                        if candidate is None:
+                            break
+                        url, depth, page, domain, host, parent = candidate
+                        self.ready_at[host] = now + self.delay
+                        inflight[pool.submit(self.visit, url)] = candidate
+                    if not inflight:
+                        time.sleep(0.05)
+                        continue
+                    finished, _ = concurrent.futures.wait(
+                        inflight,
+                        timeout=0.25,
+                        return_when=concurrent.futures.FIRST_COMPLETED,
+                    )
+                    for future in finished:
+                        self.record(log, future, *inflight.pop(future))
+            except KeyboardInterrupt:
+                click.echo("\ninterrupted -- shutting down", err=True)
+            finally:
+                pool.shutdown(wait=False, cancel_futures=True)
+
+        elapsed = time.monotonic() - started
+        return {
+            "pages": self.crawled,
+            "attempts": self.attempts,
+            "ok": self.status_counts[200],
+            "elapsed": elapsed,
+            "rate": self.crawled / elapsed if elapsed else 0.0,
+            "bytes": self.bytes,
+            "hosts": len(self.host_pages),
+            "superdomains": len(self.super_pages),
+            "status": dict(self.status_counts),
+            "fetch_secs": self.fetch_secs,
+            "parse_secs": self.parse_secs,
+            "robots": len(self.robots),
+            "blocked": self.blocked,
+            "backoffs": self.backoffs,
+            "frontier": self.queued,
+            "seen": len(self.seen),
+            "stalls": self.stalls,
+            "dropped": self.dropped,
+            "threads": self.threads,
+            "top_hosts": self.host_pages.most_common(10),
+            "top_superdomains": self.super_pages.most_common(10),
+        }
+
+    def back_off(self, host: str, delay: float):
+        """
+        Park a whole superdomain that just said "too many requests"
+        """
+        self.backoffs += 1
+        until = time.monotonic() + delay * BACKOFF_FACTOR
+        for key in (host, superdomain(host)):
+            self.ready_at[key] = max(self.ready_at.get(key, 0.0), until)
+
+    def record(self, log, future, url, depth, page, domain, host, parent):
+        """
+        Book one finished visit: log it, charge it to its domain, enqueue its links
+        """
+        try:
+            visit = future.result()
+        except Exception as exc:
+            visit = Visit(
+                FetchResult(
+                    url=url, final_url=url, error=f"{type(exc).__name__}: {exc}"
+                ),
+                [],
+                self.delay,
+                0.0,
+            )
+        result = visit.result
+        if visit.blocked:
+            self.blocked += 1
+            self.ready_at[host] = 0.0
+            return
+        self.ready_at[host] = time.monotonic() + visit.delay
+        if result.status in BACKOFF_CODES:
+            self.back_off(host, visit.delay)
+
+        self.attempts += 1
+        self.bytes += result.size
+        self.parse_secs += visit.parse_secs
+        self.fetch_secs.append(result.elapsed)
+        self.status_counts[result.status or 0] += 1
+        site = superdomain(host)
+        self.host_pages[host] += 1
+        self.super_pages[site] += 1
+        self.super_hosts.setdefault(site, set()).add(host)
+
+        final = normalize(result.final_url) or result.final_url
+        duplicate = final in self.done
+        if result.ok and result.content_type == "text/html" and not duplicate:
+            self.crawled += 1
+        self.done.add(final)
+        self.seen.add(final)
+        for hop in result.redirects:
+            self.seen.add(normalize(hop) or hop)
+
+        notes = []
+        if result.error:
+            notes.append(result.error)
+        if result.status in (401, 403):
+            notes.append("access denied")
+        if result.redirects:
+            notes.append(f"redirected to {final}")
+        if duplicate:
+            notes.append("already crawled")
+        if result.ok and result.content_type != "text/html":
+            notes.append(f"not html: {result.content_type}")
+        if result.truncated:
+            notes.append("truncated")
+        log.write(
+            "\t".join(
+                (
+                    datetime.datetime.now().isoformat(timespec="milliseconds"),
+                    url,
+                    str(result.status or 0),
+                    str(result.size),
+                    f"{result.elapsed:.3f}",
+                    f"{page:.4f}",
+                    f"{domain:.4f}",
+                    str(depth),
+                    "; ".join(notes),
+                    parent,
+                )
+            )
+            + "\n"
+        )
+
+        if result.ok and not duplicate:
+            for link in visit.links[:MAX_LINKS_PER_PAGE]:
+                self.push(link, depth + 1, url)
+        if self.progress_every and self.attempts % self.progress_every == 0:
+            click.echo(
+                f"  {self.crawled:>6} pages  {self.attempts:>7} tried  "
+                f"{self.queued:>7} queued  {len(self.host_pages):>5} hosts  "
+                f"{self.bytes / 1e6:>7.1f} MB",
+                err=True,
+            )
 
 
 # CLI 

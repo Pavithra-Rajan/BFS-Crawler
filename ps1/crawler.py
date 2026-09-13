@@ -781,7 +781,7 @@ def search(query: str, count: int, timeout: float) -> list[str]:
     return (found + spare)[:count]
 
 
-# CLI 
+# CLI
 
 
 @click.command(context_settings={"help_option_names": ["-h", "--help"]})
@@ -791,6 +791,14 @@ def search(query: str, count: int, timeout: float) -> list[str]:
     "seeds_file",
     type=click.Path(exists=True, dir_okay=False),
     help="Read seed URLs from FILE instead of querying a search engine.",
+)
+@click.option(
+    "--seeds-from",
+    "seeds_page",
+    type=click.Path(exists=True, dir_okay=False),
+    metavar="PAGE",
+    help="Read seeds out of a search-results page saved from your browser. "
+    "Search in Google, save the page (Ctrl+S, 'HTML only'), point at it.",
 )
 @click.option(
     "--pages",
@@ -848,36 +856,130 @@ def search(query: str, count: int, timeout: float) -> list[str]:
     multiple=True,
     help="Debugging aid: fetch each URL, print what came back, and exit. Repeatable.",
 )
-def main(query, seeds_file, fetch_urls, user_agent, timeout, **opts):
-    """Crawl the web breadth-first, preferring under-crawled domains.
-
-    Seeds come from a search engine result page for QUERY, or from --seeds FILE.
+def main(
+    query,
+    seeds_file,
+    seeds_page,
+    fetch_urls,
+    user_agent,
+    timeout,
+    pages,
+    threads,
+    delay,
+    max_depth,
+    log_file,
+):
+    """
+    Crawl the web breadth-first, preferring under-crawled domains
     """
     if fetch_urls:
         for url in fetch_urls:
             show_fetch(fetch(url, user_agent=user_agent, timeout=timeout))
         return
 
-    if not query and not seeds_file:
-        raise click.UsageError("give a QUERY or --seeds FILE")
+    if not query and not seeds_file and not seeds_page:
+        raise click.UsageError("give a QUERY, --seeds FILE or --seeds-from PAGE")
 
-    click.echo("config:", err=True)
-    config = dict(
-        opts, query=query, seeds_file=seeds_file, user_agent=user_agent, timeout=timeout
+    superdomain("example.com")
+    if seeds_page:
+        with open(seeds_page, "rb") as handle:
+            page = handle.read()
+        seeds = list(harvest(page, "", None, set(), max(10, threads)).values())
+        if not seeds:
+            raise click.ClickException(
+                f"no off-engine links in {seeds_page}. Save the results page "
+                "itself (Ctrl+S, 'Webpage, HTML only') rather than a "
+                "screenshot or a printout."
+            )
+    elif seeds_file:
+        seeds = []
+        with open(seeds_file, encoding="utf-8") as handle:
+            for line in handle:
+                line = line.strip()
+                if line and not line.startswith("#"):
+                    seeds.append(line)
+    else:
+        click.echo(f"searching for {query!r}", err=True)
+        seeds = search(query, max(10, threads), timeout)
+        # print(seeds)
+        if not seeds:
+            raise click.ClickException(
+                "no search engine returned usable results.\n\n"
+                "DuckDuckGo rate-limits an IP for hours after a handful of "
+                "queries in quick succession, and Marginalia is then carrying "
+                "it alone. Wait for the limit to lapse and retry, search in a "
+                "browser and use --seeds-from PAGE, or use --seeds FILE."
+            )
+
+    click.echo(
+        f"{len(seeds)} seed(s), {threads} threads, {pages} page budget", err=True
     )
-    for k, v in sorted(config.items()):
-        click.echo(f"{k:12} {v}", err=True)
+    for url in seeds[:10]:
+        click.echo(
+            f"  seed  {textwrap.shorten(url, 100, placeholder=' ...')}", err=True
+        )
+
+    crawler = Crawler(
+        pages=pages,
+        threads=threads,
+        delay=delay,
+        timeout=timeout,
+        max_depth=max_depth,
+        user_agent=user_agent,
+        log_path=log_file,
+    )
+    show_summary(crawler.run(seeds), log_file)
+
+
+def show_summary(stats: dict, log_file: str):
+    """
+    Print the end-of-crawl numbers a demo actually gets asked about
+    """
+    codes = " ".join(
+        f"{code or 'err'}:{count}" for code, count in sorted(stats["status"].items())
+    )
+    click.echo("", err=True)
+    click.echo(
+        f"crawled     {stats['pages']} pages from {stats['attempts']} "
+        f"requests -> {log_file}",
+        err=True,
+    )
+    click.echo(
+        f"elapsed     {stats['elapsed']:.1f}s  =  {stats['rate']:.1f} pages/sec "
+        f"({stats['attempts'] / stats['elapsed']:.1f} requests/sec)",
+        err=True,
+    )
+    click.echo(f"downloaded  {stats['bytes'] / 1e6:.1f} MB", err=True)
+    click.echo(
+        f"reached     {stats['hosts']} hosts across {stats['superdomains']} superdomains",
+        err=True,
+    )
+    click.echo(
+        f"frontier    {stats['frontier']} queued, {stats['seen']} URLs seen", err=True
+    )
+    click.echo(f"status      {codes}", err=True)
+    click.echo(
+        f"robots      {stats['robots']} sites consulted, {stats['blocked']} URLs off-limits",
+        err=True,
+    )
+    click.echo(f"backed off  {stats['backoffs']} times after a 429 or 503", err=True)
+    click.echo("top superdomains:", err=True)
+    for name, count in stats["top_superdomains"]:
+        click.echo(f"  {count:>5}  {name}", err=True)
+
+
+def row(label, value):
+    click.echo(f"  {label:8} {value}")
 
 
 def show_fetch(r: FetchResult):
-    """Print a FetchResult the way a human wants to read it."""
-
-    def row(label, value):
-        click.echo(f"  {label:8} {value}")
+    """
+    Print URL fetch details for debug
+    """
 
     click.echo(f"{r.status or '---'} {r.url}  ({r.elapsed:.2f}s)")
     if r.final_url != r.url:
-        row("->", f"{r.final_url}  ({len(r.redirects)} redirect(s))")
+        row("redirect", f"{r.final_url}  ({len(r.redirects)} redirect(s))")
     if r.reason and not r.ok:
         row("reason", r.reason)
     if r.content_type:
@@ -891,8 +993,14 @@ def show_fetch(r: FetchResult):
     if r.truncated:
         row("note", "truncated at the read cap")
     if r.body is not None:
-        text = r.body[:2000].decode(r.charset or "utf-8", errors="replace")
+        text = decode_html(r.body[:2000], r.charset)
         row("body", textwrap.shorten(text, width=150, placeholder=" ..."))
+        found = extract_links(r.body, r.final_url, r.charset)
+        row("links", len(found))
+        for url in found[:5]:
+            row("", textwrap.shorten(url, width=140, placeholder=" ..."))
+        if len(found) > 5:
+            row("", f"... and {len(found) - 5} more")
     elif r.ok:
         row("body", "(Not read due to unwanted content type)")
     click.echo()

@@ -509,7 +509,7 @@ class Crawler:
         Crawl until the page budget is met or the frontier runs dry
         """
         for url in seeds:
-            self.push(url, 0)
+            self.push(url, 0)       # add seed at depth 0
         started = time.monotonic()
         pool = concurrent.futures.ThreadPoolExecutor(self.threads, "fetch")
         inflight: dict[concurrent.futures.Future, tuple] = {}
@@ -519,15 +519,16 @@ class Crawler:
             try:
                 while (
                     self.crawled < self.pages
-                    and self.attempts < self.pages * ATTEMPT_LIMIT
-                    and (inflight or self.heap or self.parked)
+                    and self.attempts < self.pages * ATTEMPT_LIMIT        # account for non reachable or crawlable pages
+                    and (inflight or self.heap or self.parked)            # parked owing to the host in the delay window, or waiting for robots.txt to be fetched
                 ):
                     while (
                         len(inflight) < self.threads
-                        and self.crawled + len(inflight) < self.pages
+                        and self.crawled + len(inflight) < self.pages  # check if any free threads
                     ):
                         now = time.monotonic()
                         candidate = self.pop(now)
+                        # print(f"Candidate: {candidate}")    
                         if candidate is None:
                             break
                         url, depth, page, domain, host, parent = candidate
@@ -544,7 +545,7 @@ class Crawler:
                     for future in finished:
                         self.record(log, future, *inflight.pop(future))
             except KeyboardInterrupt:
-                click.echo("\ninterrupted -- shutting down", err=True)
+                click.echo("\nKeyboard Interrupt. Shutting down", err=True)
             finally:
                 pool.shutdown(wait=False, cancel_futures=True)
 

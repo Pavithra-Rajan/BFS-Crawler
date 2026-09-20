@@ -363,7 +363,7 @@ class Crawler:
         self.log_path = log_path
         self.progress_every = progress_every
 
-        self.heap: list[tuple[int, float, int, str, str]] = []
+        self.heap: list[tuple[float, int, int, str, str]] = []
         self.parked: dict[str, list] = {}
         self.waking: list[tuple[float, str]] = []
         self.tiebreak = itertools.count()
@@ -420,23 +420,27 @@ class Crawler:
         page, domain = self.scores(canonical)
         heapq.heappush(
             self.heap,
-            (depth, -(page + domain), next(self.tiebreak), canonical, parent),
+            (-(page + domain), next(self.tiebreak), depth, canonical, parent),
         )
         return True
 
     def pop(self, now: float):
         """
         The best URL that is safe to fetch right now, or None
+
+        Best-first on (page + domain) priority. depth rides along in the entry
+        so that --max-depth and the log still have it, but it is never
+        compared, so the traversal is not level by level.
         """
         while self.waking and self.waking[0][0] <= now:
             for item in self.parked.pop(heapq.heappop(self.waking)[1], ()):
                 heapq.heappush(self.heap, item)
         while self.heap:
-            depth, stale, seq, url, parent = heapq.heappop(self.heap)
+            stale, seq, depth, url, parent = heapq.heappop(self.heap)
             page, domain = self.scores(url)
             fresh = -(page + domain)
-            if fresh > stale and self.heap and (depth, fresh) > self.heap[0][:2]:
-                heapq.heappush(self.heap, (depth, fresh, seq, url, parent))
+            if fresh > stale and self.heap and fresh > self.heap[0][0]:
+                heapq.heappush(self.heap, (fresh, seq, depth, url, parent))
                 continue
             host = urllib.parse.urlsplit(url).hostname or ""
             ready = max(
@@ -446,7 +450,7 @@ class Crawler:
                 if host not in self.parked:
                     self.parked[host] = []
                     heapq.heappush(self.waking, (ready, host))
-                self.parked[host].append((depth, fresh, seq, url, parent))
+                self.parked[host].append((fresh, seq, depth, url, parent))
                 continue
             return url, depth, page, domain, host, parent
         self.stalls += 1
@@ -507,6 +511,10 @@ class Crawler:
     def run(self, seeds) -> dict:
         """
         Crawl until the page budget is met or the frontier runs dry
+
+        One log line per request, then a summary block of "# label<TAB>value"
+        lines at the end of the log. Everything a reader has to skip starts
+        with a "#".
         """
         for url in seeds:
             self.push(url, 0)       # add seed at depth 0
@@ -549,7 +557,40 @@ class Crawler:
             finally:
                 pool.shutdown(wait=False, cancel_futures=True)
 
-        elapsed = time.monotonic() - started
+            elapsed = time.monotonic() - started
+            for label, value in (
+                ("pages crawled", self.crawled),
+                ("requests made", self.attempts),
+                ("robots.txt fetched", len(self.robots)),
+                ("total bytes", self.bytes),
+                ("total seconds", f"{elapsed:.1f}"),
+                ("pages per second", f"{self.crawled / elapsed if elapsed else 0:.2f}"),
+                ("requests per second", f"{self.attempts / elapsed if elapsed else 0:.2f}"),
+                ("hosts reached", len(self.host_pages)),
+                ("superdomains reached", len(self.super_pages)),
+                ("404 not found", self.status_counts[404]),
+                ("403 forbidden", self.status_counts[403]),
+                ("401 unauthorized", self.status_counts[401]),
+                ("429 or 503 rate limited", self.status_counts[429] + self.status_counts[503]),
+                ("no response, transport failure", self.status_counts[0]),
+                ("blocked by robots.txt", self.blocked),
+                ("superdomain backoffs", self.backoffs),
+                ("thread seconds fetching", f"{sum(self.fetch_secs):.1f}"),
+                ("thread seconds parsing", f"{self.parse_secs:.1f}"),
+                ("frontier queued at exit", self.queued),
+                ("urls seen", len(self.seen)),
+                ("urls dropped, frontier full", self.dropped),
+                ("frontier stalls", self.stalls),
+                ("page budget", self.pages),
+                ("threads", self.threads),
+                ("min delay per host", self.delay),
+                ("max depth", self.max_depth),
+                ("user agent", self.user_agent),
+            ):
+                log.write(f"# {label}\t{value}\n")
+            for code, count in sorted(self.status_counts.items()):
+                log.write(f"# status {code}\t{count}\n")
+
         return {
             "pages": self.crawled,
             "attempts": self.attempts,
@@ -871,7 +912,7 @@ def main(
     log_file,
 ):
     """
-    Crawl the web breadth-first, preferring under-crawled domains
+    Crawl the web best-first, preferring under-crawled hosts and domains
     """
     if fetch_urls:
         for url in fetch_urls:

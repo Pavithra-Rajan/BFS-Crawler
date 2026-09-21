@@ -1,0 +1,22 @@
+# Fallback seeds for when the search engine rate-limits a query.
+# One URL per line; blank lines and # comments are ignored.
+https://en.wikipedia.org/wiki/Web_crawler
+https://www.nyu.edu/
+https://engineering.nyu.edu/
+https://news.ycombinator.com/
+https://www.python.org/
+https://docs.python.org/3/library/urllib.request.html
+https://www.bbc.co.uk/news
+https://www.nasa.gov/
+https://arxiv.org/list/cs.IR/recent
+https://www.gutenberg.org/
+https://stackoverflow.com/questions/tagged/web-crawler
+https://github.com/explore
+https://www.reuters.com/
+https://www.nature.com/
+https://ocw.mit.edu/
+https://www.si.edu/
+https://www.loc.gov/
+https://www.usa.gov/
+https://blog.mozilla.org/
+https://www.w3.org/standards/

@@ -1,0 +1,1222 @@
+time	url	status	bytes	secs	page_prio	domain_prio	depth	note	parent
+2026-09-21T22:56:45.806	https://www.python.org/	200	52957	0.089	1.0000	1.0000	0		
+2026-09-21T22:56:46.159	https://www.usa.gov/	200	48215	0.138	1.0000	1.0000	0		
+2026-09-21T22:56:46.161	https://engineering.nyu.edu/	200	116854	0.337	1.0000	1.0000	0		
+2026-09-21T22:56:46.166	https://www.loc.gov/	200	73979	0.321	1.0000	1.0000	0		
+2026-09-21T22:56:46.225	https://www.w3.org/standards/	200	28026	0.264	1.0000	1.0000	0		
+2026-09-21T22:56:46.227	https://docs.python.org/3/library/urllib.request.html	200	216525	0.120	1.0000	1.0000	0		
+2026-09-21T22:56:46.249	https://www.si.edu/	403	0	0.139	1.0000	1.0000	0	access denied	
+2026-09-21T22:56:46.249	https://www.gutenberg.org/	200	26751	0.220	1.0000	1.0000	0		
+2026-09-21T22:56:46.259	https://www.nyu.edu/	200	99311	0.202	1.0000	1.0000	0		
+2026-09-21T22:56:46.263	https://arxiv.org/list/cs.IR/recent	200	99040	0.108	1.0000	1.0000	0		
+2026-09-21T22:56:46.464	https://pypi.org/	200	27965	0.329	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.467	https://scikit-learn.org/	200	2058	0.172	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.467	https://en.wikipedia.org/wiki/Web_crawler	200	346775	0.300	1.0000	1.0000	0		
+2026-09-21T22:56:46.540	https://scipy.org/	200	18744	0.305	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.541	https://pygobject.gnome.org/	200	25898	0.339	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.554	https://www.bbc.co.uk/news	200	929109	0.597	1.0000	1.0000	0		
+2026-09-21T22:56:46.571	https://kivy.org/	200	14413	0.182	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.670	https://dearpygui.readthedocs.io/en/latest/	200	13053	0.279	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.672	https://trypyramid.com/	200	25249	0.368	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.673	https://fosstodon.org/@ThePSF	200	56467	0.567	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.673	https://ipython.org/	200	26962	0.316	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.747	https://www.djangoproject.com/	200	20617	0.556	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.750	https://pandas.pydata.org/	200	18294	0.392	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.822	https://news.ycombinator.com/	200	34119	0.503	1.0000	1.0000	0		
+2026-09-21T22:56:46.934	https://www.givecampus.com/campaigns/21840/donations/new	403	0	0.342	1.0000	1.0000	1	access denied	https://engineering.nyu.edu/
+2026-09-21T22:56:46.986	https://buildbot.net/	200	11340	0.481	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:46.988	https://planetpython.org/	200	240089	0.718	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.063	https://saltproject.io/	200	16657	0.402	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.063	https://docs.ansible.com/	429	0	0.426	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.064	https://www.nasa.gov/	200	360147	1.060	1.0000	1.0000	0		
+2026-09-21T22:56:47.087	https://pytorch.org/	200	217719	0.598	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.124	https://xon.sh/	200	39562	0.622	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.158	https://riverbankcomputing.com/software/pyqt/intro	200	29211	0.700	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.284	https://www.gsa.gov/	200	188625	0.513	1.0000	1.0000	1		https://www.usa.gov/
+2026-09-21T22:56:47.362	https://ocw.mit.edu/	200	893377	0.986	1.0000	1.0000	0		
+2026-09-21T22:56:47.368	https://flask.palletsprojects.com/	200	39704	0.810	1.0000	1.0000	1	redirected to https://flask.palletsprojects.com/en/stable/	https://www.python.org/
+2026-09-21T22:56:47.382	https://wiki.qt.io/Qt_for_Python	200	60148	0.872	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.385	https://www.roundup-tracker.org/	200	19135	0.651	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.386	https://www.wxpython.org/	200	17765	0.708	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.432	https://www.tornadoweb.org/	200	33697	0.975	1.0000	1.0000	1	redirected to https://www.tornadoweb.org/en/stable/	https://www.python.org/
+2026-09-21T22:56:47.438	https://litestar.dev/	200	313051	0.899	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.492	https://fastapi.tiangolo.com/	200	153352	0.869	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.546	https://www.congress.gov/	403	0	0.409	1.0000	1.0000	1	access denied	https://www.loc.gov/
+2026-09-21T22:56:47.546	https://www.openstack.org/	200	250706	0.888	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.548	https://bsky.app/profile/nyutandon.bsky.social	200	20847	0.654	1.0000	1.0000	1		https://engineering.nyu.edu/
+2026-09-21T22:56:47.548	https://huggingface.co/docs/transformers/	200	231424	1.121	1.0000	1.0000	1	redirected to https://huggingface.co/docs/transformers/index	https://www.python.org/
+2026-09-21T22:56:47.557	https://trac.edgewall.org/	200	17452	0.863	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.630	https://pyfound.blogspot.com/	200	128773	1.424	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.692	https://pycon.blogspot.com/	200	175414	1.596	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.755	http://copyright.gov/	200	55642	0.433	1.0000	1.0000	1	redirected to https://copyright.gov/	https://www.loc.gov/
+2026-09-21T22:56:47.806	https://datatracker.ietf.org/doc/html/rfc8089.html	200	111836	0.384	1.0000	1.0000	1		https://docs.python.org/3/library/urllib.request.html
+2026-09-21T22:56:47.827	https://www.ibiblio.org/	200	4399	0.201	1.0000	1.0000	1		https://www.gutenberg.org/
+2026-09-21T22:56:47.861	https://www.tiktok.com/@nyu_tandon	200	370353	0.999	1.0000	1.0000	1		https://engineering.nyu.edu/
+2026-09-21T22:56:47.917	https://marhamilresearch4.blob.core.windows.net/gutenberg-public/Website/	404	0	0.410	1.0000	1.0000	1		https://www.gutenberg.org/
+2026-09-21T22:56:47.917	https://pyfound.blogspot.com/2026/09/announcing-2026-psf-board-election.html	200	124592	0.944	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:47.935	https://langchain.com/	200	272441	1.373	1.0000	1.0000	1	redirected to https://www.langchain.com/	https://www.python.org/
+2026-09-21T22:56:47.957	https://bottlepy.org/	200	30582	1.588	1.0000	1.0000	1	redirected to https://bottlepy.org/docs/dev/	https://www.python.org/
+2026-09-21T22:56:47.993	https://www.sphinx-doc.org/	200	29659	0.549	1.0000	1.0000	1	redirected to https://www.sphinx-doc.org/en/master/	https://docs.python.org/3/library/urllib.request.html
+2026-09-21T22:56:48.005	https://www.techatbloomberg.com/	403	0	0.315	1.0000	1.0000	2	access denied	https://pypi.org/
+2026-09-21T22:56:48.010	https://dtdg.co/pypi	200	5326	0.384	1.0000	1.0000	2	redirected to https://p.datadoghq.com/sb/7dc8b3250-85dcf667bd	https://pypi.org/
+2026-09-21T22:56:48.048	https://www.fastly.com/	200	221037	0.297	1.0000	1.0000	2		https://pypi.org/
+2026-09-21T22:56:48.174	https://www.datadoghq.com/	200	271273	0.378	1.0000	1.0000	2		https://pypi.org/
+2026-09-21T22:56:48.187	https://scipy.github.io/devdocs/dev/roadmap.html	200	28634	0.315	1.0000	1.0000	2		https://scipy.org/
+2026-09-21T22:56:48.202	https://library-of-congress-shop.myshopify.com/	200	236062	0.600	1.0000	1.0000	1		https://www.loc.gov/
+2026-09-21T22:56:48.219	https://requests.readthedocs.io/en/master/	200	22519	0.780	1.0000	1.0000	1	redirected to https://requests.readthedocs.io/en/latest/	https://docs.python.org/3/library/urllib.request.html
+2026-09-21T22:56:48.234	https://gstreamer.freedesktop.org/	200	12826	0.236	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.252	https://www.pgdp.net/	200	16190	0.850	1.0000	1.0000	1	redirected to https://www.pgdp.net/c/	https://www.gutenberg.org/
+2026-09-21T22:56:48.281	https://copyright.gov/	200	55642	0.345	1.0000	1.0000	1	already crawled	https://www.loc.gov/
+2026-09-21T22:56:48.315	https://statuspage.io/	200	127697	0.359	1.0000	1.0000	2	redirected to https://www.atlassian.com/software/statuspage	https://pypi.org/
+2026-09-21T22:56:48.337	https://www.hudsonrivertrading.com/careers/	200	135011	0.620	1.0000	1.0000	2		https://pypi.org/
+2026-09-21T22:56:48.379	https://www.research.net/r/libraryofcongress?site=homepage	200	92387	1.003	1.0000	1.0000	1		https://www.loc.gov/
+2026-09-21T22:56:48.393	https://maoschanz.github.io/drawing/	200	22308	0.242	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.419	https://mastodon.social/@gutenberg_org	200	52707	0.763	1.0000	1.0000	1		https://www.gutenberg.org/
+2026-09-21T22:56:48.419	https://sourceware.org/libffi/	200	14505	0.254	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.460	https://www.gtk.org/	200	46260	0.397	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.506	https://w3c.social/@w3c	200	56506	0.890	1.0000	1.0000	1		https://www.w3.org/standards/
+2026-09-21T22:56:48.554	https://aws.amazon.com/	200	522509	0.635	1.0000	1.0000	2		https://pypi.org/
+2026-09-21T22:56:48.559	https://nicotine-plus.org/	200	5710	0.128	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.563	https://usebottles.com/	200	8749	0.359	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.671	https://fedoraproject.org/wiki/Anaconda	200	34579	0.408	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.675	https://depot.dev/	200	545282	0.701	1.0000	1.0000	2		https://pypi.org/
+2026-09-21T22:56:48.678	https://engineeringnyu.university-tour.com/virtual-tour/brooklyn-campus-map	200	524941	1.250	1.0000	1.0000	1		https://engineering.nyu.edu/
+2026-09-21T22:56:48.758	https://www.anthropic.com/	200	204635	0.829	1.0000	1.0000	2		https://pypi.org/
+2026-09-21T22:56:48.847	https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en	200	58601	0.903	1.0000	1.0000	1	redirected to https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=XX&uselang=en&wmf_medium=sidebar&wmf_source=donate&wmf_campaign=en.wikipedia.org	https://en.wikipedia.org/wiki/Web_crawler
+2026-09-21T22:56:48.848	https://webkitgtk.org/	200	11328	0.411	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.850	https://www.pitivi.org/	200	7430	0.169	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.850	https://developer.nvidia.com/	200	43994	0.710	1.0000	1.0000	2		https://pypi.org/
+2026-09-21T22:56:48.872	https://www.bleachbit.org/	200	18798	0.555	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.873	https://itunes.apple.com/us/artist/library-of-congress/id1280713133?mt=2	200	283303	1.466	1.0000	1.0000	1	redirected to https://podcasts.apple.com/us/artist/library-of-congress/1280713133	https://www.loc.gov/
+2026-09-21T22:56:48.890	https://deluge-torrent.org/	200	5329	0.522	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.915	https://lutris.net/	200	8545	0.406	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.921	https://gramps-project.org/	200	750	0.458	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.921	https://librivox.org/	200	34419	1.493	1.0000	1.0000	1		https://www.gutenberg.org/
+2026-09-21T22:56:48.975	https://gaphor.org/	200	23532	0.375	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.977	https://hugolabe.github.io/Wike/	200	9866	0.257	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.991	https://gajim.org/	200	14670	0.541	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:48.993	https://gfeeds.gabmus.org/	200	13687	0.465	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:49.004	https://docs.gtk.org/gobject/	200	221346	0.528	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:49.031	https://beets.io/	200	7892	0.260	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:49.032	https://pithos.github.io/	200	3917	0.323	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:49.033	http://0.0.0.0:6543/	0	0	0.025	1.0000	1.0000	2	URLError(ConnectionRefusedError(111, 'Connection refused'))	https://trypyramid.com/
+2026-09-21T22:56:49.060	https://mastodon.social/@gutenberg_new	200	52338	0.858	1.0000	1.0000	1		https://www.gutenberg.org/
+2026-09-21T22:56:49.127	https://web.archive.org/web/20020106130042/http://www.wolfbot.com/	200	18990	1.015	1.0000	1.0000	1		https://en.wikipedia.org/wiki/Web_crawler
+2026-09-21T22:56:49.173	https://gnome-terminator.org/	200	5498	0.262	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:49.192	https://github.com/python/cpython/issues	200	332078	2.508	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:49.205	https://mypaint.app/	200	256	0.338	1.0000	1.0000	2	redirected to https://www.mypaint.app/	https://pygobject.gnome.org/
+2026-09-21T22:56:49.237	https://docs.anthropic.com/	200	482501	2.264	1.0000	1.0000	1	redirected to https://platform.claude.com/docs/en/home	https://www.python.org/
+2026-09-21T22:56:49.265	https://github.com/explore	200	365237	3.288	1.0000	1.0000	0		
+2026-09-21T22:56:49.300	https://matplotlib.org/	200	34877	0.402	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:49.303	https://quodlibet.readthedocs.io/	200	7285	0.416	1.0000	1.0000	2	redirected to https://quodlibet.readthedocs.io/en/latest/	https://pygobject.gnome.org/
+2026-09-21T22:56:49.304	https://www.cvfosammmm.org/setzer/	200	4336	0.349	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:49.330	https://discuss.scientific-python.org/c/contributor/scipy/	200	64588	1.198	1.0000	1.0000	2	redirected to https://discuss.scientific-python.org/c/contributor/scipy/32	https://scipy.org/
+2026-09-21T22:56:49.357	https://pydata-sphinx-theme.readthedocs.io/en/stable/	200	35190	0.371	1.0000	1.0000	2		https://pygobject.gnome.org/
+2026-09-21T22:56:49.374	https://docs.pylonsproject.org/projects/pyramid/en/latest/narr/install.html	200	24378	0.192	1.0000	1.0000	2		https://trypyramid.com/
+2026-09-21T22:56:49.410	https://www.tensorflow.org/	200	416111	3.062	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:49.587	https://www.bbc.com/	200	673872	0.477	1.0000	1.0000	1		https://www.bbc.co.uk/news
+2026-09-21T22:56:49.605	https://pylonsproject.org/	200	12767	0.303	1.0000	1.0000	2		https://trypyramid.com/
+2026-09-21T22:56:49.657	https://www.threespot.com/	200	73628	0.497	1.0000	1.0000	2		https://www.djangoproject.com/
+2026-09-21T22:56:49.658	https://doi.org/10.5281/zenodo.22710121	200	113175	1.948	1.0000	1.0000	1	redirected to https://zenodo.org/records/22710121	https://arxiv.org/list/cs.IR/recent
+2026-09-21T22:56:49.661	https://alicegg.tech/2026/09/21/attention	200	8719	0.212	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:49.723	http://andrevv.com/	200	96128	0.347	1.0000	1.0000	2	redirected to https://andrevv.com/	https://www.djangoproject.com/
+2026-09-21T22:56:49.724	https://www.science.org/content/article/nasa-s-mars-sample-return-mission-dead	403	0	0.205	1.0000	1.0000	1	access denied	https://news.ycombinator.com/
+2026-09-21T22:56:49.764	https://joinmastodon.org/apps	200	196424	0.465	1.0000	1.0000	2		https://fosstodon.org/@ThePSF
+2026-09-21T22:56:49.774	https://hosted.weblate.org/projects/pypa/warehouse/	200	392230	1.529	1.0000	1.0000	2		https://pypi.org/
+2026-09-21T22:56:49.807	https://brand.io/article/spymarks/	200	19554	0.362	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:49.821	https://www.bodo.ai/	200	76101	0.495	1.0000	1.0000	2		https://pandas.pydata.org/
+2026-09-21T22:56:49.821	https://poloclub.github.io/transformer-explainer/	200	46998	0.477	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:49.831	https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/	200	31986	0.476	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:49.873	https://wizardzines.com/comics/floating-point-alternatives/	200	13060	0.226	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:49.895	https://lwn.net/SubscriberLink/1094575/2385e98583715c2b/	200	58551	0.360	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:49.956	https://doi.org/10.5281/zenodo.22721044	200	111832	1.713	1.0000	1.0000	1	redirected to https://zenodo.org/records/22721044	https://arxiv.org/list/cs.IR/recent
+2026-09-21T22:56:49.973	https://gabrieloc.com/2026/09/15/perspective.html	200	78691	0.337	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.001	https://sentry.io/for/python/?utm_source=pypi&utm_medium=paid-community&utm_campaign=python-na-evergreen&utm_content=static-ad-pypi-sponsor-learnmore	200	316644	2.060	1.0000	1.0000	2		https://pypi.org/
+2026-09-21T22:56:50.005	https://ipython.readthedocs.io/	200	10295	0.764	1.0000	1.0000	2	redirected to https://ipython.readthedocs.io/en/stable/	https://ipython.org/
+2026-09-21T22:56:50.019	https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/	200	20061	0.479	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.058	https://about.facebook.com/meta/	200	510719	2.164	1.0000	1.0000	2	redirected to https://www.meta.com/metaverse/?utm_source=about.facebook.com&utm_medium=redirect	https://pypi.org/
+2026-09-21T22:56:50.058	https://status.claude.com/incidents/7g1qpkyz5gxh	200	73417	0.531	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.058	https://practical.engineering/blog/2019/5/11/how-do-traffic-signals-work	200	76064	0.304	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.059	http://agendaless.com/	200	3625	0.228	1.0000	1.0000	2	redirected to https://agendaless.com/	https://trypyramid.com/
+2026-09-21T22:56:50.090	https://readthedocs.org/	200	33498	0.689	1.0000	1.0000	2	redirected to https://about.readthedocs.com/?ref=app.readthedocs.org	https://dearpygui.readthedocs.io/en/latest/
+2026-09-21T22:56:50.153	https://www.nature.com/	200	230371	4.182	1.0000	1.0000	0	redirected to https://www.nature.com/?error=cookies_not_supported&code=01d6cde9-7700-406d-93cb-7fdfd83e78e2	
+2026-09-21T22:56:50.163	https://medium.com/buildbot	403	0	0.091	1.0000	1.0000	2	access denied	https://buildbot.net/
+2026-09-21T22:56:50.216	https://www.nongnu.org/txr/	200	15159	0.151	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.250	https://github.com/python/pythondotorg/issues	200	324624	2.556	1.0000	1.0000	1		https://www.python.org/
+2026-09-21T22:56:50.274	https://www.polyhedra.net/en/	200	26070	0.498	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.310	https://numfocus.org/	200	182403	0.795	1.0000	1.0000	2		https://pandas.pydata.org/
+2026-09-21T22:56:50.330	https://t.me/s/pandas_dev	200	108897	0.881	1.0000	1.0000	2		https://pandas.pydata.org/
+2026-09-21T22:56:50.332	https://trumanworld.live/	200	16437	0.284	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.345	https://opencollective.com/kivy/contribute/backer-6729/checkout	200	16940	0.447	1.0000	1.0000	2		https://kivy.org/
+2026-09-21T22:56:50.427	https://linear.app/now/ci-bottleneck-reworked	200	547832	0.850	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.437	https://safedep.io/mathmain-encrypted-loader/	200	157391	0.354	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.498	https://public.readthedocs.io/en/stable/	200	31856	0.279	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:50.524	https://friendly-traceback.github.io/docs/	200	34604	0.317	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:50.566	https://aroberge.github.io/ideas/docs/html/	200	21120	0.406	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:50.590	https://cruisecontrol.sourceforge.net/gettingstarted.html	200	5727	0.279	1.0000	1.0000	2		https://buildbot.net/
+2026-09-21T22:56:50.592	https://reeborg.ca/index_en.html	200	4838	0.323	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:50.650	https://wondermark.com/socrates-vs-writing/	200	114720	0.572	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.652	https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/	200	324095	0.773	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.764	https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/	200	561802	0.935	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.772	https://spectrum.ieee.org/hermes-shortwave-radio-digital-data	200	474990	0.594	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.807	https://discord.gg/AMXBDUBTZV	200	24053	0.631	1.0000	1.0000	2	redirected to https://discord.com/invite/AMXBDUBTZV	https://buildbot.net/
+2026-09-21T22:56:50.868	https://mimo.xiaomi.com/mimo-v2-6	200	9799	0.801	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.868	https://rpython.readthedocs.io/en/latest/examples.html	200	12286	0.246	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:50.870	https://eli.thegreenplace.net/2012/07/12/computed-goto-for-efficient-dispatch-tables	200	30109	0.380	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:50.871	https://x.ai/news/grok-4-7	200	288368	0.721	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.911	https://timdettmers.com/2026/09/21/dlab-open-source-week/	200	48254	0.667	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:50.977	https://www.pagetable.com/300	200	23015	0.653	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:51.029	https://openpaper.work/	200	10164	1.516	1.0000	1.0000	2	redirected to https://www.openpaper.work/en/	https://pygobject.gnome.org/
+2026-09-21T22:56:51.054	https://github.com/w3c/	200	318621	2.054	1.0000	1.0000	1		https://www.w3.org/standards/
+2026-09-21T22:56:51.148	https://savvycal.com/reuven/1-on-1-python	200	20795	0.663	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.148	https://belderbos.dev/tags/python/	200	47367	0.656	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.151	https://doc.pypy.org/discussion/rawrefcount.html	200	38786	0.669	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.226	https://web.libera.chat/?channels=	200	1107	0.692	1.0000	1.0000	2		https://buildbot.net/
+2026-09-21T22:56:51.226	https://pypy.org/download.html	200	12096	0.551	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.230	https://educates.dev/	200	135858	0.376	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.251	https://hpyproject.org/	200	14728	0.330	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.273	https://www.pypy.org/	200	8595	0.639	1.0000	1.0000	2	redirected to https://pypy.org/	https://planetpython.org/
+2026-09-21T22:56:51.299	https://grahamdumpleton.github.io/jupyterlab-workshop/demo/lab/index.html?reset&workshop=hello-jupyterlab&restart=force	200	6483	0.354	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.337	https://grahamdumpleton.me/	200	29150	0.654	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.383	https://pythonagenticai.com/	200	28478	0.667	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.431	https://www.gdquest.com/library/first_shader_godot4_portal/	200	582820	0.658	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:51.478	https://cffi.readthedocs.io/	200	12972	0.852	1.0000	1.0000	2	redirected to https://cffi.readthedocs.io/en/stable/	https://planetpython.org/
+2026-09-21T22:56:51.502	https://pythoncommunitynews.com/	200	5021	0.167	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.591	https://brmmm3.github.io/	200	10386	0.343	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.592	https://m.do.co/c/bba66856dc94	200	289874	1.880	1.0000	1.0000	2	redirected to https://www.digitalocean.com/?refcode=bba66856dc94&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=CopyPaste	https://kivy.org/
+2026-09-21T22:56:51.768	https://talkpython.fm/	200	64870	0.474	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.771	http://planet.pysoy.org/	0	0	0.019	1.0000	1.0000	2	URLError(gaierror(-2, 'Name or service not known'))	https://planetpython.org/
+2026-09-21T22:56:51.771	https://blog.jetbrains.com/	200	135598	0.465	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.818	https://nedbatchelder.com/blog	200	45987	0.420	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:51.943	https://lp.jetbrains.com/research/software-engineering/	200	95694	0.373	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.000	https://www.ericholscher.com/blog/2017/aug/2/pacman-rule-conferences/	200	14537	0.584	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.002	https://pythonbytes.fm/	200	38620	0.454	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.021	https://scriptertorust.com/	200	31394	0.732	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.022	https://plugins.jetbrains.com/plugin/27488-opentelemetry	200	84455	0.563	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.134	https://pycoders.com/	200	5798	0.483	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.229	https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins	200	59640	1.393	1.0000	1.0000	2	redirected to https://www.jenkins.io/	https://buildbot.net/
+2026-09-21T22:56:52.232	https://jupyterlab-workshop.readthedocs.io/	200	25227	1.018	1.0000	1.0000	2	redirected to https://jupyterlab-workshop.readthedocs.io/en/latest/	https://planetpython.org/
+2026-09-21T22:56:52.233	https://robocurve.org/roboharm/	200	583197	1.418	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:52.321	https://lernerpython.com/	200	182661	1.421	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.345	http://planet.turbogears.org/	0	0	0.018	1.0000	1.0000	2	URLError(gaierror(-2, 'Name or service not known'))	https://planetpython.org/
+2026-09-21T22:56:52.361	https://store.metasnake.com/effective-pandas-book/lhte7	200	258944	2.813	1.0000	1.0000	2	redirected to https://store.metasnake.com/effective-pandas-book	https://pandas.pydata.org/
+2026-09-21T22:56:52.361	https://tidelift.com/	200	1014539	2.583	1.0000	1.0000	2	redirected to https://www.sonarsource.com/solutions/security/?tidelift=tidelift-redirect	https://pandas.pydata.org/
+2026-09-21T22:56:52.483	https://nedbatchelder.com/blog/202609/silence_is_golden_lightning_talk	200	13588	0.441	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.487	https://pybit.es/articles/typing-protocol-abc-alternative/	200	122039	1.129	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.503	https://jupyterlite.readthedocs.io/	200	51313	1.110	1.0000	1.0000	2	redirected to https://jupyterlite.readthedocs.io/en/stable/	https://planetpython.org/
+2026-09-21T22:56:52.578	https://2027.djangocon.eu/sponsors/sponsorship/	200	34630	0.697	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.580	http://terri.toybox.ca/python-soc/	404	0	0.652	1.0000	1.0000	2	redirected to https://curiousity.ca/python-soc/	https://planetpython.org/
+2026-09-21T22:56:52.580	http://planeta.python.org.ar/	404	0	0.538	1.0000	1.0000	2	redirected to https://planeta.python.org.ar/	https://planetpython.org/
+2026-09-21T22:56:52.588	https://aroberge.blogspot.com/2026/09/breaking-four-year-hiatus-to-talk-about.html	200	89124	1.262	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.604	https://pretalx.evolutio.pt/djangocon-europe-2027/	200	5618	0.715	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.645	https://jupyterlab-workshop.readthedocs.io/en/latest/getting-started.html	200	39300	0.866	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.646	http://planetruby.0x42.net/	0	0	0.036	1.0000	1.0000	2	URLError(gaierror(-2, 'Name or service not known'))	https://planetpython.org/
+2026-09-21T22:56:52.749	https://opentelemetry.io/docs/specs/semconv/http/http-spans/	200	259300	0.964	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.785	https://amzn.to/3DyLaJc	200	1038482	2.850	1.0000	1.0000	2	redirected to https://www.amazon.com/Python-Data-Analysis-Wrangling-Jupyter/dp/109810403X	https://pandas.pydata.org/
+2026-09-21T22:56:52.929	http://planet.laptop.org/	200	281533	0.760	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.961	https://lernerpython.com/2026/09/20/python-coaching-one-on-one/	200	196879	1.650	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.963	https://unsplash.com/photos/village-near-mountain-DZUgKFjEDuM	200	292216	1.039	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:52.964	https://opencollective.com/kivy	200	569575	3.612	1.0000	1.0000	2		https://kivy.org/
+2026-09-21T22:56:52.983	https://pretix.evolutio.pt/evolutio/djceu27/	200	47456	1.058	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.012	https://2027.djangocon.eu/	200	32997	0.642	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.017	http://dev.2degreesnetwork.com/	200	3855	0.193	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.157	https://mkennedy.codes/tags/python/	200	22305	0.296	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.160	http://speno.blogspot.com/	404	0	0.213	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.246	http://planet.lisp.org/	200	291345	0.655	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.340	https://www.listendata.com/2023/04/autogpt-explained-everything-you-need.html	200	123309	1.853	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.407	https://codespaces.new/GrahamDumpleton/jupyterlab-workshop-showcase?quickstart=1	200	47982	1.377	1.0000	1.0000	2	redirected to https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fcodespaces%2Fnew%2FGrahamDumpleton%2Fjupyterlab-workshop-showcase%3Fquickstart%3D1	https://planetpython.org/
+2026-09-21T22:56:53.446	http://planet.sympy.org/	200	149191	0.827	1.0000	1.0000	2	redirected to https://planet.sympy.org/	https://planetpython.org/
+2026-09-21T22:56:53.495	https://forms.gle/sGfXDgnfpVgd4wpL9	200	101032	1.968	1.0000	1.0000	2	redirected to https://docs.google.com/forms/d/e/1FAIpQLSfAb1EGboKxqvdR0M6B7wWUAe9BoPQ6IYOJ8o02-p0W5a8_MA/viewform?usp=send_form	https://planetpython.org/
+2026-09-21T22:56:53.506	https://morozov.ca/	0	0	0.242	1.0000	1.0000	2	URLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'morozov.ca'. (_ssl.c:1000)"))	https://planetpython.org/
+2026-09-21T22:56:53.506	https://tildeweb.nl/~michiel/tags/python.html	200	7861	0.478	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.548	https://emptysqua.re/blog/category/python/	200	9707	0.511	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.573	https://blog.adarshd.dev/python/	200	23037	0.453	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.576	https://aroberge.blogspot.com/	200	177202	2.945	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.616	https://st4lk.github.io/en/	200	4333	0.327	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.616	https://blog.cloudflare.com/python-workers-ga/	200	331771	2.083	1.0000	1.0000	1		https://news.ycombinator.com/
+2026-09-21T22:56:53.690	https://www.listendata.com/	200	109106	1.148	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.790	http://www.afpy.org/planet/	200	2423758	1.628	1.0000	1.0000	2	redirected to https://planet.afpy.org/atom.xml; not html: text/xml	https://planetpython.org/
+2026-09-21T22:56:53.841	http://www.artima.com/weblogs/index.jsp?blogger=aahz	200	16601	0.605	1.0000	1.0000	2	redirected to https://www.artima.com/weblogs/index.jsp?blogger=aahz	https://planetpython.org/
+2026-09-21T22:56:53.846	http://www.dalkescientific.com/writings/diary/	200	139351	0.296	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.874	http://mysql-python.blogspot.com/	200	78100	0.178	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.944	https://docs.google.com/document/d/1NxkgWzR7j3K8W8wp0j41VyjNtrw-sOlY7loXTd-J3iI/edit	200	236563	2.375	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.967	http://gbtami.github.io/	200	3580	0.115	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:53.996	https://www.andreagrandi.it/	200	32331	0.505	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.023	http://limi.net/	200	6641	0.588	1.0000	1.0000	2	redirected to https://limi.net/	https://planetpython.org/
+2026-09-21T22:56:54.067	http://planet.postgresql.org/	200	79205	0.773	1.0000	1.0000	2	redirected to https://planet.postgresql.org/	https://planetpython.org/
+2026-09-21T22:56:54.081	https://thetaranights.com/	0	0	0.024	1.0000	1.0000	2	URLError(gaierror(-2, 'Name or service not known'))	https://planetpython.org/
+2026-09-21T22:56:54.081	https://amjith.com/tags/python/	200	10602	0.644	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.152	http://andy.terrel.us/	200	9450	0.404	1.0000	1.0000	2	redirected to https://andy.terrel.us/	https://planetpython.org/
+2026-09-21T22:56:54.191	https://lernerpython.com/personal-coaching/	200	194334	1.794	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.192	http://www.automatingosint.com/blog	200	114	0.309	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.264	https://anarc.at/tag/python-planet/	200	52840	0.508	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.322	https://rushter.com/blog/feed/	200	14646	0.252	1.0000	1.0000	2	not html: application/xml	https://planetpython.org/
+2026-09-21T22:56:54.364	https://lucumr.pocoo.org/	200	8722	0.366	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.481	https://www.linode.com/?r=f44080aab83cbedcd4d36d0668cb940712639882	200	161784	1.968	1.0000	1.0000	2		https://trypyramid.com/
+2026-09-21T22:56:54.498	http://techblog.ironfroggy.com/search/label/programming	0	0	0.030	1.0000	1.0000	2	URLError(gaierror(-2, 'Name or service not known'))	https://planetpython.org/
+2026-09-21T22:56:54.515	http://www.planetmysql.org/	200	44426	1.072	1.0000	1.0000	2	redirected to https://planet.mysql.com/	https://planetpython.org/
+2026-09-21T22:56:54.577	http://pybites.blogspot.com/	200	75445	0.346	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.685	https://codespaces.new/GrahamDumpleton/wrapture-workshops?quickstart=1	200	47937	1.353	1.0000	1.0000	2	redirected to https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fcodespaces%2Fnew%2FGrahamDumpleton%2Fwrapture-workshops%3Fquickstart%3D1	https://planetpython.org/
+2026-09-21T22:56:54.685	https://rhodesmill.org/brandon/category/python/feed/	200	24461	0.276	1.0000	1.0000	2	not html: application/xml	https://planetpython.org/
+2026-09-21T22:56:54.722	https://antocuni.eu/	200	46101	0.819	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.787	https://nicoddemus.github.io/	0	0	0.226	1.0000	1.0000	2	URLError(gaierror(-2, 'Name or service not known')); redirected to https://nicoddemus.github.io/	https://planetpython.org/
+2026-09-21T22:56:54.787	http://planet.perl.org/	200	12503	1.250	1.0000	1.0000	2	redirected to https://www.perl.org/	https://planetpython.org/
+2026-09-21T22:56:54.828	http://bitofcheese.blogspot.com/	200	69368	0.440	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.883	https://www.open-bio.org/news/category/obf-projects/biopython/feed/atom/	404	0	0.518	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.896	https://geeksocket.in/tags/python/	200	4059	0.423	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.928	http://benjiyork.com/blog/	404	0	0.430	1.0000	1.0000	2	redirected to https://benjiyork.com/blog/	https://planetpython.org/
+2026-09-21T22:56:54.993	https://www.amvtek.com/blog/	200	9546	0.909	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:54.994	https://snarky.ca/	200	18552	0.543	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.119	http://astrocodeschool.com/	404	0	0.605	1.0000	1.0000	2	redirected to https://learn.caktusgroup.com/astro-code-school	https://planetpython.org/
+2026-09-21T22:56:55.169	https://sparrow.dev/	200	46920	0.604	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.201	https://carl.duevel.online/tags/python/	0	0	0.292	1.0000	1.0000	2	URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)'))	https://planetpython.org/
+2026-09-21T22:56:55.201	https://calvinx.com/	200	14033	0.337	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.360	http://brunorocha.org/	200	7979	0.478	1.0000	1.0000	2	redirected to https://brunorocha.org/	https://planetpython.org/
+2026-09-21T22:56:55.361	http://eatthedots.blogspot.com/	200	50765	0.358	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.399	https://www.codingthepast.com/	200	49261	0.857	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.440	https://breadcrumbscollector.tech/	200	21791	0.611	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.526	http://pyinformatics.blogspot.com/	200	104077	0.426	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.530	https://www.metachris.dev/tags/python/	200	7960	0.354	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.531	http://chris-miles-writes-python.blogspot.com/	200	36280	0.388	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.551	https://cito.github.io/tags/python/	404	0	0.231	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.649	http://lipyrary.blogspot.com/	200	65549	0.315	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.733	http://planet.python.org.br/	200	936402	1.821	1.0000	1.0000	2	redirected to https://planet.python.org.br/	https://planetpython.org/
+2026-09-21T22:56:55.785	https://carlchenet.com/	200	82942	1.016	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.786	http://pyright.blogspot.com/	200	321697	0.969	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.788	https://blog.codegrades.com/	200	21658	0.493	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.822	https://peadrop.com/blog	200	36711	1.480	1.0000	1.0000	2	redirected to https://peadrop.com/blog/	https://planetpython.org/
+2026-09-21T22:56:55.887	http://planet.parrotcode.org/	200	109608	1.902	1.0000	1.0000	2	redirected to https://nodeposit.parrotcode.org/	https://planetpython.org/
+2026-09-21T22:56:55.887	http://code.informatikamihelac.com/en/tags/django/	200	24190	0.986	1.0000	1.0000	2	redirected to https://code.informatikamihelac.com/en/tags/django/	https://planetpython.org/
+2026-09-21T22:56:55.932	https://chinghwayu.com/	200	5772	0.639	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:55.932	http://clusterbleep.net/blog	200	73115	1.681	1.0000	1.0000	2	redirected to http://clusterbleep.net/blog/	https://planetpython.org/
+2026-09-21T22:56:55.959	https://www.caktusgroup.com/tags/python/	200	47666	1.070	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:56.068	https://www.youtube.com/user/kivyframework	200	806397	6.370	1.0000	1.0000	2		https://kivy.org/
+2026-09-21T22:56:56.069	http://djangocentral.com/	200	25864	2.696	1.0000	1.0000	2	redirected to https://djangocentral.com/	https://planetpython.org/
+2026-09-21T22:56:56.070	http://planet.haskell.org/	200	1507851	1.151	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:56.156	https://saltstack.github.io/pydata-hugo-theme/	200	53374	0.665	1.0000	1.0000	2		https://saltproject.io/
+2026-09-21T22:56:56.223	https://offby1.website/	200	12009	0.539	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:56.224	https://bugfactory.io/	200	28524	0.558	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:56.277	https://chriswarrick.com/	200	34250	1.003	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:56.302	https://xonsh.zulipchat.com/join/hbvue5rimpdkwkdjuiqfs7tv/	200	19649	0.244	1.0000	1.0000	2		https://xon.sh/
+2026-09-21T22:56:56.304	https://pythontest.com/posts/	200	240737	1.365	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:56.379	https://lightning.ai/	200	18261	0.310	1.0000	1.0000	2		https://pytorch.org/
+2026-09-21T22:56:56.438	https://dev.to/ldrscke	200	178247	0.889	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:56.502	http://planet.twistedmatrix.com/	200	533759	3.104	1.0000	1.0000	2	redirected to https://planet.twistedmatrix.com/	https://planetpython.org/
+2026-09-21T22:56:56.519	https://discord.com/invite/eNSRmh92XT	200	24122	0.470	1.0000	1.0000	2		https://pytorch.org/
+2026-09-21T22:56:56.534	https://coderslegacy.com/category/python/	200	79113	0.984	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:56.579	https://www.gsaauctions.gov/?topnav=buy-through-us	200	1620	0.151	1.0000	1.0000	2		https://www.gsa.gov/
+2026-09-21T22:56:56.597	https://matrix.to/	200	2774	0.307	1.0000	1.0000	2		https://xon.sh/
+2026-09-21T22:56:56.634	https://build-system.fman.io/pyqt6-book	200	20437	0.334	1.0000	1.0000	2		https://riverbankcomputing.com/software/pyqt/intro
+2026-09-21T22:56:56.670	https://join.slack.com/t/pytorch/shared_invite/zt-2j2la612p-miUinTTaxXczKOJw48poHA	403	0	0.780	1.0000	1.0000	2	access denied; redirected to https://pytorch.slack.com/join/shared_invite/zt-2j2la612p-miUinTTaxXczKOJw48poHA	https://pytorch.org/
+2026-09-21T22:56:56.719	https://mastodon.online/@xonsh	200	52820	0.594	1.0000	1.0000	2		https://xon.sh/
+2026-09-21T22:56:56.719	https://pyqt-builder.readthedocs.io/	200	9793	0.504	1.0000	1.0000	2	redirected to https://pyqt-builder.readthedocs.io/en/stable/	https://riverbankcomputing.com/software/pyqt/intro
+2026-09-21T22:56:56.758	http://planet.cherrypy.org/	200	630174	3.527	1.0000	1.0000	2	redirected to https://www.cherrypy.org/	https://planetpython.org/
+2026-09-21T22:56:56.780	https://python-sip.readthedocs.io/	200	34948	0.625	1.0000	1.0000	2	redirected to https://python-sip.readthedocs.io/en/stable/	https://riverbankcomputing.com/software/pyqt/intro
+2026-09-21T22:56:56.804	http://eric-ide.python-projects.org/	200	6397	0.261	1.0000	1.0000	2		https://riverbankcomputing.com/software/pyqt/intro
+2026-09-21T22:56:56.822	https://metasip.readthedocs.io/	200	6770	0.590	1.0000	1.0000	2	redirected to https://metasip.readthedocs.io/en/stable/	https://riverbankcomputing.com/software/pyqt/intro
+2026-09-21T22:56:56.948	https://events.linuxfoundation.org/pytorch-conference-north-america/register/?utm_source=pytorch&utm_medium=ribbon-banner&utm_campaign=PyTorch-Conference-NA-2026&utm_content=hero	200	126030	1.142	1.0000	1.0000	2		https://pytorch.org/
+2026-09-21T22:56:56.952	https://codewith.mu/	200	6334	0.326	1.0000	1.0000	2		https://riverbankcomputing.com/software/pyqt/intro
+2026-09-21T22:56:57.030	https://docs.microsoft.com/en-us/azure/azure-functions/machine-learning-pytorch?tabs=bash	200	64479	0.391	1.0000	1.0000	2	redirected to https://learn.microsoft.com/en-us/azure/azure-functions/machine-learning-pytorch?tabs=bash	https://pytorch.org/
+2026-09-21T22:56:57.033	https://www.pythonguis.com/pyqt6-book/	200	52324	0.682	1.0000	1.0000	2		https://riverbankcomputing.com/software/pyqt/intro
+2026-09-21T22:56:57.103	https://docs.microsoft.com/en-us/azure/machine-learning/how-to-train-pytorch	200	72694	1.002	1.0000	1.0000	2	redirected to https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-pytorch?view=azureml-api-2	https://pytorch.org/
+2026-09-21T22:56:57.105	https://acquisitiongateway.gov/forecast	200	19603	0.282	1.0000	1.0000	2		https://www.gsa.gov/
+2026-09-21T22:56:57.105	https://hub.docker.com/u/xonsh	200	274829	0.918	1.0000	1.0000	2		https://xon.sh/
+2026-09-21T22:56:57.106	https://www.valdyas.org/python/book.html	200	8272	0.535	1.0000	1.0000	2		https://riverbankcomputing.com/software/pyqt/intro
+2026-09-21T22:56:57.107	https://www.hellotux.com/xonsh	200	17099	0.734	1.0000	1.0000	2		https://xon.sh/
+2026-09-21T22:56:57.111	https://azure.microsoft.com/en-us/develop/pytorch/	200	213861	1.056	1.0000	1.0000	2	redirected to https://azure.microsoft.com/en-us/resources/developers/pytorch/	https://pytorch.org/
+2026-09-21T22:56:57.128	https://careers.google.com/	200	1129839	8.875	1.0000	1.0000	2	redirected to https://www.google.com/about/careers/applications/	https://pypi.org/
+2026-09-21T22:56:57.142	http://codesnipers.com/?q=taxonomy/term/16/0	200	3290	0.652	1.0000	1.0000	2	redirected to https://codesnipers.com/?q=taxonomy/term/16/0	https://planetpython.org/
+2026-09-21T22:56:57.271	http://www.qtrac.eu/pyqtbook.html	200	12266	0.604	1.0000	1.0000	2	redirected to https://mark-summerfield.github.io/pyqtbook.html	https://riverbankcomputing.com/software/pyqt/intro
+2026-09-21T22:56:57.273	https://arilamstein.com/	200	133251	0.618	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:57.345	https://sam.gov/opportunities?topnav=sell-to-government	200	59369	0.790	1.0000	1.0000	2		https://www.gsa.gov/
+2026-09-21T22:56:57.391	https://audrey.feldroy.com/	200	327824	1.858	1.0000	1.0000	2		https://planetpython.org/
+2026-09-21T22:56:57.425	https://mitocw.zendesk.com/hc/en-us	403	0	0.281	1.0000	1.0000	1	access denied	https://ocw.mit.edu/
+2026-09-21T22:56:57.425	https://chalk-radio.simplecast.com/episodes/mit-programmer-ana-bell-on-growth-mindset-coding-and-rubber-ducks	200	39960	0.303	1.0000	1.0000	1		https://ocw.mit.edu/
+2026-09-21T22:56:57.473	https://truthsocial.com/@USGSA	200	3502	0.330	1.0000	1.0000	2		https://www.gsa.gov/
+2026-09-21T22:56:57.535	https://public.govdelivery.com/accounts/USGSA/subscriber/new	200	7237	0.415	1.0000	1.0000	2		https://www.gsa.gov/
+2026-09-21T22:56:57.554	https://events.linuxfoundation.org/pytorch-conference-north-america/register/	200	126030	1.067	1.0000	1.0000	2		https://pytorch.org/
+2026-09-21T22:56:57.617	https://www.linuxfoundation.org/privacy/	200	117131	1.650	1.0000	1.0000	2	redirected to https://www.linuxfoundation.org/legal/privacy-policy	https://pytorch.org/
+2026-09-21T22:56:57.689	https://www.linuxfoundation.org/legal/policies	200	75507	1.007	1.0000	1.0000	2		https://pytorch.org/
+2026-09-21T22:56:57.735	http://pycurl.io/	404	0	0.106	1.0000	1.0000	2		https://www.tornadoweb.org/
+2026-09-21T22:56:57.735	https://acquisition.gov/?topnav=policy-regulations	200	61082	0.752	1.0000	1.0000	2	redirected to https://www.acquisition.gov/?topnav=policy-regulations	https://www.gsa.gov/
+2026-09-21T22:56:57.797	https://creativecommons.org/licenses/by-nc-sa/4.0/	200	37346	0.455	1.0000	1.0000	1		https://ocw.mit.edu/
+2026-09-21T22:56:57.800	https://www.gsaadvantage.gov/	200	141	0.548	1.0000	1.0000	2		https://www.gsa.gov/
+2026-09-21T22:56:57.800	http://data.gov/?source=gsa.gov-technology	200	121816	0.940	1.0000	1.0000	2	redirected to https://data.gov/?source=gsa.gov-technology	https://www.gsa.gov/
+2026-09-21T22:56:57.802	https://www.sba.gov/counseling/	200	198935	1.032	1.0000	1.0000	2		https://www.gsa.gov/
+2026-09-21T22:56:57.812	https://www.pythonguis.com/pyqt5-book/	200	49032	0.708	1.0000	1.0000	2		https://riverbankcomputing.com/software/pyqt/intro
+2026-09-21T22:56:57.866	https://getnikola.com/	200	13891	0.287	1.0000	1.0000	2		https://www.wxpython.org/
+2026-09-21T22:56:57.928	https://www.gsaig.gov/	200	67638	0.694	1.0000	1.0000	2		https://www.gsa.gov/
+2026-09-21T22:56:58.031	https://wxwidgets.org/	200	37725	0.414	1.0000	1.0000	2		https://www.wxpython.org/
+2026-09-21T22:56:58.060	https://www.cbca.gov/	200	23099	0.603	1.0000	1.0000	2		https://www.gsa.gov/
+2026-09-21T22:56:58.062	https://groups.google.com/g/kivy-users	200	1095714	8.757	1.0000	1.0000	2		https://kivy.org/
+2026-09-21T22:56:58.143	https://yaml.org/	200	25151	0.376	1.0000	1.0000	2		https://litestar.dev/
+2026-09-21T22:56:58.144	http://anweshadas.in/	200	20522	2.490	1.0000	1.0000	2	redirected to https://anweshadas.in/	https://planetpython.org/
+2026-09-21T22:56:58.147	https://wsgi.readthedocs.io/en/latest/	200	6665	0.322	1.0000	1.0000	2		https://www.tornadoweb.org/
+2026-09-21T22:56:58.153	https://www.whitehouse.gov/?footer=gsa	200	290632	1.258	1.0000	1.0000	2		https://www.gsa.gov/
+2026-09-21T22:56:58.157	http://www.apache.org/licenses/LICENSE-2.0.html	200	36789	0.379	1.0000	1.0000	2	redirected to https://www.apache.org/licenses/LICENSE-2.0.html	https://www.tornadoweb.org/
+2026-09-21T22:56:58.181	https://aoprals.state.gov/content.asp?content_id=184&menu_id=78	200	32611	1.388	1.0000	1.0000	2	redirected to https://allowances.state.gov/	https://www.gsa.gov/
+2026-09-21T22:56:58.248	https://webchat.kde.org/	200	4721	0.440	1.0000	1.0000	2		https://wiki.qt.io/Qt_for_Python
+2026-09-21T22:56:58.248	https://pypistats.org/packages/roundup	200	224655	0.694	1.0000	1.0000	2		https://www.roundup-tracker.org/
+2026-09-21T22:56:58.248	https://www.ocw-openmatters.org/2026/09/16/mit-opencourseware-wins-a-2026-open-education-award-for-excellence/?utm_source=rss&utm_medium=rss&utm_campaign=mit-opencourseware-wins-a-2026-open-education-award-for-excellence	200	97357	0.852	1.0000	1.0000	1		https://ocw.mit.edu/
+2026-09-21T22:56:58.251	https://words.filippo.io/csrf/	200	28654	0.348	1.0000	1.0000	2		https://www.roundup-tracker.org/
+2026-09-21T22:56:58.373	https://msgspec.dev/	200	35452	0.371	1.0000	1.0000	2		https://litestar.dev/
+2026-09-21T22:56:58.376	https://www.alibabacloud.com/en/product/machine-learning	200	115955	1.699	1.0000	1.0000	2	redirected to https://www.alibabacloud.com/en/product/machine-learning?_p_lc=1	https://pytorch.org/
+2026-09-21T22:56:58.499	https://gettingthingsdone.com/	200	153385	0.921	1.0000	1.0000	2		https://www.roundup-tracker.org/
+2026-09-21T22:56:58.594	https://www.attrs.org/	200	34479	0.730	1.0000	1.0000	2	redirected to https://www.attrs.org/en/stable/	https://litestar.dev/
+2026-09-21T22:56:58.599	https://databento.com/?utm_source=fastapi&utm_medium=sponsor&utm_content=display	200	17781	0.217	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:58.633	https://fastapiconf.com/	200	98873	0.502	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:58.635	https://www.ocw-openmatters.org/2026/09/10/ocw-resources-for-the-25th-anniversary-of-9-11/?utm_source=rss&utm_medium=rss&utm_campaign=ocw-resources-for-the-25th-anniversary-of-9-11	200	104733	0.767	1.0000	1.0000	1		https://ocw.mit.edu/
+2026-09-21T22:56:58.799	https://fastapicloud.com/	200	105225	0.609	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:58.802	https://coverage-badge.samuelcolvin.workers.dev/redirect/fastapi/fastapi	400	0	0.263	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:58.802	https://www.mediawiki.org/	200	87656	0.615	1.0000	1.0000	2	redirected to https://www.mediawiki.org/wiki/MediaWiki	https://wiki.qt.io/Qt_for_Python
+2026-09-21T22:56:58.814	http://127.0.0.1:8000/items/5?q=somequery	0	0	0.037	1.0000	1.0000	2	URLError(ConnectionRefusedError(111, 'Connection refused'))	https://fastapi.tiangolo.com/
+2026-09-21T22:56:58.814	https://tldrlegal.com/license/gnu-general-public-license-v2	200	36069	0.601	1.0000	1.0000	2	redirected to https://www.tldrlegal.com/license/gnu-general-public-license-v2	https://wiki.qt.io/Qt_for_Python
+2026-09-21T22:56:58.848	https://netflixtechblog.com/introducing-dispatch-da4b8a2a8072	403	0	0.189	1.0000	1.0000	2	access denied	https://fastapi.tiangolo.com/
+2026-09-21T22:56:58.848	https://www.alibabacloud.com/help/en/pai/pytorch-1	200	17856	1.258	1.0000	1.0000	2		https://pytorch.org/
+2026-09-21T22:56:58.849	https://tldrlegal.com/license/gnu-lesser-general-public-license-v3-(lgpl-3)	200	26976	1.182	1.0000	1.0000	2	redirected to https://www.tldrlegal.com/license/gnu-lesser-general-public-license-v3-lgpl-3	https://wiki.qt.io/Qt_for_Python
+2026-09-21T22:56:58.938	https://www.findmyelectric.com/	200	367696	1.168	1.0000	1.0000	2		https://www.wxpython.org/
+2026-09-21T22:56:58.957	https://docs.pydantic.dev/	200	51232	0.758	1.0000	1.0000	2	redirected to https://pydantic.dev/docs/	https://litestar.dev/
+2026-09-21T22:56:59.009	https://www.youtube.com/nyutandon	200	2008591	12.178	1.0000	1.0000	1		https://engineering.nyu.edu/
+2026-09-21T22:56:59.010	https://www.alibabacloud.com/help/en/pai/submit-a-standalone-training-job-that-uses-pytorch	200	22914	1.377	1.0000	1.0000	2		https://pytorch.org/
+2026-09-21T22:56:59.011	https://www.greptile.com/?utm_source=fastapi&utm_medium=sponsorship&utm_campaign=fastapi_sponsor_page	200	354043	0.481	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.124	https://json-schema.org/	200	119207	0.634	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.159	http://gitter.im/PySide/pyside2	404	0	1.179	1.0000	1.0000	2	redirected to https://app.gitter.im/	https://wiki.qt.io/Qt_for_Python
+2026-09-21T22:56:59.189	https://www.data.gov/?footer=gsa	200	121816	1.151	1.0000	1.0000	2	redirected to https://data.gov/?footer=gsa	https://www.gsa.gov/
+2026-09-21T22:56:59.211	https://www.svix.com/	200	247970	0.567	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.293	https://docs.railway.com/guides/fastapi?utm_medium=integration&utm_source=docs&utm_campaign=fastapi	200	214250	0.669	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.321	https://strawberry.rocks/	200	69645	0.400	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.405	https://blockbee.io/?ref=fastapi	200	200015	1.158	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.408	https://serpapi.com/?utm_source=fastapi_website	200	166358	0.946	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.427	https://scalar.com/	200	350182	1.166	1.0000	1.0000	2		https://litestar.dev/
+2026-09-21T22:56:59.454	https://pydantic.dev/docs/	200	51232	0.746	1.0000	1.0000	2	already crawled	https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.495	https://www.youtube.com/libraryofcongress/	200	1538198	11.909	1.0000	1.0000	1		https://www.loc.gov/
+2026-09-21T22:56:59.526	https://telemetrysports.com/	200	303011	1.084	1.0000	1.0000	2	redirected to https://teamworks.com/coaching-nfl	https://litestar.dev/
+2026-09-21T22:56:59.564	http://www.blog.pythonlibrary.org/	200	158996	1.220	1.0000	1.0000	2	redirected to https://blog.pythonlibrary.org/	https://www.wxpython.org/
+2026-09-21T22:56:59.606	https://uvicorn.dev/	200	47328	0.704	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.699	http://h71000.www7.hp.com/doc/84final/ba554_90015/ch03s09.html	0	0	0.062	1.0000	1.0000	2	URLError(gaierror(-2, 'Name or service not known'))	https://datatracker.ietf.org/doc/html/rfc8089.html
+2026-09-21T22:56:59.699	https://www.youtube.com/user/nyu	200	1580982	11.053	1.0000	1.0000	1		https://www.nyu.edu/
+2026-09-21T22:56:59.700	https://docs.astral.sh/uv/getting-started/installation/	200	88246	0.579	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.788	https://www.permit.io/blog/implement-authorization-in-fastapi?utm_source=github&utm_medium=referral&utm_campaign=fastapi	200	112607	1.144	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.799	http://www.gnu.org/software/bash/manual/html_node/Tilde-Expansion.html	200	7349	0.096	1.0000	1.0000	2		https://datatracker.ietf.org/doc/html/rfc8089.html
+2026-09-21T22:56:59.799	https://starlette.dev/	200	44502	0.874	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.801	https://www.python-httpx.org/	200	31898	0.431	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.802	https://docs.render.com/deploy-fastapi?utm_source=deploydoc&utm_medium=referral&utm_campaign=fastapi	200	276841	1.524	1.0000	1.0000	2	redirected to https://render.com/docs/deploy-fastapi?utm_campaign=fastapi&utm_medium=referral&utm_source=deploydoc	https://fastapi.tiangolo.com/
+2026-09-21T22:56:59.890	https://wiki.c2.com/?WikiWikiWeb	200	8565	0.345	1.0000	1.0000	2		https://trac.edgewall.org/
+2026-09-21T22:56:59.890	https://gitjobs.dev/?foundation=openinfra	200	55216	0.360	1.0000	1.0000	2		https://www.openstack.org/
+2026-09-21T22:56:59.891	https://openinfra.org/doc	404	0	0.323	1.0000	1.0000	2		https://www.openstack.org/
+2026-09-21T22:57:00.025	https://www.techempower.com/benchmarks/	200	2003	0.558	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:57:00.079	https://html.spec.whatwg.org/	200	5242880	3.678	1.0000	1.0000	1	truncated	https://docs.python.org/3/library/urllib.request.html
+2026-09-21T22:57:00.181	https://vexxhost.com/	200	308607	0.676	1.0000	1.0000	2		https://www.openstack.org/
+2026-09-21T22:57:00.264	https://tutorcruncher.com/?utm_source=fastapi	200	205859	1.471	1.0000	1.0000	2	redirected to https://tutorcruncher.com/us?utm_source=fastapi	https://fastapi.tiangolo.com/
+2026-09-21T22:57:00.294	https://zensical.org/	200	30420	0.620	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:57:00.295	https://ccb.gov/	200	21690	0.493	1.0000	1.0000	2		http://copyright.gov/
+2026-09-21T22:57:00.353	https://techaro.lol/	200	30644	0.468	1.0000	1.0000	2		https://www.ibiblio.org/
+2026-09-21T22:57:00.386	https://bsky.social/	200	63407	0.902	1.0000	1.0000	2	redirected to https://bsky.social/about	https://bsky.app/profile/nyutandon.bsky.social
+2026-09-21T22:57:00.388	http://www.unicode.org/reports/tr15/tr15-44.html	200	139082	0.319	1.0000	1.0000	2		https://datatracker.ietf.org/doc/html/rfc8089.html
+2026-09-21T22:57:00.473	https://www.makotemplates.org/	200	4367	0.351	1.0000	1.0000	2		https://bottlepy.org/
+2026-09-21T22:57:00.517	https://www.coderabbit.ai/?utm_source=fastapi&utm_medium=banner&utm_campaign=fastapi	200	816597	1.740	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:57:00.540	https://www.bairesdev.com/	200	432009	1.663	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:57:00.554	http://git-scm.com/	200	6161	0.799	1.0000	1.0000	2	redirected to https://git-scm.com/	https://trac.edgewall.org/
+2026-09-21T22:57:00.600	https://www.propelauth.com/?utm_source=fastapi&utm_campaign=1223&utm_medium=topbanner	200	1635421	1.578	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:57:00.602	https://www.scintilla.org/ScintillaDoc.html	200	605921	3.377	1.0000	1.0000	2		https://riverbankcomputing.com/software/pyqt/intro
+2026-09-21T22:57:00.704	https://trac-hacks.org/	200	18126	0.777	1.0000	1.0000	2		https://trac.edgewall.org/
+2026-09-21T22:57:00.706	https://www.uber.com/us/en/blog/ludwig-v0-2/	200	501958	2.073	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:57:00.729	https://groups.google.de/group/bottlepy	404	0	0.298	1.0000	1.0000	2		https://bottlepy.org/
+2026-09-21T22:57:00.782	https://www.coderabbit.ai/?utm_source=fastapi&utm_medium=badge&utm_campaign=fastapi	200	816640	1.707	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:57:00.820	https://atproto.com/	200	89760	1.176	1.0000	1.0000	2		https://bsky.app/profile/nyutandon.bsky.social
+2026-09-21T22:57:00.835	https://www.rfc-editor.org/errata_search.php?rfc=8089	200	11904	0.938	1.0000	1.0000	2	redirected to https://errata.rfc-editor.org/search/?rfc_number=8089	https://datatracker.ietf.org/doc/html/rfc8089.html
+2026-09-21T22:57:00.836	https://gunicorn.org/	200	40802	0.506	1.0000	1.0000	2		https://bottlepy.org/
+2026-09-21T22:57:00.864	https://docs.kernel.org/	200	18375	0.299	1.0000	1.0000	2		https://www.sphinx-doc.org/
+2026-09-21T22:57:00.901	https://huggingface.com/models	200	370923	1.123	1.0000	1.0000	2	redirected to https://huggingface.co/models	https://huggingface.co/docs/transformers/
+2026-09-21T22:57:00.968	https://www.meetup.com/pro/openinfradev	200	99185	1.451	1.0000	1.0000	2	redirected to https://www.meetup.com/pro/openinfradev/	https://www.openstack.org/
+2026-09-21T22:57:00.969	https://huggingface.com/	200	176936	0.645	1.0000	1.0000	2	redirected to https://huggingface.co/	https://huggingface.co/docs/transformers/
+2026-09-21T22:57:00.971	https://repology.org/project/drawing/versions	0	0	0.018	1.0000	1.0000	3	URLError(ConnectionRefusedError(111, 'Connection refused'))	https://maoschanz.github.io/drawing/
+2026-09-21T22:57:01.091	https://pythonpaste.readthedocs.io/	200	8459	0.554	1.0000	1.0000	2	redirected to https://pythonpaste.readthedocs.io/en/latest/	https://bottlepy.org/
+2026-09-21T22:57:01.092	https://www.cheetahtemplate.org/	200	16201	0.387	1.0000	1.0000	2	redirected to https://cheetahtemplate.org/	https://bottlepy.org/
+2026-09-21T22:57:01.188	https://social.openinfra.dev/@OpenStack	200	55833	0.712	1.0000	1.0000	2		https://www.openstack.org/
+2026-09-21T22:57:01.299	https://cheroot.cherrypy.dev/	200	23497	0.789	1.0000	1.0000	2	redirected to https://cheroot.cherrypy.dev/en/latest/	https://bottlepy.org/
+2026-09-21T22:57:01.373	https://dribia.com/en/	200	205750	2.058	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:57:01.393	https://www.rfc-editor.org/errata.php	200	6917	0.827	1.0000	1.0000	2	redirected to https://errata.rfc-editor.org/search/	https://datatracker.ietf.org/doc/html/rfc8089.html
+2026-09-21T22:57:01.419	https://www.atlassian.com/zh/software/statuspage	200	126320	0.431	1.0000	1.0000	3		https://statuspage.io/
+2026-09-21T22:57:01.510	https://www.atlassianfoundation.org/	200	65509	0.360	1.0000	1.0000	3		https://statuspage.io/
+2026-09-21T22:57:01.541	https://url.spec.whatwg.org/	200	740143	1.116	1.0000	1.0000	2		https://datatracker.ietf.org/doc/html/rfc8089.html
+2026-09-21T22:57:01.558	https://numpy.org/neps/nep-0037-array-module.html	200	92773	0.875	1.0000	1.0000	3		https://scipy.github.io/devdocs/dev/roadmap.html
+2026-09-21T22:57:01.583	http://blogs.msdn.com/b/ie/archive/2006/12/06/file-uris-in-windows.aspx	403	0	0.912	1.0000	1.0000	2	access denied; redirected to https://devblogs.microsoft.com/ie/file-uris-in-windows.aspx	https://datatracker.ietf.org/doc/html/rfc8089.html
+2026-09-21T22:57:01.583	https://www.propelauth.com/?utm_source=fastapi&utm_campaign=1223&utm_medium=mainbadge	200	1635421	2.136	1.0000	1.0000	2		https://fastapi.tiangolo.com/
+2026-09-21T22:57:01.604	https://transonic.readthedocs.io/	200	20532	0.786	1.0000	1.0000	3	redirected to https://transonic.readthedocs.io/en/latest/	https://scipy.github.io/devdocs/dev/roadmap.html
+2026-09-21T22:57:01.634	https://universeodon.com/@DProofreaders	200	44876	0.582	1.0000	1.0000	2		https://www.pgdp.net/
+2026-09-21T22:57:01.664	https://docs.jupyter.org/	200	41514	1.118	1.0000	1.0000	2	redirected to https://docs.jupyter.org/en/latest/	https://www.sphinx-doc.org/
+2026-09-21T22:57:01.710	https://openinfra.dev/	200	818261	1.788	1.0000	1.0000	2	redirected to https://openinfra.org/	https://www.openstack.org/
+2026-09-21T22:57:01.770	https://boards.greenhouse.io/hrttalentcommunity/jobs/3432773	200	54364	0.645	1.0000	1.0000	3	redirected to https://job-boards.greenhouse.io/hrttalentcommunity/jobs/3432773	https://www.hudsonrivertrading.com/careers/
+2026-09-21T22:57:01.781	https://bitbucket.org/product	200	178427	0.773	1.0000	1.0000	3	redirected to https://bitbucket.org/product/	https://statuspage.io/
+2026-09-21T22:57:01.796	http://www.ala.org/advocacy/intfreedom/freedomreadstatement	200	181468	0.633	1.0000	1.0000	2	redirected to https://www.ala.org/advocacy/intfreedom/freedomreadstatement	https://www.pgdp.net/
+2026-09-21T22:57:01.802	https://luma.com/langchain?k=c	200	349366	1.429	1.0000	1.0000	2		https://langchain.com/
+2026-09-21T22:57:01.819	https://discourse.gstreamer.org/	200	12770	0.620	1.0000	1.0000	3		https://gstreamer.freedesktop.org/
+2026-09-21T22:57:01.840	http://status.dropbox.com/	200	79464	0.629	1.0000	1.0000	3	redirected to https://status.dropbox.com/	https://statuspage.io/
+2026-09-21T22:57:01.897	https://atlassian.com/blog	200	345900	0.686	1.0000	1.0000	3	redirected to https://www.atlassian.com/blog	https://statuspage.io/
+2026-09-21T22:57:01.913	https://gitlab.com/src_prepare/src_prepare-overlay/-/tree/master/media-gfx/drawing	200	49818	0.692	1.0000	1.0000	3		https://maoschanz.github.io/drawing/
+2026-09-21T22:57:01.939	http://moxielogic.org/blog	200	8757	0.278	1.0000	1.0000	3	redirected to http://moxielogic.org/blog/	https://sourceware.org/libffi/
+2026-09-21T22:57:02.004	https://floss.social/@GStreamer	200	56958	0.831	1.0000	1.0000	3		https://gstreamer.freedesktop.org/
+2026-09-21T22:57:02.034	https://calculator.aws/?nc2=h_pr_calc	200	2701	0.137	1.0000	1.0000	3		https://aws.amazon.com/
+2026-09-21T22:57:02.044	https://www.surveymonkey.com/mp/policy/privacy-policy/	200	470333	0.828	1.0000	1.0000	2	redirected to https://www.surveymonkey.com/mp/legal/	https://www.research.net/r/libraryofcongress?site=homepage
+2026-09-21T22:57:02.087	http://status.digitalocean.com/	200	234287	0.847	1.0000	1.0000	3	redirected to https://status.digitalocean.com/	https://statuspage.io/
+2026-09-21T22:57:02.088	https://transmissionbt.com/	200	16382	0.275	1.0000	1.0000	3		https://www.gtk.org/
+2026-09-21T22:57:02.105	https://developer.mozilla.org/en/Firefox_3.6_for_developers	404	0	0.684	1.0000	1.0000	3	redirected to https://developer.mozilla.org/en-US/Firefox_3.6_for_developers	https://sourceware.org/libffi/
+2026-09-21T22:57:02.128	http://www.numpy.org/neps/nep-0018-array-function-protocol.html	200	118113	0.958	1.0000	1.0000	3	redirected to https://numpy.org/neps/nep-0018-array-function-protocol.html	https://scipy.github.io/devdocs/dev/roadmap.html
+2026-09-21T22:57:02.147	https://builder.aws.com/?nc2=h_rsc_cs_bldr	200	3681	0.200	1.0000	1.0000	3		https://aws.amazon.com/
+2026-09-21T22:57:02.156	https://racket-lang.org/	200	39972	0.349	1.0000	1.0000	3		https://sourceware.org/libffi/
+2026-09-21T22:57:02.174	https://jekyllrb.com/	200	10393	0.214	1.0000	1.0000	3		https://www.gtk.org/
+2026-09-21T22:57:02.217	https://floss.social/@GTK	200	56710	0.622	1.0000	1.0000	3		https://www.gtk.org/
+2026-09-21T22:57:02.339	https://www.shopify.com/?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore	200	690596	1.428	1.0000	1.0000	2		https://library-of-congress-shop.myshopify.com/
+2026-09-21T22:57:02.364	https://pepy.tech/project/requests	200	300126	1.423	1.0000	1.0000	2	redirected to https://pepy.tech/projects/requests	https://requests.readthedocs.io/en/master/
+2026-09-21T22:57:02.405	https://www.blogger.com/profile/15138793242213676112	200	518486	2.722	1.0000	1.0000	2		https://pyfound.blogspot.com/
+2026-09-21T22:57:02.449	https://www.citynetwork.eu/pressreleases/city-network-launches-new-cloud-management-system/	200	56919	1.870	1.0000	1.0000	2	redirected to https://cleura.com/press-releases/city-network-launches-new-cloud-management-system/	https://www.openstack.org/
+2026-09-21T22:57:02.486	https://www.surveymonkey.com/mp/legal/privacy/?ut_source=survey_pp&white_label=1	200	827185	0.527	1.0000	1.0000	2		https://www.research.net/r/libraryofcongress?site=homepage
+2026-09-21T22:57:02.490	https://press.aboutamazon.com/aws	200	173176	0.317	1.0000	1.0000	3		https://aws.amazon.com/
+2026-09-21T22:57:02.499	https://claude.ai/	403	0	0.165	1.0000	1.0000	3	access denied	https://www.anthropic.com/
+2026-09-21T22:57:02.513	https://cockpit-project.org/	200	15896	0.297	1.0000	1.0000	3		https://fedoraproject.org/wiki/Anaconda
+2026-09-21T22:57:02.529	https://studentbridge.com/privacy-policy	200	49517	0.185	1.0000	1.0000	2		https://engineeringnyu.university-tour.com/virtual-tour/brooklyn-campus-map
+2026-09-21T22:57:02.549	https://fedoramagazine.org/	200	70521	0.412	1.0000	1.0000	3		https://fedoraproject.org/wiki/Anaconda
+2026-09-21T22:57:02.555	https://anaconda-installer.readthedocs.io/en/latest/boot-options.html	404	0	0.389	1.0000	1.0000	3		https://fedoraproject.org/wiki/Anaconda
+2026-09-21T22:57:02.564	https://www.blogger.com/profile/06173618710147431813	200	518877	1.025	1.0000	1.0000	2		https://pyfound.blogspot.com/
+2026-09-21T22:57:02.603	https://www.slsknet.org/news/	200	29005	0.455	1.0000	1.0000	3		https://nicotine-plus.org/
+2026-09-21T22:57:02.610	https://handbrake.fr/	200	3059	0.506	1.0000	1.0000	3		https://www.gtk.org/
+2026-09-21T22:57:02.636	https://inkscape.org/	200	31773	0.638	1.0000	1.0000	3		https://www.gtk.org/
+2026-09-21T22:57:02.644	http://www.redhat.com/mailman/listinfo/kickstart-list	0	0	0.316	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known')); redirected to http://www.redhat.com/mailman/listinfo/kickstart-list	https://fedoraproject.org/wiki/Anaconda
+2026-09-21T22:57:02.680	https://gimp.org/	200	21473	0.439	1.0000	1.0000	3	redirected to https://www.gimp.org/	https://www.gtk.org/
+2026-09-21T22:57:02.719	https://launchpad.net/~cartes/+archive/ubuntu/drawing/	200	27988	1.177	1.0000	1.0000	3		https://maoschanz.github.io/drawing/
+2026-09-21T22:57:02.812	http://developer.android.com/guide/basics/what-is-android.html	200	276087	0.943	1.0000	1.0000	3	redirected to https://developer.android.com/about	https://sourceware.org/libffi/
+2026-09-21T22:57:02.905	https://guadec.org/	200	106491	0.675	1.0000	1.0000	3	redirected to https://events.gnome.org/event/306/	https://www.gtk.org/
+2026-09-21T22:57:02.915	https://repost.aws/?nc1=f_dr	200	520644	0.800	1.0000	1.0000	3		https://aws.amazon.com/
+2026-09-21T22:57:02.946	https://stopthemingmy.app/	200	13835	0.160	1.0000	1.0000	3		https://hugolabe.github.io/Wike/
+2026-09-21T22:57:03.024	https://www.youtube.com/@NASA	200	1694602	7.518	1.0000	1.0000	1		https://www.nasa.gov/
+2026-09-21T22:57:03.025	https://lucide.dev/license	200	152861	0.245	1.0000	1.0000	3		https://gajim.org/
+2026-09-21T22:57:03.055	https://setuptools.pypa.io/en/latest/userguide/ext_modules.html	200	57656	0.280	1.0000	1.0000	3		https://gaphor.org/
+2026-09-21T22:57:03.072	https://getfedora.org/	200	218180	0.629	1.0000	1.0000	3	redirected to https://fedoraproject.org/	https://fedoraproject.org/wiki/Anaconda
+2026-09-21T22:57:03.087	https://gohugo.io/	200	91251	0.294	1.0000	1.0000	3		https://gfeeds.gabmus.org/
+2026-09-21T22:57:03.126	https://colorlib.com/wp/themes/illdy/	200	135749	0.399	1.0000	1.0000	3		https://gaphor.org/
+2026-09-21T22:57:03.150	http://www.beatport.com/	403	0	0.228	1.0000	1.0000	3	access denied; redirected to https://www.beatport.com/	https://beets.io/
+2026-09-21T22:57:03.188	https://pip.pypa.io/en/stable/getting-started/	200	43062	0.350	1.0000	1.0000	3		https://beets.io/
+2026-09-21T22:57:03.240	http://mesonbuild.com/	200	13615	0.454	1.0000	1.0000	3	redirected to https://mesonbuild.com/	https://gaphor.org/
+2026-09-21T22:57:03.242	https://www.twitch.tv/aws	200	213422	0.886	1.0000	1.0000	3		https://aws.amazon.com/
+2026-09-21T22:57:03.242	https://liberapay.com/Gajim	200	19945	0.513	1.0000	1.0000	3		https://gajim.org/
+2026-09-21T22:57:03.251	https://docs.webkit.org/	200	64448	0.641	1.0000	1.0000	3		https://webkitgtk.org/
+2026-09-21T22:57:03.325	https://flathub.org/apps/details/com.github.maoschanz.drawing	200	708440	1.885	1.0000	1.0000	3	redirected to https://flathub.org/en/apps/com.github.maoschanz.drawing	https://maoschanz.github.io/drawing/
+2026-09-21T22:57:03.326	https://discordapp.com/invite/Pnt5CuY	200	23942	0.614	1.0000	1.0000	3	redirected to https://discord.com/invite/Pnt5CuY	https://lutris.net/
+2026-09-21T22:57:03.327	https://beets.readthedocs.io/en/stable/guides/	200	19539	0.268	1.0000	1.0000	3		https://beets.io/
+2026-09-21T22:57:03.353	https://xmpp.org/	200	18593	0.243	1.0000	1.0000	3		https://gajim.org/
+2026-09-21T22:57:03.393	http://pandora.com/	200	21797	0.357	1.0000	1.0000	3	redirected to https://www.pandora.com/	https://pithos.github.io/
+2026-09-21T22:57:03.432	https://pdm-project.org/	200	69446	0.676	1.0000	1.0000	3	redirected to https://pdm-project.org/en/latest/	https://gaphor.org/
+2026-09-21T22:57:03.516	https://efficientcoder.net/	0	0	10.223	1.0000	1.0000	2	TimeoutError('The read operation timed out')	https://planetpython.org/
+2026-09-21T22:57:03.564	https://codeberg.org/eyekay/webapps	200	66860	0.908	1.0000	1.0000	3		https://webkitgtk.org/
+2026-09-21T22:57:03.573	https://repost.aws/knowledge-center?nc1=f_dr	200	233151	0.564	1.0000	1.0000	3		https://aws.amazon.com/
+2026-09-21T22:57:03.583	https://whatcanidoforfedora.org/	200	215794	0.976	1.0000	1.0000	3	redirected to https://whatcanidoforfedora.org/en/	https://fedoraproject.org/wiki/Anaconda
+2026-09-21T22:57:03.601	https://wiki.mozilla.org/JSctypes	200	25818	1.391	1.0000	1.0000	3		https://sourceware.org/libffi/
+2026-09-21T22:57:03.650	https://docs.rapids.ai/install?_gl=1*lckjjx*_ga*MzEwNDE3NDM2LjE3MDkwNjU0Nzg.*_ga_RKXFW6CM42*MTcwOTA2NTY1Mi4xLjEuMTcwOTA2NTY4Mi4zMC4wLjA.	200	109383	0.909	1.0000	1.0000	3	redirected to https://docs.nvidia.com/datascience/install/?_gl=1*lckjjx*_ga*MzEwNDE3NDM2LjE3MDkwNjU0Nzg.*_ga_RKXFW6CM42*MTcwOTA2NTY1Mi4xLjEuMTcwOTA2NTY4Mi4zMC4wLjA.	https://developer.nvidia.com/
+2026-09-21T22:57:03.721	https://gnome-terminator.readthedocs.io/en/latest/	200	15025	0.345	1.0000	1.0000	3		https://gnome-terminator.org/
+2026-09-21T22:57:03.742	https://getfedora.org/en/sponsors/	200	203993	0.749	1.0000	1.0000	3	redirected to https://fedoraproject.org/en/sponsors/	https://fedoraproject.org/wiki/Anaconda
+2026-09-21T22:57:03.782	https://www.githubstatus.com/	200	154247	0.383	1.0000	1.0000	2		https://github.com/python/cpython/issues
+2026-09-21T22:57:03.837	https://www.discourse.org/	200	109990	0.201	1.0000	1.0000	3		https://discuss.scientific-python.org/c/contributor/scipy/
+2026-09-21T22:57:03.840	https://docs.webkit.org/Build%20%26%20Debug/BuildOptions.html	200	72794	0.550	1.0000	1.0000	3		https://webkitgtk.org/
+2026-09-21T22:57:03.862	https://trygvrad.github.io/google-soc-bivariate-colormaps/	200	26342	0.259	1.0000	1.0000	3		https://matplotlib.org/
+2026-09-21T22:57:03.864	https://cal.com/team/depot/engineer-talk	200	620196	1.206	1.0000	1.0000	3		https://depot.dev/
+2026-09-21T22:57:03.864	https://www.igalia.com/	200	45218	0.599	1.0000	1.0000	3		https://webkitgtk.org/
+2026-09-21T22:57:03.895	https://pradyunsg.me/furo/quickstart/	200	22169	0.223	1.0000	1.0000	3		https://pydata-sphinx-theme.readthedocs.io/en/stable/
+2026-09-21T22:57:03.910	https://scitools.org.uk/cartopy/docs/latest/	200	344	0.199	1.0000	1.0000	3		https://matplotlib.org/
+2026-09-21T22:57:03.920	https://docs.astropy.org/en/stable/visualization/wcsaxes/	200	62527	0.332	1.0000	1.0000	3		https://matplotlib.org/
+2026-09-21T22:57:03.961	http://www.pip-installer.org/	200	26484	0.764	1.0000	1.0000	3	redirected to https://pip.pypa.io/en/stable/	https://beets.io/
+2026-09-21T22:57:03.984	https://www.kaggle.com/models	200	5525	0.160	1.0000	1.0000	2		https://www.tensorflow.org/
+2026-09-21T22:57:04.012	https://plotnine.readthedocs.io/en/stable/	200	133	0.450	1.0000	1.0000	3	redirected to https://plotnine.org/en/stable/	https://matplotlib.org/
+2026-09-21T22:57:04.019	https://github.blog/	200	286533	0.700	1.0000	1.0000	2		https://github.com/python/cpython/issues
+2026-09-21T22:57:04.034	https://patreon.com/lutris	200	427005	1.260	1.0000	1.0000	3	redirected to https://www.patreon.com/lutris	https://lutris.net/
+2026-09-21T22:57:04.052	https://jupyterbook.org/	200	97037	0.308	1.0000	1.0000	3		https://pydata-sphinx-theme.readthedocs.io/en/stable/
+2026-09-21T22:57:04.054	https://brew.sh/	200	26350	0.288	1.0000	1.0000	3		https://docs.pylonsproject.org/projects/pyramid/en/latest/narr/install.html
+2026-09-21T22:57:04.094	https://sphinx-themes.org/	200	47658	0.300	1.0000	1.0000	3		https://pydata-sphinx-theme.readthedocs.io/en/stable/
+2026-09-21T22:57:04.114	https://movetoamend.org/donate	200	68473	0.719	1.0000	1.0000	3	redirected to https://www.movetoamend.org/	https://beets.io/
+2026-09-21T22:57:04.139	https://tree-nation.com/profile/impact/pitivi	200	19821	0.745	1.0000	1.0000	3		https://www.pitivi.org/
+2026-09-21T22:57:04.160	https://www.britbox.com/?utm_source=bbc.com&utm_medium=referral&utm_campaign=bottom-anchored-rail	200	294024	0.389	1.0000	1.0000	2		https://www.bbc.com/
+2026-09-21T22:57:04.176	https://codemeta.github.io/terms/	200	21740	0.150	1.0000	1.0000	2		https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:04.198	https://sphinx-book-theme.readthedocs.io/	200	38429	0.397	1.0000	1.0000	3	redirected to https://sphinx-book-theme.readthedocs.io/en/stable/	https://pydata-sphinx-theme.readthedocs.io/en/stable/
+2026-09-21T22:57:04.213	http://beets.radbox.org/	200	7892	0.484	1.0000	1.0000	3	redirected to https://beets.io/; already crawled	https://beets.io/
+2026-09-21T22:57:04.231	https://orcid.org/0000-0002-5676-7556	200	65015	0.166	1.0000	1.0000	2		https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:04.287	https://poeditor.com/join/project?hash=kNgJu4MAum	200	102120	1.286	1.0000	1.0000	3		https://hugolabe.github.io/Wike/
+2026-09-21T22:57:04.301	https://advertising.bbcstudios.com/	200	45427	0.288	1.0000	1.0000	2		https://www.bbc.com/
+2026-09-21T22:57:04.319	https://webob.org/	200	7017	0.242	1.0000	1.0000	3		https://pylonsproject.org/
+2026-09-21T22:57:04.427	https://elk.zone/	200	23202	0.195	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.427	https://packages.ubuntu.com/search?keywords=setzer	200	8084	0.425	1.0000	1.0000	3		https://www.cvfosammmm.org/setzer/
+2026-09-21T22:57:04.446	https://tsukumogami.software/	200	9907	0.221	1.0000	1.0000	2		https://alicegg.tech/2026/09/21/attention
+2026-09-21T22:57:04.463	https://pinafore.social/	200	28543	0.242	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.500	https://flatpak.org/getting.html	404	0	0.538	1.0000	1.0000	3		https://pithos.github.io/
+2026-09-21T22:57:04.520	https://acidfs.readthedocs.io/en/latest/	200	31942	0.644	1.0000	1.0000	3	redirected to https://docs.pylonsproject.org/projects/acidfs/en/latest/	https://pylonsproject.org/
+2026-09-21T22:57:04.523	https://www.webkit.org/	200	67745	1.376	1.0000	1.0000	3	redirected to https://webkit.org/	https://webkitgtk.org/
+2026-09-21T22:57:04.536	https://n1k0.github.io/tooty/v2/	200	4391	0.202	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.601	https://aur.archlinux.org/packages/gfeeds-git/	200	36288	1.488	1.0000	1.0000	3	redirected to https://aur.archlinux.org/packages/gfeeds-git	https://gfeeds.gabmus.org/
+2026-09-21T22:57:04.604	https://commission.europa.eu/index_en	200	171458	0.308	1.0000	1.0000	2		https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:04.612	http://musicbrainz.org/	200	35830	1.232	1.0000	1.0000	3	redirected to https://musicbrainz.org/	https://beets.io/
+2026-09-21T22:57:04.617	https://lmst.online/	200	6667	0.166	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.618	http://fedoraplanet.org/	200	1028309	1.339	1.0000	1.0000	3	redirected to https://fedoraplanet.org/	https://fedoraproject.org/wiki/Anaconda
+2026-09-21T22:57:04.634	https://phanpy.social/	200	5432	0.301	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.665	https://opensource.org/licenses/MIT	200	185143	0.586	1.0000	1.0000	2	redirected to https://opensource.org/license/MIT	https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:04.674	https://litterbox.koyu.space/	0	0	0.244	1.0000	1.0000	3	URLError(SSLError(1, '[SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000)'))	https://joinmastodon.org/apps
+2026-09-21T22:57:04.700	https://fedica.com/	200	199748	0.387	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.711	https://nicolasconstant.github.io/sengi/	200	13436	0.209	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.728	https://thedesk.top/en	200	72262	0.241	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.734	https://whalebird.social/	200	9652	0.157	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.755	https://flathub.org/apps/details/com.github.hugolabe.Wike	200	706448	2.236	1.0000	1.0000	3	redirected to https://flathub.org/en/apps/com.github.hugolabe.Wike	https://hugolabe.github.io/Wike/
+2026-09-21T22:57:04.773	https://tuba.geopjr.dev/	200	27746	0.129	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.821	https://ai.google.dev/edge/litert	200	197720	0.807	1.0000	1.0000	2	redirected to https://developers.google.com/edge/litert	https://www.tensorflow.org/
+2026-09-21T22:57:04.848	https://fedistar.net/	200	16623	0.164	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.901	https://zenodo.org/	200	66063	0.648	1.0000	1.0000	2		https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:04.922	https://help.openai.com/en/articles/8912793-provenance-signals-content-credentials-synthid-in-openai-generated-content	403	0	0.142	1.0000	1.0000	2	access denied	https://brand.io/article/spymarks/
+2026-09-21T22:57:04.922	https://buffer.com/	200	604308	0.606	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.940	https://aereeeee.github.io/	200	1375	0.086	1.0000	1.0000	2		https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:04.957	https://hachyderm.io/@alicegg	200	55891	0.551	1.0000	1.0000	2		https://alicegg.tech/2026/09/21/attention
+2026-09-21T22:57:04.970	https://web.nicolium.app/	200	2037	0.334	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.997	https://mastui.app/	200	1908	0.220	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.997	https://joinmastodon.instatus.com/	200	185708	0.267	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:04.998	https://ror.org/01k4yrm29	200	2317	0.828	1.0000	1.0000	2		https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:04.998	https://statuzer.com/	200	1713	0.380	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:05.007	https://dl.acm.org/doi/pdf/10.1145/3772318.3791725	403	0	0.100	1.0000	1.0000	2	access denied	https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:05.058	https://brutaldon.org/	200	4764	0.321	1.0000	1.0000	3	redirected to https://brutaldon.org/about	https://joinmastodon.org/apps
+2026-09-21T22:57:05.077	https://stats.uptimerobot.com/vlYOVuWgM/	200	31129	0.668	1.0000	1.0000	2		https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:05.084	https://mastodeck.com/	200	5909	0.388	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:05.130	https://sokaudiowm.github.io/	200	244528	0.312	1.0000	1.0000	2		https://brand.io/article/spymarks/
+2026-09-21T22:57:05.167	https://explore.openaire.eu/search/result?pid=10.5281/zenodo.22710121	200	75675	0.787	1.0000	1.0000	2		https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:05.179	https://alechelbling.com/	200	17712	0.177	1.0000	1.0000	2		https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:05.194	https://onnxruntime.ai/	200	266786	0.209	1.0000	1.0000	2		https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:05.216	https://d3js.org/	200	71294	0.266	1.0000	1.0000	2		https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:05.323	https://www.cidrdb.org/	200	29872	0.163	1.0000	1.0000	2		https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/
+2026-09-21T22:57:05.338	https://seongmin.xyz/	200	9477	0.175	1.0000	1.0000	2		https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:05.355	https://packages.debian.org/search?searchon=names&keywords=setzer	200	11091	1.461	1.0000	1.0000	3		https://www.cvfosammmm.org/setzer/
+2026-09-21T22:57:05.377	https://exiftool.org/TagNames/GPS.html	200	7960	0.400	1.0000	1.0000	2		https://brand.io/article/spymarks/
+2026-09-21T22:57:05.392	https://toot.bezdomni.net/	200	21186	0.466	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:05.451	https://www.paypal.com/donate/?hosted_button_id=XG699XCZ2XV6E	200	850976	1.725	1.0000	1.0000	3		https://www.cvfosammmm.org/setzer/
+2026-09-21T22:57:05.469	https://bhoov.com/	200	116491	0.304	1.0000	1.0000	2		https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:05.507	https://home.cern/	200	297902	1.139	1.0000	1.0000	2		https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:05.562	https://zijie.wang/	200	226800	0.395	1.0000	1.0000	2		https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:05.584	https://www.onelimited.org/ss-leguin-02	200	80905	0.587	1.0000	1.0000	2		https://brand.io/article/spymarks/
+2026-09-21T22:57:05.605	https://elifesciences.org/articles/82819	200	677388	0.383	1.0000	1.0000	2		https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:05.700	https://git-merge.com/	200	5458	0.306	1.0000	1.0000	2		https://lwn.net/SubscriberLink/1094575/2385e98583715c2b/
+2026-09-21T22:57:05.700	https://inveniordm.docs.cern.ch/	200	136638	0.931	1.0000	1.0000	2		https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:05.738	https://libgit2.org/	200	7529	0.324	1.0000	1.0000	2		https://lwn.net/SubscriberLink/1094575/2385e98583715c2b/
+2026-09-21T22:57:05.739	https://kit.svelte.dev/	200	89796	0.586	1.0000	1.0000	2	redirected to https://svelte.dev/	https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:05.741	https://ghost.org/	200	121271	0.391	1.0000	1.0000	2		https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/
+2026-09-21T22:57:05.794	https://labs.sentry.dev/	200	32173	0.300	1.0000	1.0000	3		https://sentry.io/for/python/?utm_source=pypi&utm_medium=paid-community&utm_campaign=python-na-evergreen&utm_content=static-ad-pypi-sponsor-learnmore
+2026-09-21T22:57:05.795	https://www.openaire.eu/	200	144788	1.180	1.0000	1.0000	2		https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:05.823	https://cli.sentry.dev/	200	44421	0.263	1.0000	1.0000	3		https://sentry.io/for/python/?utm_source=pypi&utm_medium=paid-community&utm_campaign=python-na-evergreen&utm_content=static-ad-pypi-sponsor-learnmore
+2026-09-21T22:57:05.847	https://alexkarpekov.com/	200	44097	0.630	1.0000	1.0000	2	redirected to https://www.alexkarpekov.com/	https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:05.861	https://deepmind.google/models/synthid/	200	144567	0.832	1.0000	1.0000	2		https://brand.io/article/spymarks/
+2026-09-21T22:57:05.904	https://writethatblog.substack.com/p/dev-reaction-to-ai-blog-posts	200	220180	0.748	1.0000	1.0000	2		https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/
+2026-09-21T22:57:05.918	https://jvns.ca/	200	146865	0.474	1.0000	1.0000	2		https://wizardzines.com/comics/floating-point-alternatives/
+2026-09-21T22:57:05.988	https://mcp.sentry.dev/	200	6614	0.171	1.0000	1.0000	3		https://sentry.io/for/python/?utm_source=pypi&utm_medium=paid-community&utm_campaign=python-na-evergreen&utm_content=static-ad-pypi-sponsor-learnmore
+2026-09-21T22:57:05.988	https://map.simonsarris.com/p/resist-summary	200	170177	0.822	1.0000	1.0000	2		https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/
+2026-09-21T22:57:05.988	https://www.deeplearning.ai/the-batch/reinforcement-learning-plus-transformers-equals-efficiency/	200	159280	1.003	1.0000	1.0000	2	redirected to https://www.deeplearning.ai/the-batch/reinforcement-learning-plus-transformers-equals-efficiency	https://poloclub.github.io/transformer-explainer/
+2026-09-21T22:57:06.062	https://develop.sentry.dev/getting-started/	200	110290	0.238	1.0000	1.0000	3		https://sentry.io/for/python/?utm_source=pypi&utm_medium=paid-community&utm_campaign=python-na-evergreen&utm_content=static-ad-pypi-sponsor-learnmore
+2026-09-21T22:57:06.124	https://www.gettyimages.com/photos/migrant-mother-by-dorothea-lange	200	776377	1.143	1.0000	1.0000	2		https://brand.io/article/spymarks/
+2026-09-21T22:57:06.146	https://sr.ht/~julienxx/Masto9/	200	7144	0.821	1.0000	1.0000	3		https://joinmastodon.org/apps
+2026-09-21T22:57:06.160	https://www.theatlantic.com/technology/2026/03/ai-creative-writing/686418/	200	146196	0.858	1.0000	1.0000	2		https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/
+2026-09-21T22:57:06.196	https://ipywidgets.readthedocs.io/en/stable/	200	36082	0.296	1.0000	1.0000	3		https://ipython.readthedocs.io/
+2026-09-21T22:57:06.231	https://fullhoffman.com/2006/03/20/the-sun-doesnt-shine-on-me/	429	0	0.203	1.0000	1.0000	2		https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/
+2026-09-21T22:57:06.232	https://ipyparallel.readthedocs.io/en/latest/	200	25963	0.260	1.0000	1.0000	3		https://ipython.readthedocs.io/
+2026-09-21T22:57:06.255	https://muratbuffalo.blogspot.com/2026/08/the-safest-job-from-ai-may-be-writing.html	200	156891	0.943	1.0000	1.0000	2		https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/
+2026-09-21T22:57:06.294	https://oxide.computer/principles	200	121196	0.241	1.0000	1.0000	2		https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/
+2026-09-21T22:57:06.344	https://python-prompt-toolkit.readthedocs.io/en/stable/	200	43244	0.479	1.0000	1.0000	3		https://ipython.readthedocs.io/
+2026-09-21T22:57:06.379	https://status.readthedocs.com/	200	8723	0.204	1.0000	1.0000	3		https://readthedocs.org/
+2026-09-21T22:57:06.380	http://www.substanced.net/	200	160889	1.362	1.0000	1.0000	3	redirected to https://www.substanced.net/	https://pylonsproject.org/
+2026-09-21T22:57:06.464	https://syntax.fm/	200	100060	0.720	1.0000	1.0000	3		https://sentry.io/for/python/?utm_source=pypi&utm_medium=paid-community&utm_campaign=python-na-evergreen&utm_content=static-ad-pypi-sponsor-learnmore
+2026-09-21T22:57:06.497	https://www.pangram.com/	200	513784	1.186	1.0000	1.0000	2		https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/
+2026-09-21T22:57:06.500	https://about.readthedocs.com/	200	33498	0.372	1.0000	1.0000	3		https://readthedocs.org/
+2026-09-21T22:57:06.505	https://jupyter.readthedocs.io/en/latest/	200	41514	0.665	1.0000	1.0000	3	redirected to https://docs.jupyter.org/en/latest/; already crawled	https://ipython.readthedocs.io/
+2026-09-21T22:57:06.567	https://tracker.debian.org/pkg/cvs	200	42069	0.637	1.0000	1.0000	2		https://lwn.net/SubscriberLink/1094575/2385e98583715c2b/
+2026-09-21T22:57:06.571	https://ror.org/000qzf213	200	2317	1.658	1.0000	1.0000	2		https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:06.596	https://docs.readthedocs.com/platform/stable/support.html	200	22710	0.293	1.0000	1.0000	3		https://readthedocs.org/
+2026-09-21T22:57:06.600	https://opensourcepledge.com/	200	425486	0.746	1.0000	1.0000	3		https://sentry.io/for/python/?utm_source=pypi&utm_medium=paid-community&utm_campaign=python-na-evergreen&utm_content=static-ad-pypi-sponsor-learnmore
+2026-09-21T22:57:06.658	https://softwaremisadventures.com/p/oxide-ditching-the-rules	200	153451	0.630	1.0000	1.0000	2		https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/
+2026-09-21T22:57:06.660	https://www.asd-ste100.org/	200	15994	0.645	1.0000	1.0000	2		https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/
+2026-09-21T22:57:06.695	https://www.ethicalads.io/advertisers/?ref=rtd	200	49486	0.373	1.0000	1.0000	3		https://readthedocs.org/
+2026-09-21T22:57:06.714	https://www.natureasia.com/ja-jp	200	71945	0.161	1.0000	1.0000	1		https://www.nature.com/
+2026-09-21T22:57:06.746	https://chimera-linux.org/	200	7839	0.180	1.0000	1.0000	2		https://www.nongnu.org/txr/
+2026-09-21T22:57:06.788	https://easybuild.io/	200	7469	0.174	1.0000	1.0000	2		https://www.nongnu.org/txr/
+2026-09-21T22:57:06.804	https://www.colino.net/wordpress/en/binary-release-of-mastodon-for-the-apple-c/	200	40563	1.689	1.0000	1.0000	3	redirected to https://www.colino.net/wordpress/mastodon-for-apple-ii/	https://joinmastodon.org/apps
+2026-09-21T22:57:06.818	https://deepmind.google/blog/watermarking-ai-generated-text-and-video-with-synthid/	200	155714	1.017	1.0000	1.0000	2		https://brand.io/article/spymarks/
+2026-09-21T22:57:06.845	https://voidlinux.org/	200	23199	0.258	1.0000	1.0000	2		https://www.nongnu.org/txr/
+2026-09-21T22:57:06.848	https://docs.readthedocs.io/	200	24329	0.753	1.0000	1.0000	3	redirected to https://docs.readthedocs.com/platform/stable/	https://readthedocs.org/
+2026-09-21T22:57:06.855	https://jupytergis.readthedocs.io/	200	22436	0.703	1.0000	1.0000	3	redirected to https://jupytergis.readthedocs.io/en/latest/	https://readthedocs.org/
+2026-09-21T22:57:06.901	https://www.springernature.com/gp/authors/research-data	200	110322	0.264	1.0000	1.0000	1		https://www.nature.com/
+2026-09-21T22:57:06.922	https://opensourcepledge.com/members/sentry/	200	296999	0.439	1.0000	1.0000	3		https://sentry.io/for/python/?utm_source=pypi&utm_medium=paid-community&utm_campaign=python-na-evergreen&utm_content=static-ad-pypi-sponsor-learnmore
+2026-09-21T22:57:06.954	https://nixos.org/	200	57348	0.260	1.0000	1.0000	2		https://www.nongnu.org/txr/
+2026-09-21T22:57:06.972	https://home.cern/science/computing/data-centre	200	238935	2.007	1.0000	1.0000	2	redirected to https://home.cern/science/computing/data-centre/	https://doi.org/10.5281/zenodo.22710121
+2026-09-21T22:57:06.985	https://dev.readthedocs.io/page/contribute.html	200	26624	0.629	1.0000	1.0000	3	redirected to https://docs.readthedocs.com/dev/latest/contribute.html	https://readthedocs.org/
+2026-09-21T22:57:07.042	http://confluence.public.thoughtworks.org/display/CC/Home	0	0	0.021	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	https://cruisecontrol.sourceforge.net/gettingstarted.html
+2026-09-21T22:57:07.071	https://alpinelinux.org/	200	9114	0.351	1.0000	1.0000	2		https://www.nongnu.org/txr/
+2026-09-21T22:57:07.116	https://www.meta.com/quest/?utm_content=23428	200	525573	1.067	1.0000	1.0000	3		https://about.facebook.com/meta/
+2026-09-21T22:57:07.151	https://www.protocols.io/	200	160768	0.742	1.0000	1.0000	1		https://www.nature.com/
+2026-09-21T22:57:07.171	https://github.community/	200	596718	2.351	1.0000	1.0000	2	redirected to https://github.com/orgs/community/discussions/	https://github.com/python/cpython/issues
+2026-09-21T22:57:07.207	https://solutions.springernature.com/	200	126427	0.597	1.0000	1.0000	1		https://www.nature.com/
+2026-09-21T22:57:07.210	https://boards.4chan.org/g/thread/102488015/lisp-general	404	0	0.265	1.0000	1.0000	2		https://www.nongnu.org/txr/
+2026-09-21T22:57:07.245	https://authorservices.springernature.com/go/sn/?utm_source=For+Authors&utm_medium=Website_Nature&utm_campaign=Platform+Experimentation+2022&utm_id=PE2022	200	303412	0.888	1.0000	1.0000	1		https://www.nature.com/
+2026-09-21T22:57:07.247	https://mstdn.ca/@Kazinator	200	60096	0.469	1.0000	1.0000	2		https://www.nongnu.org/txr/
+2026-09-21T22:57:07.247	https://vitest.dev/	200	37808	0.246	1.0000	1.0000	2		https://linear.app/now/ci-bottleneck-reworked
+2026-09-21T22:57:07.273	https://datapythonista.me/blog/pandas-20-and-the-arrow-revolution-part-i	200	34812	0.296	1.0000	1.0000	3		https://t.me/s/pandas_dev
+2026-09-21T22:57:07.275	https://app.readthedocs.com/dashboard/	200	12828	1.159	1.0000	1.0000	3	redirected to https://app.readthedocs.com/accounts/login/?next=/dashboard/	https://readthedocs.org/
+2026-09-21T22:57:07.301	https://research.jfrog.com/post/equation-of-compromise/	200	53894	0.194	1.0000	1.0000	2		https://safedep.io/mathmain-encrypted-loader/
+2026-09-21T22:57:07.310	https://buf.build/safedep/api	200	6245	0.140	1.0000	1.0000	2		https://safedep.io/mathmain-encrypted-loader/
+2026-09-21T22:57:07.330	https://sentry.shop/	200	135651	0.925	1.0000	1.0000	3	redirected to https://checkout.sentry.shop/	https://sentry.io/for/python/?utm_source=pypi&utm_medium=paid-community&utm_campaign=python-na-evergreen&utm_content=static-ad-pypi-sponsor-learnmore
+2026-09-21T22:57:07.403	https://api.npmjs.org/downloads/point/2026-09-12:2026-09-18/mathmain	200	81	0.142	1.0000	1.0000	2	not html: application/json	https://safedep.io/mathmain-encrypted-loader/
+2026-09-21T22:57:07.460	https://www.elegantthemes.com/	200	272309	0.558	1.0000	1.0000	3		https://numfocus.org/
+2026-09-21T22:57:07.470	https://www.netlify.com/	200	412339	0.515	1.0000	1.0000	3		https://numfocus.org/
+2026-09-21T22:57:07.503	https://safedep-inc.notion.site/Careers-at-SafeDep-11e61d70b23680d7b98dcbdb6c710d55	200	19518	0.319	1.0000	1.0000	2		https://safedep.io/mathmain-encrypted-loader/
+2026-09-21T22:57:07.559	https://oxc.rs/docs/guide/usage/linter	200	70591	0.206	1.0000	1.0000	2		https://linear.app/now/ci-bottleneck-reworked
+2026-09-21T22:57:07.569	https://calendly.com/abhisek-safedep/30min	200	2372	0.404	1.0000	1.0000	2		https://safedep.io/mathmain-encrypted-loader/
+2026-09-21T22:57:07.624	https://davidmalki.com/	200	38763	0.184	1.0000	1.0000	2		https://wondermark.com/socrates-vs-writing/
+2026-09-21T22:57:07.632	https://www.natureindex.com/	200	198007	0.751	1.0000	1.0000	1	redirected to https://www.nature.com/nature-index/	https://www.nature.com/
+2026-09-21T22:57:07.654	https://sendfox.com/davidmalki	200	10619	0.273	1.0000	1.0000	2		https://wondermark.com/socrates-vs-writing/
+2026-09-21T22:57:07.694	https://agmai.org/	200	67904	0.262	1.0000	1.0000	2		https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/
+2026-09-21T22:57:07.700	https://www.varietyinsight.com/	0	0	0.054	1.0000	1.0000	2	URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)'))	https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/
+2026-09-21T22:57:07.707	https://optout.aboutads.info/?c=2&lang=EN	429	0	0.094	1.0000	1.0000	2		https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/
+2026-09-21T22:57:07.797	https://www.sportico.com/leagues/olympics/2026/usa-fencing-creator-showdown-olympic-sport-growth-marketing-1234945308/	200	461472	0.226	1.0000	1.0000	2		https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/
+2026-09-21T22:57:07.805	https://www.parsintl.com/publications/ieee-media/	403	0	0.107	1.0000	1.0000	2	access denied	https://spectrum.ieee.org/hermes-shortwave-radio-digital-data
+2026-09-21T22:57:07.872	https://www.rollingstone.com/music/music-features/harry-styles-together-together-reasons-to-see-live-2026-1235610318/	200	568426	0.329	1.0000	1.0000	2		https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/
+2026-09-21T22:57:07.880	http://www.pragmaticprogrammer.com/sk/auto/	404	0	0.394	1.0000	1.0000	3	redirected to https://pragprog.com/sk/auto/	https://cruisecontrol.sourceforge.net/gettingstarted.html
+2026-09-21T22:57:07.880	https://telegram.org/dl?tme=a47ecaf0e6f7ddb148_5386991315994024344	200	15654	0.725	1.0000	1.0000	3	redirected to https://telegram.org/apps	https://t.me/s/pandas_dev
+2026-09-21T22:57:07.885	http://topazruby.com/	0	0	0.015	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	https://rpython.readthedocs.io/en/latest/examples.html
+2026-09-21T22:57:07.892	https://snailgeist.com/irc-logs/?message_id=189174	0	0	0.646	1.0000	1.0000	2	URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1000)'))	https://www.nongnu.org/txr/
+2026-09-21T22:57:07.969	https://www.meta.com/actions/responsible-innovation/	200	286535	1.139	1.0000	1.0000	3		https://about.facebook.com/meta/
+2026-09-21T22:57:08.011	https://althofer.de/	200	7732	0.329	1.0000	1.0000	2		https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/
+2026-09-21T22:57:08.024	https://subtotal.com/?utm_source=fastapi&utm_medium=sponsorship&utm_campaign=open-source	0	0	5.062	1.0000	1.0000	2	URLError(ConnectionRefusedError(111, 'Connection refused'))	https://fastapi.tiangolo.com/
+2026-09-21T22:57:08.053	https://gocomics.com/wondermark/	403	0	0.365	1.0000	1.0000	2	access denied; redirected to https://www.gocomics.com/wondermark/	https://wondermark.com/socrates-vs-writing/
+2026-09-21T22:57:08.105	http://asmjs.org/	200	572	0.076	1.0000	1.0000	3		https://rpython.readthedocs.io/en/latest/examples.html
+2026-09-21T22:57:08.160	https://www.canva.com/design/DAG6UGHTSkE/2ntz1Vbx93qcD-0AX_GWUg/view?utm_content=DAG6UGHTSkE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8ed682c24d	200	10384	0.575	1.0000	1.0000	2		https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/
+2026-09-21T22:57:08.189	https://sf-encyclopedia.com/entry/malki_david	200	23518	0.461	1.0000	1.0000	2		https://wondermark.com/socrates-vs-writing/
+2026-09-21T22:57:08.250	https://linearstatus.com/	200	198235	0.558	1.0000	1.0000	2		https://linear.app/now/ci-bottleneck-reworked
+2026-09-21T22:57:08.304	https://youtu.be/4cCeUfzH-No?t=1150	200	1242267	3.136	1.0000	1.0000	2	redirected to https://www.youtube.com/watch?t=1150&v=4cCeUfzH-No&feature=youtu.be	https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/
+2026-09-21T22:57:08.333	https://t2sde.org/	200	38651	0.871	1.0000	1.0000	2	redirected to http://t2linux.com/	https://www.nongnu.org/txr/
+2026-09-21T22:57:08.414	https://www.wordpress.org/	200	165046	1.087	1.0000	1.0000	3	redirected to https://wordpress.org/	https://numfocus.org/
+2026-09-21T22:57:08.456	https://telegram.org/faq	200	120286	0.634	1.0000	1.0000	3		https://t.me/s/pandas_dev
+2026-09-21T22:57:08.532	https://pmc.com/terms-of-use	200	134433	0.768	1.0000	1.0000	2	redirected to https://www.pmc.com/terms-of-use	https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/
+2026-09-21T22:57:08.614	https://robbreport.com/motors/motorcycles/review-bimota-kb998-rimini-superbike-1238660630/	200	426653	0.996	1.0000	1.0000	2		https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/
+2026-09-21T22:57:08.633	https://wwd.com/shop/shop-home/best-luxury-pillows-1235931376/	200	904554	0.905	1.0000	1.0000	2		https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/
+2026-09-21T22:57:08.689	https://syncthing.net/	200	8776	0.280	1.0000	1.0000	3		https://openpaper.work/
+2026-09-21T22:57:08.771	https://ieee.dragonforms.com/spectrum_subscribe?utm_source=ieee-spectrum&utm_medium=nav&utm_content=hugemenu	200	359	0.766	1.0000	1.0000	2	redirected to https://ieee.dragonforms.com/init.do?utm_source=ieee-spectrum&utm_medium=nav&utm_content=hugemenu&omedasite=spectrum_subscribe	https://spectrum.ieee.org/hermes-shortwave-radio-digital-data
+2026-09-21T22:57:08.771	https://askthecanon.com/	200	47356	0.292	1.0000	1.0000	3		https://belderbos.dev/tags/python/
+2026-09-21T22:57:08.772	http://emscripten.org/	200	9430	0.500	1.0000	1.0000	3	redirected to https://emscripten.org/	https://rpython.readthedocs.io/en/latest/examples.html
+2026-09-21T22:57:08.857	https://pretalx.sysmocom.de/osmodevcon2019/talk/BZX338/	200	13380	0.562	1.0000	1.0000	2		https://spectrum.ieee.org/hermes-shortwave-radio-digital-data
+2026-09-21T22:57:08.858	https://magazineshop.us/collections/variety	200	409491	1.026	1.0000	1.0000	2		https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/
+2026-09-21T22:57:08.909	https://grokipedia.com/	200	83535	0.783	1.0000	1.0000	2		https://x.ai/news/grok-4-7
+2026-09-21T22:57:08.970	http://convergepl.org/	200	2072	0.638	1.0000	1.0000	3	redirected to https://convergepl.org/	https://rpython.readthedocs.io/en/latest/examples.html
+2026-09-21T22:57:09.049	https://hermes.radio/	200	2182741	1.232	1.0000	1.0000	2		https://spectrum.ieee.org/hermes-shortwave-radio-digital-data
+2026-09-21T22:57:09.104	https://rustplatform.com/track/unix/	200	26805	0.290	1.0000	1.0000	3		https://belderbos.dev/tags/python/
+2026-09-21T22:57:09.106	https://journal-alerts.springernature.com/subscribe?journal_id=41586	302	0	2.795	1.0000	1.0000	1	redirected to https://idp.springernature.com/authorize?redirect_uri=https%3A%2F%2Fjournal-alerts.springernature.com%2Fsubscribe%3Fjournal_id%3D41586%26error%3Dcookies_not_supported%26error%3Dcookies_not_supported%26error%3Dcookies_not_supported%26code%3D51439aa5-5436-4dca-a1ce-3fce83ee75c9%26code%3D2856a7d3-076c-47be-a943-ca1be4e4ef6e%26code%3De40bae68-e030-41a3-be32-b081f14afa15&client_id=rct&response_type=cookie	https://www.nature.com/
+2026-09-21T22:57:09.106	https://topatoco.com/wondermark	200	450474	1.525	1.0000	1.0000	2	redirected to https://topatoco.com/collections/wondermark	https://wondermark.com/socrates-vs-writing/
+2026-09-21T22:57:09.113	http://pypyjs.org/	200	4664	0.632	1.0000	1.0000	3	redirected to https://pypyjs.org/	https://rpython.readthedocs.io/en/latest/examples.html
+2026-09-21T22:57:09.171	http://www.sparkleshare.org/	200	6525	0.424	1.0000	1.0000	3	redirected to https://www.sparkleshare.org/	https://openpaper.work/
+2026-09-21T22:57:09.210	http://minnesota.publicradio.org/display/web/2010/01/25/fink/	200	61504	1.384	1.0000	1.0000	2	redirected to https://www.mprnews.org/story/2010/01/25/fink	https://wondermark.com/socrates-vs-writing/
+2026-09-21T22:57:09.211	https://pybitesplatform.com/	200	57740	0.269	1.0000	1.0000	3		https://belderbos.dev/tags/python/
+2026-09-21T22:57:09.231	https://pybites.dev/	0	0	0.008	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	https://pythonagenticai.com/
+2026-09-21T22:57:09.262	https://scopefirst.dev/	200	54171	0.635	1.0000	1.0000	3		https://belderbos.dev/tags/python/
+2026-09-21T22:57:09.307	https://docs.godotengine.org/	200	1334110	1.817	1.0000	1.0000	3	redirected to https://docs.godotengine.org/en/stable/	https://readthedocs.org/
+2026-09-21T22:57:09.315	https://mercury.hermes.radio/	200	94066	0.293	1.0000	1.0000	2		https://spectrum.ieee.org/hermes-shortwave-radio-digital-data
+2026-09-21T22:57:09.323	https://machineofdeath.net/	200	90796	1.696	1.0000	1.0000	2		https://wondermark.com/socrates-vs-writing/
+2026-09-21T22:57:09.348	https://www.rhizomatica.org/team/peter-bloom/	200	14280	0.745	1.0000	1.0000	2		https://spectrum.ieee.org/hermes-shortwave-radio-digital-data
+2026-09-21T22:57:09.349	https://juanjoseexposito.com/	200	48486	0.500	1.0000	1.0000	3		https://belderbos.dev/tags/python/
+2026-09-21T22:57:09.364	https://cursor.com/	200	626746	0.912	1.0000	1.0000	2		https://x.ai/news/grok-4-7
+2026-09-21T22:57:09.395	https://ieee.dragonforms.com/spectrum_subscribe	200	298	0.678	1.0000	1.0000	2	redirected to https://ieee.dragonforms.com/init.do?omedasite=spectrum_subscribe	https://spectrum.ieee.org/hermes-shortwave-radio-digital-data
+2026-09-21T22:57:09.451	http://www.studiopress.com/	200	129526	0.986	1.0000	1.0000	2	redirected to https://www.studiopress.com/	https://timdettmers.com/2026/09/21/dlab-open-source-week/
+2026-09-21T22:57:09.477	https://calnewport.com/on-ai-coding-and-its-discontents/	200	185144	0.664	1.0000	1.0000	3		https://belderbos.dev/tags/python/
+2026-09-21T22:57:09.479	https://www.rhizomatica.org/	200	9136	0.684	1.0000	1.0000	2		https://spectrum.ieee.org/hermes-shortwave-radio-digital-data
+2026-09-21T22:57:09.479	https://pmc.com/privacy-policy	200	166717	1.008	1.0000	1.0000	2	redirected to https://www.pmc.com/privacy-policy	https://variety.com/2026/film/news/robin-williams-daughter-ai-videos-1236871568/
+2026-09-21T22:57:09.512	https://www.learn2d.gamedevfromzero.com/	0	0	0.138	1.0000	1.0000	2	URLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.learn2d.gamedevfromzero.com'. (_ssl.c:1000)"))	https://www.gdquest.com/library/first_shader_godot4_portal/
+2026-09-21T22:57:09.545	https://quietlinks.com/ai	200	7334	0.151	1.0000	1.0000	3		https://pythonagenticai.com/
+2026-09-21T22:57:09.576	http://wordpress.org/	200	165046	1.155	1.0000	1.0000	2	redirected to https://wordpress.org/; already crawled	https://timdettmers.com/2026/09/21/dlab-open-source-week/
+2026-09-21T22:57:09.620	https://www.desmos.com/calculator/nk5sdlohnm	200	12528	0.110	1.0000	1.0000	2		https://www.gdquest.com/library/first_shader_godot4_portal/
+2026-09-21T22:57:09.635	https://grok.com/?referrer=website	200	566004	1.508	1.0000	1.0000	2		https://x.ai/news/grok-4-7
+2026-09-21T22:57:09.659	https://commitgraph.app/today/	200	4929	0.736	1.0000	1.0000	3	redirected to https://commitgraph.app/accounts/login/?next=/today/	https://belderbos.dev/tags/python/
+2026-09-21T22:57:09.659	https://help.desmos.com/hc/en-us/articles/4406040715149-Getting-Started-Desmos-Graphing-Calculator	403	0	0.182	1.0000	1.0000	2	access denied	https://www.gdquest.com/library/first_shader_godot4_portal/
+2026-09-21T22:57:09.690	https://iquilezles.org/articles/gpuconditionals/	200	14048	0.190	1.0000	1.0000	2		https://www.gdquest.com/library/first_shader_godot4_portal/
+2026-09-21T22:57:09.733	https://youtu.be/yTdw97KNgGM	200	1062642	2.726	1.0000	1.0000	3	redirected to https://www.youtube.com/watch?v=yTdw97KNgGM&feature=youtu.be	https://reeborg.ca/index_en.html
+2026-09-21T22:57:09.734	http://morepypy.blogspot.de/2012/07/hello-everyone.html	200	150916	1.474	1.0000	1.0000	3	redirected to https://morepypy.blogspot.com/2012/07/hello-everyone.html	https://rpython.readthedocs.io/en/latest/examples.html
+2026-09-21T22:57:09.754	https://www.glassdoor.com/Overview/Working-at-DigitalOcean-EI_IE823482.11,23.htm	403	0	0.177	1.0000	1.0000	3	access denied	https://m.do.co/c/bba66856dc94
+2026-09-21T22:57:09.770	https://www.graalvm.org/python	200	425	0.397	1.0000	1.0000	3	redirected to https://www.graalvm.org/python/	https://hpyproject.org/
+2026-09-21T22:57:09.774	https://commitgraph.app/	200	24840	0.444	1.0000	1.0000	3		https://belderbos.dev/tags/python/
+2026-09-21T22:57:09.817	https://pdxwebproperties.com/	200	13804	0.155	1.0000	1.0000	3		https://talkpython.fm/
+2026-09-21T22:57:09.865	https://css-tricks.com/	200	178065	0.252	1.0000	1.0000	3		https://m.do.co/c/bba66856dc94
+2026-09-21T22:57:09.888	https://alabaster.readthedocs.io/	200	9314	0.363	1.0000	1.0000	3	redirected to https://alabaster.readthedocs.io/en/latest/	https://cffi.readthedocs.io/
+2026-09-21T22:57:09.901	https://pythoncommunitynews.transistor.fm/	200	53499	0.396	1.0000	1.0000	3		https://pythoncommunitynews.com/
+2026-09-21T22:57:09.920	https://tally.so/r/Gx40Yz	200	66524	0.414	1.0000	1.0000	3		https://pythonagenticai.com/
+2026-09-21T22:57:09.942	http://www.vintage-basic.net/	200	4618	0.164	1.0000	1.0000	3		https://nedbatchelder.com/blog
+2026-09-21T22:57:09.985	https://stand-with-ukraine.pp.ua/	200	9686	0.136	1.0000	1.0000	3		https://nedbatchelder.com/blog
+2026-09-21T22:57:10.057	https://about.bostonpython.com/slack	200	14072	0.214	1.0000	1.0000	3		https://nedbatchelder.com/blog
+2026-09-21T22:57:10.107	https://nextcloud.com/	200	239434	1.250	1.0000	1.0000	3		https://openpaper.work/
+2026-09-21T22:57:10.138	https://www.thepayroll.app/	200	1033331	1.113	1.0000	1.0000	3		https://belderbos.dev/tags/python/
+2026-09-21T22:57:10.144	https://modelcontextprotocol.io/docs/getting-started/intro	200	295412	0.572	1.0000	1.0000	3	redirected to https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro	https://belderbos.dev/tags/python/
+2026-09-21T22:57:10.170	https://morepypy.blogspot.com/	200	449425	0.856	1.0000	1.0000	3		https://pypy.org/download.html
+2026-09-21T22:57:10.250	https://www.jenkins.io/download/	200	160525	0.304	1.0000	1.0000	3		https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:10.275	https://sixfeetup.com/?ref=pythonbytes&utm_source=pythonbytes	200	76006	0.350	1.0000	1.0000	3		https://pythonbytes.fm/
+2026-09-21T22:57:10.282	https://www.builtinnyc.com/company/digitalocean	200	109131	0.550	1.0000	1.0000	3		https://m.do.co/c/bba66856dc94
+2026-09-21T22:57:10.298	https://scripter-to-rust.kit.com/6185b5c801	200	23203	0.339	1.0000	1.0000	3		https://scriptertorust.com/
+2026-09-21T22:57:10.311	https://hpy.readthedocs.io/	200	18947	0.982	1.0000	1.0000	3	redirected to https://docs.hpyproject.org/en/latest/	https://hpyproject.org/
+2026-09-21T22:57:10.360	https://youtu.be/w5OveY1U8RE	200	1078265	2.303	1.0000	1.0000	3	redirected to https://www.youtube.com/watch?v=w5OveY1U8RE&feature=youtu.be	https://reeborg.ca/index_en.html
+2026-09-21T22:57:10.374	https://kylheku.com/txr-users	200	5242880	2.834	1.0000	1.0000	2	redirected to https://www.kylheku.com/honeypot; truncated	https://www.nongnu.org/txr/
+2026-09-21T22:57:10.383	https://stories.jenkins.io/	200	79924	0.359	1.0000	1.0000	3		https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:10.394	https://contributors.jenkins.io/	200	17298	0.292	1.0000	1.0000	3		https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:10.409	https://hpy.readthedocs.io/en/latest/	200	18947	0.475	1.0000	1.0000	3	redirected to https://docs.hpyproject.org/en/latest/; already crawled	https://hpyproject.org/
+2026-09-21T22:57:10.421	https://pythondiscord.com/	200	22763	0.543	1.0000	1.0000	3	redirected to https://www.pythondiscord.com/	https://nedbatchelder.com/blog
+2026-09-21T22:57:10.483	https://www.kylheku.com/txr-downloads/txr-302/	200	5242880	3.252	1.0000	1.0000	2	redirected to https://www.kylheku.com/honeypot; already crawled; truncated	https://www.nongnu.org/txr/
+2026-09-21T22:57:10.528	https://mathstodon.xyz/@TajraWD/116539942319775498	200	62092	0.639	1.0000	1.0000	3		https://nedbatchelder.com/blog
+2026-09-21T22:57:10.571	https://www.ibm.com/	200	198273	0.516	1.0000	1.0000	3	redirected to https://www.ibm.com/us-en	https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:10.770	https://www.sothebys.com/en/buy/auction/2019/20th-century-art-middle-east/dana-awartani-dodecahedron-within-an-icosahedron	200	339852	1.022	1.0000	1.0000	3		https://nedbatchelder.com/blog
+2026-09-21T22:57:10.780	https://osuosl.org/	200	33535	0.561	1.0000	1.0000	3		https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:10.782	http://writethedocs.org/	200	16543	0.620	1.0000	1.0000	3	redirected to https://www.writethedocs.org/	https://www.ericholscher.com/blog/2017/aug/2/pacman-rule-conferences/
+2026-09-21T22:57:10.884	https://www.oreilly.com/library/view/robust-python/9781098100650/	403	0	0.218	1.0000	1.0000	3	access denied	https://pybit.es/articles/typing-protocol-abc-alternative/
+2026-09-21T22:57:10.903	https://andrewbrookins.com/technology/building-implicit-interfaces-in-python-with-protocol-classes/	200	34954	0.289	1.0000	1.0000	3		https://pybit.es/articles/typing-protocol-abc-alternative/
+2026-09-21T22:57:10.904	https://buttondown.email/	200	107721	0.688	1.0000	1.0000	3	redirected to https://buttondown.com/	https://pythoncommunitynews.com/
+2026-09-21T22:57:10.905	https://blogtrottr.com/?subscribe=https://nedbatchelder.com/blog/rss.xml	200	19557	1.082	1.0000	1.0000	3	redirected to https://blogtrottr.com/	https://nedbatchelder.com/blog
+2026-09-21T22:57:11.090	https://www.oeglobal.org/	200	226612	6.983	1.0000	1.0000	1		https://ocw.mit.edu/
+2026-09-21T22:57:11.136	https://xmission.com/	200	51491	0.611	1.0000	1.0000	3		https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:11.247	https://xeus-python.readthedocs.io/en/latest/	200	17461	0.243	1.0000	1.0000	3		https://jupyterlite.readthedocs.io/
+2026-09-21T22:57:11.248	https://cloudbees.com/	200	156496	1.096	1.0000	1.0000	3	redirected to https://www.cloudbees.com/	https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:11.259	https://godotshaders.com/	200	130572	1.223	1.0000	1.0000	2		https://www.gdquest.com/library/first_shader_godot4_portal/
+2026-09-21T22:57:11.318	https://jupyterlab.readthedocs.io/en/stable/user/code_console.html	200	26653	0.280	1.0000	1.0000	3		https://jupyterlite.readthedocs.io/
+2026-09-21T22:57:11.336	https://learning.oreilly.com/library/view/ai-assisted-python-for/9798341661622/	403	0	0.544	1.0000	1.0000	3	access denied; redirected to https://www.oreilly.com/library/view/ai-assisted-python-for/9798341661622/	https://lernerpython.com/
+2026-09-21T22:57:11.408	https://jupyterlab-team-compass.readthedocs.io/	200	18574	0.609	1.0000	1.0000	3	redirected to https://jupyterlab-team-compass.readthedocs.io/en/latest/	https://jupyterlite.readthedocs.io/
+2026-09-21T22:57:11.409	http://sonarsource.com/the-coding-personalities-of-leading-llms/leaderboard/	200	17627	0.472	1.0000	1.0000	3	redirected to https://www.sonarsource.com/the-coding-personalities-of-leading-llms/leaderboard/	https://tidelift.com/
+2026-09-21T22:57:11.451	https://roboharm-artifacts.pages.dev/runs/rrd/omen-2_rig-5_adhoc_0145e4ce.rrd	200	223797	0.128	1.0000	1.0000	2	not html: application/octet-stream	https://robocurve.org/roboharm/
+2026-09-21T22:57:11.451	https://jb.gg/jetbrainsgearblog	200	180185	1.284	1.0000	1.0000	3	redirected to https://www.jetbrainsmerchandise.com/?utm_campaign=link&utm_medium=banner&utm_source=blog	https://blog.jetbrains.com/
+2026-09-21T22:57:11.495	https://pandasworkout.com/	200	55751	0.591	1.0000	1.0000	3	redirected to https://www.bambooweekly.com/pandas-workout/	https://lernerpython.com/
+2026-09-21T22:57:11.521	http://freedif.org/	200	2698	0.596	1.0000	1.0000	3		https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:11.600	https://www.goodreads.com/?ref=books_dsk_sn_goodreads-47db3	200	55601	0.277	1.0000	1.0000	3		https://amzn.to/3DyLaJc
+2026-09-21T22:57:11.623	http://www.planetplanet.org/	0	0	10.043	1.0000	1.0000	2	URLError(TimeoutError('timed out'))	https://planetpython.org/
+2026-09-21T22:57:11.623	https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html	200	1506227	1.246	1.0000	1.0000	2		https://www.gdquest.com/library/first_shader_godot4_portal/
+2026-09-21T22:57:11.631	https://i2rt.com/products/yam-6-dof-arm	200	355958	0.948	1.0000	1.0000	2		https://robocurve.org/roboharm/
+2026-09-21T22:57:11.690	https://pyodide.org/	200	31659	0.835	1.0000	1.0000	3	redirected to https://pyodide.org/en/stable/	https://jupyterlite.readthedocs.io/
+2026-09-21T22:57:11.713	https://belnet.be/	200	188146	1.044	1.0000	1.0000	3		https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:11.725	http://www.writethedocs.org/	200	16543	0.536	1.0000	1.0000	3	redirected to https://www.writethedocs.org/; already crawled	https://www.ericholscher.com/blog/2017/aug/2/pacman-rule-conferences/
+2026-09-21T22:57:11.848	https://www.amazon.science/	200	396560	0.584	1.0000	1.0000	3		https://amzn.to/3DyLaJc
+2026-09-21T22:57:11.880	https://basthon.fr/	200	18869	0.562	1.0000	1.0000	3		https://jupyterlite.readthedocs.io/
+2026-09-21T22:57:11.937	https://cd.foundation/	200	187233	1.049	1.0000	1.0000	3		https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:11.939	https://www.sonarsource.com/resources/events/world-tour/new-york-city/	200	598816	1.247	1.0000	1.0000	3		https://tidelift.com/
+2026-09-21T22:57:11.992	https://www.veeqo.com/?utm_source=amazon&utm_medium=website&utm_campaign=footer	200	237778	0.426	1.0000	1.0000	3		https://amzn.to/3DyLaJc
+2026-09-21T22:57:11.993	https://jupyterlite.rtfd.io/en/stable/try/lab	200	817	1.041	1.0000	1.0000	3	redirected to https://jupyterlite.readthedocs.io/en/stable/try/lab/	https://jupyterlite.readthedocs.io/
+2026-09-21T22:57:11.994	https://www.wholefoodsmarket.com/	200	163936	0.288	1.0000	1.0000	3		https://amzn.to/3DyLaJc
+2026-09-21T22:57:12.003	https://www.istockphoto.com/googleimages.php?id=4072573&platform=blogger&langregion=en	200	236312	0.669	1.0000	1.0000	3	redirected to https://www.istockphoto.com/	https://aroberge.blogspot.com/2026/09/breaking-four-year-hiatus-to-talk-about.html
+2026-09-21T22:57:12.017	https://www.amazon.jobs/	200	32517	0.715	1.0000	1.0000	3	redirected to https://www.amazon.jobs/en/	https://amzn.to/3DyLaJc
+2026-09-21T22:57:12.036	http://ghanatogether.org/	200	114	0.244	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:12.084	https://pagerduty.com/	200	357288	1.271	1.0000	1.0000	3	redirected to https://www.pagerduty.com/	https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:12.107	https://www.olpcsf.org/blog	0	0	0.014	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://planet.laptop.org/
+2026-09-21T22:57:12.107	https://www.woot.com/	200	31697	0.224	1.0000	1.0000	3		https://amzn.to/3DyLaJc
+2026-09-21T22:57:12.112	https://libera.irclog.whitequark.org/pypy	200	8320	2.073	1.0000	1.0000	3	redirected to https://libera.catirclogs.org/pypy/2026-09-22	https://pypy.org/download.html
+2026-09-21T22:57:12.182	https://bambooweekly.com/	200	141779	1.010	1.0000	1.0000	3	redirected to https://www.bambooweekly.com/	https://lernerpython.com/
+2026-09-21T22:57:12.201	https://servanamanaged.com/	200	156377	1.574	1.0000	1.0000	3	redirected to https://stacktrack.com/	https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:12.203	https://notebook.link/	200	73047	0.746	1.0000	1.0000	3		https://jupyterlite.readthedocs.io/
+2026-09-21T22:57:12.225	https://www.developmentaid.org/	403	0	0.190	1.0000	1.0000	3	access denied	http://planet.laptop.org/
+2026-09-21T22:57:12.229	https://unmad.in/	200	49255	0.376	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:12.257	https://dspjobhub.com/	200	57151	0.708	1.0000	1.0000	3		https://amzn.to/3DyLaJc
+2026-09-21T22:57:12.273	https://www.audible.com/	200	296434	0.490	1.0000	1.0000	3		https://amzn.to/3DyLaJc
+2026-09-21T22:57:12.280	http://ntugigroup.org/	0	0	0.025	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://planet.laptop.org/
+2026-09-21T22:57:12.303	https://roboharm-artifacts.pages.dev/runs/transcripts/omen-2_rig-5_adhoc_0145e4ce.html	200	1067440	1.722	1.0000	1.0000	2	redirected to https://roboharm-artifacts.pages.dev/runs/transcripts/omen-2_rig-5_adhoc_0145e4ce	https://robocurve.org/roboharm/
+2026-09-21T22:57:12.346	http://www.izardnet.com/	0	0	0.031	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://planet.laptop.org/
+2026-09-21T22:57:12.419	https://www.abebooks.com/	200	311394	0.730	1.0000	1.0000	3		https://amzn.to/3DyLaJc
+2026-09-21T22:57:12.459	https://hostico.ro/	200	351343	1.532	1.0000	1.0000	3		https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:12.478	http://brianio.com/category/olpc-sugar/feed/	0	0	0.013	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://planet.laptop.org/
+2026-09-21T22:57:12.483	http://activitycentral.com/community/news/feed	200	114	0.115	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:12.509	http://ghanatogether.blogspot.com/	200	166034	0.411	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:12.553	http://olpcbasecamp.blogspot.com/	200	145191	0.331	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:12.568	https://www.addtoany.com/share	200	19568	0.219	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:12.620	https://www.6pm.com/	200	678020	0.972	1.0000	1.0000	3		https://amzn.to/3DyLaJc
+2026-09-21T22:57:12.640	http://scratched.gse.harvard.edu/guide/	200	27150	0.338	1.0000	1.0000	3	redirected to https://scratched.gse.harvard.edu/guide/	http://planet.laptop.org/
+2026-09-21T22:57:12.648	https://mako.cc/	200	15580	0.454	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:12.686	http://tweedyrains.blogspot.com/feeds/posts/default/-/OLPC	200	0	0.097	1.0000	1.0000	3	not html: application/atom+xml	http://planet.laptop.org/
+2026-09-21T22:57:12.726	https://allenai.org/blog/molmoact2	200	1246029	2.103	1.0000	1.0000	2		https://robocurve.org/roboharm/
+2026-09-21T22:57:12.788	http://www.reactivated.net/weblog	200	127033	0.950	1.0000	1.0000	3	redirected to http://www.reactivated.net/weblog/	http://planet.laptop.org/
+2026-09-21T22:57:12.812	https://www.shopbop.com/	200	721288	0.974	1.0000	1.0000	3		https://amzn.to/3DyLaJc
+2026-09-21T22:57:12.815	https://www.tsinghua.edu.cn/	200	100302	1.572	1.0000	1.0000	3		https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:12.825	http://planet.plone.org/	0	0	10.194	1.0000	1.0000	2	TimeoutError('The read operation timed out'); redirected to http://planet.plone.org/	https://planetpython.org/
+2026-09-21T22:57:12.826	http://bethstepsup.blogspot.com/feeds/posts/default	200	0	0.265	1.0000	1.0000	3	not html: application/atom+xml	http://planet.laptop.org/
+2026-09-21T22:57:12.826	http://www.reactivated.net/weblog/archives/2006/01/digital-persona-fingerprint-driver-site-launched/comment-page-1/	200	27757	0.130	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:12.882	https://edsiper.linuxchile.cl/blog/?cat=4&feed=rss	0	0	0.012	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://planet.laptop.org/
+2026-09-21T22:57:12.883	https://robotsguide.com/	200	568298	4.887	1.0000	1.0000	2		https://spectrum.ieee.org/hermes-shortwave-radio-digital-data
+2026-09-21T22:57:12.899	http://www.sfsu.edu/	200	70760	0.251	1.0000	1.0000	3	redirected to https://www.sfsu.edu/	http://planet.laptop.org/
+2026-09-21T22:57:12.949	https://www.rwth-aachen.de/	200	98170	2.067	1.0000	1.0000	3	redirected to https://www.rwth-aachen.de/go/id/a/?lidx=1	https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:12.971	https://sugarlabs.org/	200	1116	0.439	1.0000	1.0000	3	redirected to https://www.sugarlabs.org/	http://planet.laptop.org/
+2026-09-21T22:57:12.979	https://blogs.unicef.org/blog/world-ready-to-learn/	200	266861	0.628	1.0000	1.0000	3	redirected to https://www.unicef.org/blog	http://planet.laptop.org/
+2026-09-21T22:57:13.037	http://theconversation.com/national-curriculums-dont-always-work-for-rural-and-regional-schools-108071	200	184011	0.728	1.0000	1.0000	3	redirected to https://theconversation.com/national-curriculums-dont-always-work-for-rural-and-regional-schools-108071	http://planet.laptop.org/
+2026-09-21T22:57:13.073	https://www.eventbrite.com/e/olpc-sf-ethiopia-update-tickets-662403266	200	160319	0.772	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:13.102	http://danishkanavin.blogspot.sg/feeds/posts/default/-/OLPC	200	0	0.269	1.0000	1.0000	3	not html: application/atom+xml	http://planet.laptop.org/
+2026-09-21T22:57:13.142	https://www.wired.com/story/year-in-review-tech-addiction-debate-all-wrong/	200	1436393	0.953	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:13.182	http://within-parens.blogspot.com/	200	108218	0.196	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:13.196	https://lispblog.xach.com/rss	0	0	0.126	1.0000	1.0000	3	RemoteDisconnected('Remote end closed connection without response')	http://planet.lisp.org/
+2026-09-21T22:57:13.214	http://hackathon.sfsu.edu/	200	33597	0.656	1.0000	1.0000	3	redirected to https://hackathon.sfsu.edu/	http://planet.laptop.org/
+2026-09-21T22:57:13.241	https://www.tfeb.org/fragments/tags/lisp.html	200	12049	0.131	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:13.277	http://abcl-dev.blogspot.com/	200	109027	0.197	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:13.288	https://borretti.me/	200	2982	0.177	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:13.299	http://commons.sfsu.edu/	200	22868	0.638	1.0000	1.0000	3	redirected to https://commons.sfsu.edu/	http://planet.laptop.org/
+2026-09-21T22:57:13.324	https://en.scratch-wiki.info/wiki/Cloud_Data	200	61915	0.564	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:13.384	http://cl-test-grid.blogspot.com/feeds/posts/default	200	0	0.180	1.0000	1.0000	3	not html: application/atom+xml	http://planet.lisp.org/
+2026-09-21T22:57:13.396	https://mako.cc/academic/	200	175565	0.711	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:13.423	https://fundacionzt.org/en/	200	68968	0.307	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:13.432	http://planet.sbcl.org/	200	23445	0.224	1.0000	1.0000	3	redirected to https://planet.sbcl.org/	http://planet.lisp.org/
+2026-09-21T22:57:13.437	https://journal.paoloamoroso.com/tag:CommonLisp/feed/	503	0	0.349	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:13.437	https://bokesan.blogspot.com/feeds/posts/default/?q=label:Lisp	200	0	0.239	1.0000	1.0000	3	not html: application/atom+xml	http://planet.lisp.org/
+2026-09-21T22:57:13.455	http://smallsolutionsbigideas.org/	200	149741	0.680	1.0000	1.0000	3	redirected to https://www.smallsolutionsbigideas.org/	http://planet.laptop.org/
+2026-09-21T22:57:13.479	http://lisp-univ-etc.blogspot.com/feeds/posts/default/-/lisp/en	200	0	0.159	1.0000	1.0000	3	not html: application/atom+xml	http://planet.lisp.org/
+2026-09-21T22:57:13.511	https://scottlburson2.blogspot.com/	200	83504	0.275	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:13.577	http://40ants.com/lisp-project-of-the-day/	200	58438	0.263	1.0000	1.0000	3	redirected to https://40ants.com/lisp-project-of-the-day/	http://planet.lisp.org/
+2026-09-21T22:57:13.606	https://snapcraft.io/drawing	200	109176	2.087	1.0000	1.0000	3		https://maoschanz.github.io/drawing/
+2026-09-21T22:57:13.608	http://croquetweak.blogspot.com/feeds/posts/default/-/olpc	200	0	0.682	1.0000	1.0000	3	redirected to https://blog.codefrau.net/feeds/posts/default/-/olpc; not html: application/atom+xml	http://planet.laptop.org/
+2026-09-21T22:57:13.613	http://common-lisp-net.tumblr.com/rss	0	0	0.224	1.0000	1.0000	3	RemoteDisconnected('Remote end closed connection without response'); redirected to http://common-lisp-net.tumblr.com/rss	http://planet.lisp.org/
+2026-09-21T22:57:13.654	http://p-cos.blogspot.com/	200	103197	0.244	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:13.668	http://ausil.us/blog/index.rss20	404	0	0.448	1.0000	1.0000	3	redirected to https://ausil.us/blog/index.rss20	http://planet.laptop.org/
+2026-09-21T22:57:13.685	http://boinkor.net/	200	29233	0.131	1.0000	1.0000	3	redirected to https://boinkor.net/	http://planet.lisp.org/
+2026-09-21T22:57:13.704	https://tychoish.com/tags/lisp/	200	75462	0.172	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:13.716	https://design.blog/2016/08/25/mitchel-resnick-designing-for-wide-walls/	404	0	1.061	1.0000	1.0000	3	redirected to https://automattic.design/2016/08/25/mitchel-resnick-designing-for-wide-walls/	http://planet.laptop.org/
+2026-09-21T22:57:13.741	http://planet.scheme.org/	200	108130	0.388	1.0000	1.0000	3	redirected to https://planet.scheme.org/	http://planet.lisp.org/
+2026-09-21T22:57:13.755	https://netzhansa.blogspot.com/feeds/posts/default	200	0	0.162	1.0000	1.0000	3	not html: application/atom+xml	http://planet.lisp.org/
+2026-09-21T22:57:13.761	https://lisper.in/	200	7765	0.142	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:13.790	https://www.fitzsim.org/blog/?feed=rss2&cat=6	200	0	0.195	1.0000	1.0000	3	not html: application/rss+xml	http://planet.lisp.org/
+2026-09-21T22:57:13.794	http://michaeljforster.tumblr.com/tagged/lisp/rss	0	0	0.250	1.0000	1.0000	3	RemoteDisconnected('Remote end closed connection without response'); redirected to http://michaeljforster.tumblr.com/tagged/lisp/rss	http://planet.lisp.org/
+2026-09-21T22:57:13.826	https://johnj.com/tags/lisp/	200	6512	0.104	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:13.855	http://www.method-combination.net/blog/index.rss2	403	0	0.104	1.0000	1.0000	3	access denied	http://planet.lisp.org/
+2026-09-21T22:57:13.948	https://blog.communitydata.science/scratch-gender-feedback-dynamics/	200	118863	0.769	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:13.958	https://w4ra.org/2018/06/24/vu-and-unimas-students-develop-app-for-children-in-sarawak-malaysia/	200	159519	1.188	1.0000	1.0000	3	redirected to https://w4ra.org/blog/2018/06/24/vu-and-unimas-students-develop-app-for-children-in-sarawak-malaysia/	http://planet.laptop.org/
+2026-09-21T22:57:13.977	http://tapoueh.org/blog	404	0	0.409	1.0000	1.0000	3	redirected to https://tapoueh.org/blog/	http://planet.lisp.org/
+2026-09-21T22:57:14.081	http://funcall.blogspot.com/	200	243539	0.182	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.100	https://www.pvk.ca/	200	39467	0.202	1.0000	1.0000	3	redirected to https://pvk.ca/	http://planet.lisp.org/
+2026-09-21T22:57:14.139	http://tkpapp.blogspot.com/	200	53593	0.171	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.169	http://quotenil.com/lisp.html	200	36089	0.087	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.175	http://ausil.us/blog	404	0	0.510	1.0000	1.0000	3	redirected to https://ausil.us/blog	http://planet.laptop.org/
+2026-09-21T22:57:14.182	https://blog.printf.net/feed/	200	0	0.173	1.0000	1.0000	3	not html: application/rss+xml	http://planet.laptop.org/
+2026-09-21T22:57:14.182	https://nmunro.github.io/nmunro.github.io/	200	4142	0.251	1.0000	1.0000	3	redirected to https://nmunro.github.io/	http://planet.lisp.org/
+2026-09-21T22:57:14.211	http://blog.quicklisp.org/	200	169621	0.139	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.225	http://blog.codeartist.org/feeds/posts/default	0	0	0.026	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://planet.lisp.org/
+2026-09-21T22:57:14.234	https://borodust.org/	200	18268	0.307	1.0000	1.0000	3	redirected to https://borodust.github.io/	http://planet.lisp.org/
+2026-09-21T22:57:14.252	https://www.darkchestnut.com/	200	10228	0.250	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.261	https://blog.printf.net/	200	90561	0.263	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:14.293	https://www.yamagata-u.ac.jp/en/	200	24542	2.001	1.0000	1.0000	3		https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+2026-09-21T22:57:14.315	https://blog.tymoon.eu/api/reader/atom?tag=common%20lisp	200	71430	0.433	1.0000	1.0000	3	not html: application/atom+xml	http://planet.lisp.org/
+2026-09-21T22:57:14.325	https://reader.tymoon.eu/	200	24887	0.441	1.0000	1.0000	3	not html: application/xhtml+xml	http://planet.lisp.org/
+2026-09-21T22:57:14.330	https://blog.cddr.org/tags/lisp/	200	4890	0.348	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.405	https://w4ra.org/2018/06/28/a-living-lab-in-kampung-pinggan-jaya-sarawak-short-clip/	200	152865	1.206	1.0000	1.0000	3	redirected to https://w4ra.org/blog/2018/06/28/a-living-lab-in-kampung-pinggan-jaya-sarawak-short-clip/	http://planet.laptop.org/
+2026-09-21T22:57:14.416	https://enthusiasm.cozy.org/archives/category/common-lisp/feed/atom	200	0	0.482	1.0000	1.0000	3	not html: application/atom+xml	http://planet.lisp.org/
+2026-09-21T22:57:14.416	http://trittweiler.blogspot.com/	200	65094	0.163	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.448	https://en.unesco.org/commemorations/educationday	200	309620	2.181	1.0000	1.0000	3	redirected to https://www.unesco.org/en/days/education	http://planet.laptop.org/
+2026-09-21T22:57:14.466	https://lispers.de/rss	0	0	0.286	1.0000	1.0000	3	URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)'))	http://planet.lisp.org/
+2026-09-21T22:57:14.471	http://kvardek-du.kerno.org/feeds/posts/default/-/lisp	200	0	0.274	1.0000	1.0000	3	not html: application/atom+xml	http://planet.lisp.org/
+2026-09-21T22:57:14.502	https://jorgetavares.com/feed/	200	0	0.166	1.0000	1.0000	3	not html: application/rss+xml	http://planet.lisp.org/
+2026-09-21T22:57:14.530	https://sirherrbatka.github.io/	200	9550	0.148	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.578	http://blog.funcall.org/	200	21813	0.114	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.601	https://borodust.github.io/2020/06/12/claw-honing/	200	16520	0.075	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.607	http://www.stylewarning.com/posts/	200	2254	0.157	1.0000	1.0000	3	redirected to https://www.stylewarning.com/posts/	http://planet.lisp.org/
+2026-09-21T22:57:14.644	https://jrm-code-project.com/rdescent.html	200	5393	0.074	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.675	https://langnostic.inaimathi.ca/feed/atom/by-tag/common-lisp	502	0	0.136	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.709	http://www.redblobgames.com/	200	44907	0.142	1.0000	1.0000	3	redirected to https://www.redblobgames.com/	http://planet.lisp.org/
+2026-09-21T22:57:14.740	https://common-lisp.net/project/ecl	200	9049	0.983	1.0000	1.0000	3	redirected to https://ecl.common-lisp.dev/	http://planet.lisp.org/
+2026-09-21T22:57:14.772	https://mstmetent.blogspot.com/feeds/posts/default	200	0	0.211	1.0000	1.0000	3	not html: application/atom+xml	http://planet.lisp.org/
+2026-09-21T22:57:14.791	https://communitydata.science/	200	33808	1.370	1.0000	1.0000	3	redirected to https://wiki.communitydata.science/Main_Page	http://planet.laptop.org/
+2026-09-21T22:57:14.826	https://mov.im/?feed/phoe%40movim.eu	200	0	0.747	1.0000	1.0000	3	redirected to https://mov.im/feed/phoe%40movim.eu; not html: application/atom+xml	http://planet.lisp.org/
+2026-09-21T22:57:14.858	https://www.timmons.dev/	200	15807	0.309	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.863	https://sujalkumar06.github.io/blog/2026/week-1/	200	15318	0.101	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:14.873	https://lisp-journey.gitlab.io/	200	18872	0.329	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:14.955	https://www.pinecone.io/	200	375667	0.203	1.0000	1.0000	3		https://www.listendata.com/2023/04/autogpt-explained-everything-you-need.html
+2026-09-21T22:57:14.991	https://terranostra.one/	200	12974	0.394	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:15.026	https://gxyd.github.io/blogs/Another-Try-LLVM/	200	8447	0.124	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.034	https://summerofcode.withgoogle.com/programs/2026/organizations/sympy	200	47524	0.126	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.073	http://www.advogato.org/person/dwmw2/	0	0	0.235	1.0000	1.0000	3	URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)')); redirected to http://www.advogato.org/person/dwmw2/	http://planet.laptop.org/
+2026-09-21T22:57:15.127	https://didierverna.net/tags/lisp/	200	44683	0.461	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:15.139	http://christophe.rhodes.io/notes/blog/feeds/lisp/	200	305550	0.646	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:15.158	https://rogueliketutorials.com/	200	5731	0.351	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:15.159	http://www.olpc.asia/eng/xo_feature.html	404	0	1.559	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:15.187	https://rushabhmehta2005.github.io/posts/GSoC-Week-Final/	200	19460	0.191	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.203	https://common-lisp.net/project/mcclim	200	7088	0.978	1.0000	1.0000	3	redirected to https://mcclim.common-lisp.dev/	http://planet.lisp.org/
+2026-09-21T22:57:15.204	https://leomanga.github.io/update/close-to-the-end/	200	22784	0.190	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.239	https://githubsupport.com/	0	0	0.010	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://planet.sympy.org/
+2026-09-21T22:57:15.239	https://www.w3schools.com/w3css/	200	214062	0.579	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:15.281	https://en.cppreference.com/	200	48112	0.206	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.289	https://krishnavbajoria02.github.io/blog-sympy-gsoc2025/blog-sympy-gsoc2025/2025/06/01/gsoc-bonding-phase.html	404	0	0.191	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.301	https://www.lispworks.com/documentation/HyperSpec/Front/	200	2828	0.325	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:15.306	https://tjstienstra.github.io//gsoc/2022/2022/10/03/final-overview.html	200	22478	0.209	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.364	https://mov.im/?blog/phoe%40movim.eu	200	77385	0.885	1.0000	1.0000	3	redirected to https://mov.im/blog/phoe%40movim.eu	http://planet.lisp.org/
+2026-09-21T22:57:15.374	https://helambdap.sf.net/	200	2848	0.476	1.0000	1.0000	3	redirected to https://helambdap.sourceforge.net/	http://planet.lisp.org/
+2026-09-21T22:57:15.462	https://www.eff.org/wp/unintended-consequences-16-years-under-dmca	200	28853	0.183	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.465	https://turtleware.eu/posts/A-brief-note-about-slot-access-cost-in-Common-Lisp.html	200	17972	0.492	1.0000	1.0000	3		http://planet.lisp.org/
+2026-09-21T22:57:15.475	https://learncpp.com/	200	232833	0.241	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.483	http://blog.matroid.org/	200	39274	0.731	1.0000	1.0000	3	redirected to https://blog.matroid.org/	http://planet.lisp.org/
+2026-09-21T22:57:15.499	http://nishnik.github.io/	200	7139	0.094	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.521	https://ravicharann.github.io/blog/	200	6468	0.138	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.534	http://srajangarg.github.io//	200	5880	0.136	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.565	https://shekharrajak.github.io/	200	10987	0.184	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.588	https://sidhantnagpal.github.io/	200	5755	0.082	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.602	https://szymag.github.io/	200	8467	0.139	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.615	https://asmeurer.com/blog/posts/the-sympy-hackerrank-dmca-incident/	200	31020	0.224	1.0000	1.0000	3	redirected to https://www.asmeurer.com/blog/posts/the-sympy-hackerrank-dmca-incident/	http://planet.sympy.org/
+2026-09-21T22:57:15.630	https://yathartha22.github.io//	200	9359	0.095	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.675	https://divyanshu132.github.io//	200	8406	0.087	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.681	https://jmig5776.github.io//	200	7615	0.080	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.701	http://bjodah.github.io/blog/	200	50874	0.301	1.0000	1.0000	3	redirected to https://bjodah.github.io/blog/	http://planet.sympy.org/
+2026-09-21T22:57:15.711	http://valglad.github.io/	200	4998	0.167	1.0000	1.0000	3	redirected to https://valglad.github.io/	http://planet.sympy.org/
+2026-09-21T22:57:15.724	https://sc0rpi0n101.github.io/categories/gsoc/	200	23888	0.111	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.771	http://isuruf.blogspot.com/	200	86408	0.387	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.774	https://blog.olenepal.org/index.php/archives/2764	404	0	2.079	1.0000	1.0000	3	redirected to https://olenepal.org/our-stories/index.php/archives/2764	http://planet.laptop.org/
+2026-09-21T22:57:15.815	https://sachin-4099.github.io//	200	62531	0.138	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:15.835	https://blog.olenepal.org/	200	36408	2.151	1.0000	1.0000	3	redirected to https://olenepal.org/our-stories/	http://planet.laptop.org/
+2026-09-21T22:57:15.849	https://futurecoder.io/	200	34321	0.125	1.0000	1.0000	3		https://aroberge.blogspot.com/
+2026-09-21T22:57:15.861	http://friyaz.github.io/	200	11949	0.173	1.0000	1.0000	3	redirected to https://friyaz.github.io/	http://planet.sympy.org/
+2026-09-21T22:57:15.890	https://pubs.acs.org/doi/abs/10.1021/ci000069q	403	0	0.113	1.0000	1.0000	3	access denied	http://www.dalkescientific.com/writings/diary/
+2026-09-21T22:57:15.924	https://chemfp.com/	200	10791	0.136	1.0000	1.0000	3		http://www.dalkescientific.com/writings/diary/
+2026-09-21T22:57:15.931	https://www.sf.net/	200	116027	0.643	1.0000	1.0000	3	redirected to https://sourceforge.net/	http://planet.lisp.org/
+2026-09-21T22:57:15.991	https://deepdivepython.com/	200	45996	0.121	1.0000	1.0000	3		https://blog.adarshd.dev/python/
+2026-09-21T22:57:16.074	http://0.30000000000000004.com/	200	156998	0.246	1.0000	1.0000	3	redirected to https://0.30000000000000004.com/	https://aroberge.blogspot.com/
+2026-09-21T22:57:16.088	https://science.sciencemag.org/content/166/3902/178	403	0	0.085	1.0000	1.0000	3	access denied	http://www.dalkescientific.com/writings/diary/
+2026-09-21T22:57:16.141	http://stackoverflow.com/users/808820/farcepest	403	0	0.144	1.0000	1.0000	3	access denied; redirected to https://stackoverflow.com/users/808820/farcepest	http://mysql-python.blogspot.com/
+2026-09-21T22:57:16.145	https://chemfp.readthedocs.io/en/latest/tool-help.html	404	0	0.200	1.0000	1.0000	3		http://www.dalkescientific.com/writings/diary/
+2026-09-21T22:57:16.211	http://peak.telecommunity.com/DevCenter/EasyInstall	200	127934	0.183	1.0000	1.0000	3		http://mysql-python.blogspot.com/
+2026-09-21T22:57:16.225	https://blogger.googleusercontent.com/img/a/AVvXsEgSMSTQ_UK9fnq87019ZflN0bRkbA_DnQFevBKCA5m9KU94Xmd-nUebGOULWv8RFtE9TD9IThi996_75DBD97xv0vlbkk1Mq2d1p-SjzsLe1ahimstm6mGr9CaHy6VvSwuTYCchyh0tbi97JoTUr3_Mu3sgmInBfe_SHutMOa_fpTcnRl0njU4	200	53165	0.514	1.0000	1.0000	3	not html: image/png	https://aroberge.blogspot.com/
+2026-09-21T22:57:16.245	https://ko-fi.com/G2G83E9SV	403	0	0.074	1.0000	1.0000	3	access denied	https://www.andreagrandi.it/
+2026-09-21T22:57:16.261	https://etc.ruricolist.com/?feed=rss2	200	93787	0.804	1.0000	1.0000	3	redirected to https://web.archive.org/web/20230526172708/https://etc.ruricolist.com/	http://planet.lisp.org/
+2026-09-21T22:57:16.275	http://dev.mysql.com/downloads/mysql/	200	31353	0.287	1.0000	1.0000	3	redirected to https://dev.mysql.com/downloads/mysql/	http://mysql-python.blogspot.com/
+2026-09-21T22:57:16.412	https://blog.olenepal.org/index.php/archives/2793	404	0	1.870	1.0000	1.0000	3	redirected to https://olenepal.org/our-stories/index.php/archives/2793	http://planet.laptop.org/
+2026-09-21T22:57:16.554	https://www.firefox.com/	200	46962	0.060	1.0000	1.0000	3		http://limi.net/
+2026-09-21T22:57:16.578	https://upvotetracker.com/post/hn/31087175	404	0	1.203	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:16.588	https://blog.olenepal.org/index.php/archives/2658	404	0	1.874	1.0000	1.0000	3	redirected to https://olenepal.org/our-stories/index.php/archives/2658	http://planet.laptop.org/
+2026-09-21T22:57:16.590	http://del.icio.us/tag/mysql+python	0	0	0.306	1.0000	1.0000	3	URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')); redirected to http://del.icio.us/tag/mysql+python	http://mysql-python.blogspot.com/
+2026-09-21T22:57:16.757	https://etc.ruricolist.com/	200	93787	0.781	1.0000	1.0000	3	redirected to https://web.archive.org/web/20230526172708/https://etc.ruricolist.com/; already crawled	http://planet.lisp.org/
+2026-09-21T22:57:16.803	https://momjian.us/main/blogs/pgblog/2026.html	200	37471	0.263	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:16.832	https://jarn.com/	200	20676	0.401	1.0000	1.0000	3		http://limi.net/
+2026-09-21T22:57:16.832	https://userstyles.org/styles/163429/leipzig-for-lichess	200	875237	0.475	1.0000	1.0000	3		http://gbtami.github.io/
+2026-09-21T22:57:16.838	https://jimmycai.com/	200	36493	0.345	1.0000	1.0000	3	redirected to https://cai.im/	https://www.andreagrandi.it/
+2026-09-21T22:57:16.839	https://www.rdkit.org/docs/source/rdkit.DataStructs.cDataStructs.html	200	130358	0.560	1.0000	1.0000	3		http://www.dalkescientific.com/writings/diary/
+2026-09-21T22:57:16.923	https://nuclia.com/	200	199446	0.439	1.0000	1.0000	3	redirected to https://www.progress.com/agentic-rag	http://limi.net/
+2026-09-21T22:57:16.960	https://www.enterprisedb.com/blog	200	100087	0.146	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:16.995	https://dialpad.com/	200	329465	0.481	1.0000	1.0000	3	redirected to https://www.dialpad.com/	http://limi.net/
+2026-09-21T22:57:17.013	https://www.mozilla.com/	200	46962	0.519	1.0000	1.0000	3	redirected to https://www.firefox.com/; already crawled	http://limi.net/
+2026-09-21T22:57:17.019	https://thebuild.com/blog/all-your-gucs-in-a-row-max_pred_locks_per_page-and-max_pred_locks_per_relation/	200	19351	0.454	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.034	https://talkingpostgres.com/episodes/25-years-of-contributing-to-postgres-with-peter-eisentraut	200	66772	0.164	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.078	http://www.macports.org/	200	9544	0.727	1.0000	1.0000	3	redirected to https://www.macports.org/	http://mysql-python.blogspot.com/
+2026-09-21T22:57:17.109	http://www.pgexperts.com/	200	20634	0.344	1.0000	1.0000	3	redirected to https://pgexperts.com/	http://planet.postgresql.org/
+2026-09-21T22:57:17.124	https://about.me/andre.roberge	0	0	5.045	1.0000	1.0000	3	URLError(ConnectionRefusedError(111, 'Connection refused'))	https://reeborg.ca/index_en.html
+2026-09-21T22:57:17.243	https://www.hackinscience.org/	200	12852	0.741	1.0000	1.0000	3	redirected to https://genepy.org/	https://aroberge.blogspot.com/
+2026-09-21T22:57:17.293	https://vonng.com/en/pg/pg-nls/	200	65087	0.161	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.307	https://clickhouse.com/blog/postgres-week-in-the-netherlands-pgday-lowlands-percona-live-2026	200	255954	0.180	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.315	https://markwkm.blogspot.com/2026/09/sizing-oltp-tpc-e-like-workload-part-1.html	200	18603	0.178	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.316	http://lists.qt-project.org/mailman/listinfo/pyside	0	0	10.071	1.0000	1.0000	2	URLError(TimeoutError('timed out'))	https://wiki.qt.io/Qt_for_Python
+2026-09-21T22:57:17.348	https://postgres-contrib.org/post/97/	200	5981	0.302	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.370	https://www.pgblr.in/	200	159158	0.265	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.380	https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL153534/	200	594593	1.291	1.0000	1.0000	3	redirected to https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL153534	http://www.dalkescientific.com/writings/diary/
+2026-09-21T22:57:17.388	https://www.cheminfo.org/wikipedia/	200	606	0.884	1.0000	1.0000	3	redirected to https://wikipedia.cheminfo.org/	http://www.dalkescientific.com/writings/diary/
+2026-09-21T22:57:17.452	https://www.pgedge.com/blog/looking-forward-to-postgres-19-epilogue	200	227209	0.290	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.481	https://www.rdkit.org/docs/source/rdkit.DataStructs.cDataStructs.html?highlight=explicitbitvect	200	130358	0.577	1.0000	1.0000	3		http://www.dalkescientific.com/writings/diary/
+2026-09-21T22:57:17.515	https://pganalyze.com/blog/postgres-monitoring-for-sql-server-dbas	200	97793	0.253	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.524	https://vyruss.org/blog/postgresql-commitfest-metrics-pgconfdev-2026-part-one.html	200	19149	0.374	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.578	https://cloomba.com/c/postgresedi	200	166429	0.426	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.680	https://vvka-141.github.io/pgmi/articles/	200	10616	0.139	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.733	http://www.pychess.org/	200	590771	1.115	1.0000	1.0000	3	redirected to https://www.pychess.org/	http://gbtami.github.io/
+2026-09-21T22:57:17.735	https://ardentperf.com/2026/09/15/agents-gone-awry-on-postgres-sboms-start-over/	200	134198	0.211	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.772	https://fljd.in/en/2026/09/16/inspecting-a-catalog-with-pg_migrate/	200	27880	0.151	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.779	http://nklein.com/feed/	200	0	3.482	1.0000	1.0000	3	not html: application/rss+xml	http://planet.lisp.org/
+2026-09-21T22:57:17.870	http://nklein.com/	200	62209	2.634	1.0000	1.0000	3	redirected to https://nklein.com/	http://planet.lisp.org/
+2026-09-21T22:57:17.875	http://mariadb.org/	200	145954	1.389	1.0000	1.0000	3	redirected to https://mariadb.org/	http://mysql-python.blogspot.com/
+2026-09-21T22:57:17.879	https://exobench.ai/	200	57041	0.207	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.890	https://theartofpostgresql.com/lab/	200	261	0.179	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.905	https://2026.pgconf.dev/	200	43054	0.150	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:17.939	https://www.shubhamjha.com/	200	63533	1.640	1.0000	1.0000	3		http://planet.sympy.org/
+2026-09-21T22:57:17.946	http://ikiwiki.info/	200	5031	0.075	1.0000	1.0000	3		https://anarc.at/tag/python-planet/
+2026-09-21T22:57:17.968	http://www.postgis.net/	200	52880	0.205	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:18.016	https://wiki.sugarlabs.org/go/Sugarizer_Saint-Ouen_deployment	200	71696	5.955	1.0000	1.0000	3		http://planet.laptop.org/
+2026-09-21T22:57:18.023	https://fenicsproject.org/	200	6818	0.106	1.0000	1.0000	3		http://andy.terrel.us/
+2026-09-21T22:57:18.034	https://andreas.scherbaum.la/post/2026-09-17_prague-postgresql-meetup-april-2026-edition/	200	34401	0.472	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:18.041	http://www.cybertec.at/	403	0	0.231	1.0000	1.0000	3	access denied; redirected to https://www.cybertec-postgresql.com/	http://planet.postgresql.org/
+2026-09-21T22:57:18.055	https://www.ebi.ac.uk/chembl/compound_report_card/CHEMBL440060/	200	595535	1.248	1.0000	1.0000	3	redirected to https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL440060	http://www.dalkescientific.com/writings/diary/
+2026-09-21T22:57:18.097	https://postgres.scot/	200	4942	0.338	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:18.108	https://stormatics.tech/	200	210363	0.308	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:18.166	https://www.crunchydata.com/	200	151412	0.374	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:18.186	https://www.commandprompt.com/blog/pgcolumnar-10-alpha4-released/	200	42383	0.377	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:18.257	https://boringsql.com/posts/row-locks-on-the-page/	200	83935	0.632	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:18.258	https://andreas.scherbaum.la/about/	200	11244	0.370	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:18.354	https://markdownlivepreview.com/blog	404	0	0.128	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:18.365	https://percona.community/blog/2026/09/16/vibe-coding-a-database-lab/	200	60069	0.144	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:18.439	https://www.electronicsweekly.com/blogs/mannerisms/memory-mannerisms/micron-shipping-pcm-to-nokia-2012-12/	200	206107	1.303	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:18.448	https://planet.oursqlcommunity.org/?source=villagesql	200	257451	0.193	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:18.498	https://www.commandprompt.com/rss/author/jd/category/postgres/	200	39533	0.368	1.0000	1.0000	3	not html: application/rss+xml	http://planet.postgresql.org/
+2026-09-21T22:57:18.498	https://songlibing.github.io/english/	200	15680	0.211	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:18.499	https://developers.akamai.com/	403	0	0.382	1.0000	1.0000	3	access denied	https://www.linode.com/?r=f44080aab83cbedcd4d36d0668cb940712639882
+2026-09-21T22:57:18.500	https://www.percona.com/blog/vector-distance-vector-similarity-search-in-percona-server-for-mysql/	200	327680	0.231	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:18.512	https://bersace.cae.li/	200	20824	0.529	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:18.568	https://ronaldbradford.com/blog/2026-09-20-getting-vector-capabilities-in-mysql-8-4-using-villagesql/	200	500987	0.407	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:18.596	https://villagesql.com/blog/village-news-mysql-news-events-21-september-2026/	200	44803	0.333	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:18.598	https://docs.percona.com/percona-operator-for-mysql/1.2.0/ReleaseNotes/Kubernetes-Operator-for-PS-RN1.2.0.html	200	187986	0.351	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:18.642	https://boringsql.com/	200	30338	0.489	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:18.643	https://www.snowflake.com/content/snowflake-site/global/en/blog/engineering/postgresql-19-release-delay-feature-reverts	200	532791	1.122	1.0000	1.0000	3	redirected to https://www.snowflake.com/en/blog/engineering/postgresql-19-release-delay-feature-reverts/	http://planet.postgresql.org/
+2026-09-21T22:57:18.747	http://www.dalibo.com/	200	15571	0.659	1.0000	1.0000	3	redirected to https://www.dalibo.com/	http://planet.postgresql.org/
+2026-09-21T22:57:18.840	https://training.akamai.com/learn	200	18058	0.206	1.0000	1.0000	3		https://www.linode.com/?r=f44080aab83cbedcd4d36d0668cb940712639882
+2026-09-21T22:57:18.851	https://www.snowflake.com/en/engineering-blog/	200	556081	0.461	1.0000	1.0000	3	redirected to https://www.snowflake.com/en/blog/engineering/	http://planet.postgresql.org/
+2026-09-21T22:57:18.904	https://www.continuent.com/blog/	200	107189	0.236	1.0000	1.0000	3	redirected to https://www.continuent.com/resources/blog	http://www.planetmysql.org/
+2026-09-21T22:57:18.951	https://mysql-ninjas.blogspot.com/	200	154324	0.298	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:19.021	http://www.aosabook.org/en/	200	26181	0.170	1.0000	1.0000	3	redirected to https://aosabook.org/en/	http://pybites.blogspot.com/
+2026-09-21T22:57:19.066	https://seedfa.st/blog/pgbouncer-transaction-mode	200	479027	0.292	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:19.093	https://miabajic.dev/	200	31381	0.136	1.0000	1.0000	3		https://antocuni.eu/
+2026-09-21T22:57:19.215	https://www.anaconda.com/	200	460827	0.187	1.0000	1.0000	3		https://antocuni.eu/
+2026-09-21T22:57:19.321	http://benjamin-peterson.org/	200	101	0.139	1.0000	1.0000	3	redirected to http://www.benjamin-peterson.org/	http://pybites.blogspot.com/
+2026-09-21T22:57:19.356	http://activestate.com/	200	367489	0.334	1.0000	1.0000	3	redirected to https://www.activestate.com/	http://pybites.blogspot.com/
+2026-09-21T22:57:19.386	https://codeforgeek.com/nodejs-mysql-select-unique/	200	204781	1.195	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:19.424	http://codespeak.net/pipermail/py-dev/2011q3/001833.html	0	0	0.342	1.0000	1.0000	3	URLError(OSError(101, 'Network is unreachable')); redirected to http://codespeak.net/pipermail/py-dev/2011q3/001833.html	http://pybites.blogspot.com/
+2026-09-21T22:57:19.424	https://squidfunk.github.io/mkdocs-material/	200	82375	0.171	1.0000	1.0000	3		https://antocuni.eu/
+2026-09-21T22:57:19.488	https://codeforgeek.com/	200	180579	0.394	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:19.515	https://anotherboringtechblog.com/	200	160096	0.749	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:19.522	https://seedfa.st/blog	200	347904	0.325	1.0000	1.0000	3		http://planet.postgresql.org/
+2026-09-21T22:57:19.546	http://pytest.org/	200	31975	0.545	1.0000	1.0000	3	redirected to https://docs.pytest.org/en/stable/	http://pybites.blogspot.com/
+2026-09-21T22:57:19.572	https://www.odbms.org/blog/2026/09/traceability-matters-gopal-shankar-on-opening-up-mysql-development-for-the-next-decade/	200	64450	0.858	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:19.593	https://open.spotify.com/episode/52oMn2JxF9JlwwE0tx1vjF?si=xGGoEcvUQBK2SH2XLV2EOw	200	186916	0.606	1.0000	1.0000	3		https://antocuni.eu/
+2026-09-21T22:57:19.653	http://www.lulu.com/shop/amy-brown-and-greg-wilson/the-architecture-of-open-source-applications-volume-ii/paperback/product-20111008.html	200	185713	0.762	1.0000	1.0000	3	redirected to https://www.lulu.com/shop/amy-brown-and-greg-wilson/the-architecture-of-open-source-applications-volume-ii/paperback/product-20111008.html	http://pybites.blogspot.com/
+2026-09-21T22:57:19.735	http://blog.devart.com/	200	291019	0.927	1.0000	1.0000	3	redirected to https://www.devart.com/blog/	http://www.planetmysql.org/
+2026-09-21T22:57:19.775	https://metacpan.org/release/Moose/	200	3038	0.265	1.0000	1.0000	3		http://planet.perl.org/
+2026-09-21T22:57:19.816	https://techdocs.akamai.com/cloud-computing/docs/welcome	200	3236341	0.876	1.0000	1.0000	3		https://www.linode.com/?r=f44080aab83cbedcd4d36d0668cb940712639882
+2026-09-21T22:57:19.827	https://www.refactorcoach.com/	0	0	5.035	1.0000	1.0000	3	URLError(ConnectionRefusedError(111, 'Connection refused'))	https://scriptertorust.com/
+2026-09-21T22:57:19.901	http://www.perlfoundation.org/	200	46294	0.225	1.0000	1.0000	3	redirected to https://perlfoundation.org/	http://planet.perl.org/
+2026-09-21T22:57:19.916	https://www.perl.com/article/herodevs-donates-10-000-to-the-perl-and-raku-foundation/	200	25063	0.110	1.0000	1.0000	3		http://planet.perl.org/
+2026-09-21T22:57:19.943	http://www.red-sweater.com/marsedit/	200	12809	0.183	1.0000	1.0000	3	redirected to https://redsweater.com/marsedit/	http://bitofcheese.blogspot.com/
+2026-09-21T22:57:19.988	http://merlinux.eu/	200	3273	0.624	1.0000	1.0000	3	redirected to https://merlinux.eu/	http://pybites.blogspot.com/
+2026-09-21T22:57:20.092	http://jfg-mysql.blogspot.com/	200	342973	1.388	1.0000	1.0000	3	redirected to https://jfg-mysql.blogspot.com/	http://www.planetmysql.org/
+2026-09-21T22:57:20.164	http://dasini.net/blog/en/	200	505014	1.320	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:20.185	http://www.openoffice.org/product/impress.html	200	10214	0.248	1.0000	1.0000	3		http://bitofcheese.blogspot.com/
+2026-09-21T22:57:20.210	https://ep2025.europython.eu/	200	174431	0.676	1.0000	1.0000	3		https://antocuni.eu/
+2026-09-21T22:57:20.289	http://caseman.googlecode.com/svn/trunk/grease/grease/pygletsys.py	404	0	0.273	1.0000	1.0000	3		http://eatthedots.blogspot.com/
+2026-09-21T22:57:20.321	https://pycon.it/	200	565677	0.837	1.0000	1.0000	3	redirected to https://2026.pycon.it/en	https://antocuni.eu/
+2026-09-21T22:57:20.344	http://www.fromdual.ch/blog	200	20975	1.018	1.0000	1.0000	3	redirected to https://www.fromdual.ch/blog/	http://www.planetmysql.org/
+2026-09-21T22:57:20.385	https://programminghistorian.org/	200	14526	0.124	1.0000	1.0000	3		https://www.codingthepast.com/
+2026-09-21T22:57:20.422	https://keys.openpgp.org/vks/v1/by-fingerprint/83CEA0561163E4D22D4E21899B8A4019DBEB07AF	200	23640	0.454	1.0000	1.0000	3	not html: application/pgp-keys	https://geeksocket.in/tags/python/
+2026-09-21T22:57:20.466	https://brunoponne.com/	200	16505	0.090	1.0000	1.0000	3		https://www.codingthepast.com/
+2026-09-21T22:57:20.508	https://rweekly.org/	200	320530	0.201	1.0000	1.0000	3		https://www.codingthepast.com/
+2026-09-21T22:57:20.524	http://lambda-the-ultimate.org/	200	27290	0.466	1.0000	1.0000	3		http://eatthedots.blogspot.com/
+2026-09-21T22:57:20.544	https://djangui.herokuapp.com/	404	0	0.109	1.0000	1.0000	3		http://pyinformatics.blogspot.com/
+2026-09-21T22:57:20.556	http://dbahire.com/	200	42377	1.131	1.0000	1.0000	3		http://www.planetmysql.org/
+2026-09-21T22:57:20.589	http://www.python-turbomail.org/	0	0	0.006	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://chris-miles-writes-python.blogspot.com/
+2026-09-21T22:57:20.602	https://www.subscribepage.com/geeksocket-subscription	200	21185	0.465	1.0000	1.0000	3		https://geeksocket.in/tags/python/
+2026-09-21T22:57:20.656	http://www.planetpostgresql.org/	0	0	0.265	1.0000	1.0000	3	URLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetpostgresql.org'. (_ssl.c:1000)")); redirected to http://www.planetpostgresql.org/	http://eatthedots.blogspot.com/
+2026-09-21T22:57:20.755	https://www.r-bloggers.com/	200	85046	0.435	1.0000	1.0000	3		https://www.codingthepast.com/
+2026-09-21T22:57:20.772	http://galaxyproject.org/	200	32765	0.203	1.0000	1.0000	3	redirected to https://galaxyproject.org/	http://pyinformatics.blogspot.com/
+2026-09-21T22:57:20.904	http://www.sqlalchemy.org/	200	19126	0.162	1.0000	1.0000	3	redirected to https://www.sqlalchemy.org/	http://chris-miles-writes-python.blogspot.com/
+2026-09-21T22:57:20.914	http://www.pyweek.org/	200	12269	0.438	1.0000	1.0000	3	redirected to https://pyweek.org/	http://eatthedots.blogspot.com/
+2026-09-21T22:57:21.019	https://python-bloggers.com/	200	44360	0.397	1.0000	1.0000	3		https://www.codingthepast.com/
+2026-09-21T22:57:21.033	http://pygamesf.org/~casey/planar/doc/	0	0	0.283	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://eatthedots.blogspot.com/
+2026-09-21T22:57:21.059	https://toots.dgplug.org/@bhavin192	200	44351	0.725	1.0000	1.0000	3		https://geeksocket.in/tags/python/
+2026-09-21T22:57:21.099	http://bruynooghe.blogspot.com/2009/11/new-python-system-information-release.html	404	0	0.250	1.0000	1.0000	3		http://chris-miles-writes-python.blogspot.com/
+2026-09-21T22:57:21.114	https://www.ohloh.net/accounts/14925?ref=Detailed	0	0	0.038	1.0000	1.0000	3	URLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1000)'))	http://lipyrary.blogspot.com/
+2026-09-21T22:57:21.117	http://mercurial.selenic.com/	404	0	0.240	1.0000	1.0000	3		http://bitofcheese.blogspot.com/
+2026-09-21T22:57:21.149	https://carimbo.run/	0	0	0.005	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://planet.python.org.br/
+2026-09-21T22:57:21.165	http://pygamesf.org/~casey/grease/doc/	0	0	0.257	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://eatthedots.blogspot.com/
+2026-09-21T22:57:21.213	https://wooey.herokuapp.com/	404	0	0.482	1.0000	1.0000	3		http://pyinformatics.blogspot.com/
+2026-09-21T22:57:21.342	https://nullonerror.org/	200	14277	0.137	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:21.349	https://www.fiverr.com/yuugenpixie	403	0	0.111	1.0000	1.0000	3	access denied	http://planet.python.org.br/
+2026-09-21T22:57:21.379	https://playwright.dev/	200	20699	0.083	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:21.467	http://www.atomenabled.org/	301	0	0.903	1.0000	1.0000	3	redirected to http://www.atomenabled.org/	http://bitofcheese.blogspot.com/
+2026-09-21T22:57:21.511	https://jna.dev.java.net/	0	0	10.085	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	https://sourceware.org/libffi/
+2026-09-21T22:57:21.532	https://sqlite.org/	200	8886	0.163	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:21.647	https://go.dev/	200	64185	0.275	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:21.651	http://www.crummy.com/software/BeautifulSoup/doc/	200	381071	1.237	1.0000	1.0000	3	redirected to https://www.crummy.com/software/BeautifulSoup/bs4/doc/	http://bitofcheese.blogspot.com/
+2026-09-21T22:57:21.660	http://developer.berlios.de/projects/smcfreeimage/	404	0	0.555	1.0000	1.0000	3	redirected to https://berlios.de/projects/smcfreeimage/	http://lipyrary.blogspot.com/
+2026-09-21T22:57:21.690	http://wiki.pylonshq.com/display/pylonsprojects/Pylons+Project+Templates	0	0	0.006	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://chris-miles-writes-python.blogspot.com/
+2026-09-21T22:57:21.720	https://takealook.pro/4MP	0	0	0.006	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://planet.python.org.br/
+2026-09-21T22:57:21.795	https://bunny.net/	200	823728	0.137	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:21.825	http://kedar.nitty-witty.com/blog/category/mysql	200	59135	2.264	1.0000	1.0000	3	redirected to https://kedar.nitty-witty.com/blog/category/mysql	http://www.planetmysql.org/
+2026-09-21T22:57:21.915	http://www.olpclearningclub.org/	200	602729	5.036	1.0000	1.0000	3	redirected to https://www.ahodhandyman.com/	http://planet.laptop.org/
+2026-09-21T22:57:21.922	https://www.raspberrypi.com/	403	0	0.114	1.0000	1.0000	3	access denied	http://planet.python.org.br/
+2026-09-21T22:57:21.931	http://pylonshq.com/	200	46382	0.901	1.0000	1.0000	3	redirected to https://pylonshq.com/	http://chris-miles-writes-python.blogspot.com/
+2026-09-21T22:57:21.977	https://www.papertrail.com/	200	121907	0.156	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:22.008	https://www.xing.com/profile/Christian_Heimes	200	266879	0.814	1.0000	1.0000	3		http://lipyrary.blogspot.com/
+2026-09-21T22:57:22.033	http://www.littlecms.com/	200	44196	0.643	1.0000	1.0000	3	redirected to https://www.littlecms.com/	http://lipyrary.blogspot.com/
+2026-09-21T22:57:22.048	https://ultratech.software/	200	17926	0.127	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:22.076	http://www.lfd.uci.edu/~gohlke/pythonlibs/	200	62559	0.689	1.0000	1.0000	3	redirected to https://www.cgohlke.com/	http://lipyrary.blogspot.com/
+2026-09-21T22:57:22.165	https://asdf-vm.com/	200	32459	0.095	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:22.189	https://www.lua.org/	200	2036	0.365	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:22.218	http://today.java.net/pub/a/today/2009/05/21/zero-and-shark-openjdk-port.html	0	0	10.510	1.0000	1.0000	3	TimeoutError('The read operation timed out'); redirected to http://today.java.net/pub/a/today/2009/05/21/zero-and-shark-openjdk-port.html	https://sourceware.org/libffi/
+2026-09-21T22:57:22.382	http://www.raku.org/	200	31429	1.639	1.0000	1.0000	3	redirected to https://raku.org/	http://planet.perl.org/
+2026-09-21T22:57:22.489	http://www.semantics.de/	200	26439	0.837	1.0000	1.0000	3	redirected to https://www.semantics.de/	http://lipyrary.blogspot.com/
+2026-09-21T22:57:22.764	http://www.lighthouse3d.com/opengl/terrain/index.php3?particle	200	9336	1.107	1.0000	1.0000	3	redirected to https://www.lighthouse3d.com/opengl/terrain/index.php3?particle	http://bitofcheese.blogspot.com/
+2026-09-21T22:57:22.925	http://www.odbms.org/blog	200	330649	2.730	1.0000	1.0000	3	redirected to https://www.odbms.org/blog/	http://www.planetmysql.org/
+2026-09-21T22:57:23.001	https://william-os4y.livejournal.com/	0	0	20.107	1.0000	1.0000	2	URLError(TimeoutError('timed out'))	https://planetpython.org/
+2026-09-21T22:57:23.120	http://www.olpclearningclub.org/beliebte-krypto-wahrung-blockchain-projekte/	200	602729	5.689	1.0000	1.0000	3	redirected to https://www.ahodhandyman.com/; already crawled	http://planet.laptop.org/
+2026-09-21T22:57:23.128	http://www.olpclearningclub.org/kryptowaehrungen-fuer-zahlungen/	200	602729	5.838	1.0000	1.0000	3	redirected to https://www.ahodhandyman.com/; already crawled	http://planet.laptop.org/
+2026-09-21T22:57:23.434	https://kagi.com/	200	62751	0.193	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:23.536	https://zed.dev/	200	2681706	0.327	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:23.553	https://orbstack.dev/	200	58866	0.185	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:23.666	https://www.usebruno.com/	200	612600	0.339	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:23.828	http://www.olpclearningclub.org/hallo-welt/	200	602729	5.488	1.0000	1.0000	3	redirected to https://www.ahodhandyman.com/; already crawled	http://planet.laptop.org/
+2026-09-21T22:57:24.122	https://bear.app/	200	216996	0.712	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:24.176	https://redis.io/docs/data-types/sorted-sets/	200	1220	0.189	1.0000	1.0000	3	redirected to https://redis.io/docs/latest/data-types/sorted-sets/	http://planet.python.org.br/
+2026-09-21T22:57:24.432	http://www.olpclearningclub.org/was-ist-der-wahre-wert-von-krypto-waehrungen/	200	602729	5.858	1.0000	1.0000	3	redirected to https://www.ahodhandyman.com/; already crawled	http://planet.laptop.org/
+2026-09-21T22:57:24.638	http://eepurl.com/ikypNP	200	534327	3.943	1.0000	1.0000	3	redirected to https://mailchimp.com/solutions/email-marketing-platform/?utm_source=freemium_newsletter&utm_medium=email&utm_campaign=referral_marketing&aid=ae95cc65e2d79bab1a22dba39&afl=1	https://www.codingthepast.com/
+2026-09-21T22:57:24.726	http://www.olpclearningclub.org/krypto-waehrung-und-der-bitcoin-profit/	200	602729	5.315	1.0000	1.0000	3	redirected to https://www.ahodhandyman.com/; already crawled	http://planet.laptop.org/
+2026-09-21T22:57:24.894	http://www.hatena.com/	200	652915	3.270	1.0000	1.0000	3	redirected to https://www.hatena.ne.jp/	http://bitofcheese.blogspot.com/
+2026-09-21T22:57:24.955	http://www.naturechina.com/	200	311528	17.812	1.0000	1.0000	1		https://www.nature.com/
+2026-09-21T22:57:24.994	https://godbolt.org/	200	118192	0.139	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:25.094	https://fueled.com/	200	265098	0.282	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:25.418	http://www.olpclearningclub.org/alle-kryptowaehrungen-erklaert/	200	602729	5.098	1.0000	1.0000	3	redirected to https://www.ahodhandyman.com/; already crawled	http://planet.laptop.org/
+2026-09-21T22:57:25.751	https://www.jsonrpc.org/	200	4917	0.103	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:33.332	https://help.sugarlabs.org/en/my_settings.html	0	0	10.029	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://planet.laptop.org/
+2026-09-21T22:57:33.561	https://webassembly.org/	200	5543	0.111	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:34.179	http://toscawidgets.org/	200	240313	6.470	1.0000	1.0000	3	redirected to https://www.cniptgeoagiubai.ro/	http://chris-miles-writes-python.blogspot.com/
+2026-09-21T22:57:38.051	https://www.ir.akamai.com/	0	0	10.072	1.0000	1.0000	3	TimeoutError('The read operation timed out')	https://www.linode.com/?r=f44080aab83cbedcd4d36d0668cb940712639882
+2026-09-21T22:57:38.410	https://wasmtime.dev/	200	11622	0.093	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:38.591	http://openjdk.org/	200	12601	18.264	1.0000	1.0000	3	redirected to https://openjdk.org/	https://sourceware.org/libffi/
+2026-09-21T22:57:40.659	http://chrismiles.info/	0	0	10.024	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://chris-miles-writes-python.blogspot.com/
+2026-09-21T22:57:41.060	http://www.taverna.org.uk/introduction/taverna-in-use/biology/	0	0	10.319	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://pyinformatics.blogspot.com/
+2026-09-21T22:57:41.220	https://kubernetes.io/	200	41608	0.338	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:41.639	https://gvisor.dev/	200	22792	0.215	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:52.711	https://cananian.livejournal.com/data/rss?tag=olpc	0	0	20.031	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://planet.laptop.org/
+2026-09-21T22:57:52.713	http://dgh.livejournal.com/data/rss?tag=olpc	0	0	20.034	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://planet.laptop.org/
+2026-09-21T22:57:52.740	https://www.starlette.io/	0	0	0.008	1.0000	1.0000	3	URLError(gaierror(-2, 'Name or service not known'))	http://planet.python.org.br/
+2026-09-21T22:57:53.025	https://wasi.dev/	200	19006	0.092	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:53.486	https://icculus.org/physfs/	200	9139	0.319	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:53.538	https://cananian.livejournal.com/	0	0	20.023	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://planet.laptop.org/
+2026-09-21T22:57:53.615	http://dgh.livejournal.com/	0	0	20.025	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://planet.laptop.org/
+2026-09-21T22:57:53.795	https://conan.io/	200	29761	0.104	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:53.888	http://enlivend.livejournal.com/data/atom	0	0	20.022	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://planet.lisp.org/
+2026-09-21T22:57:54.112	https://developer.chrome.com/blog/wasm-debugging-2020/	200	152869	0.285	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:54.127	https://www.stripclubconcierge.com/	200	76124	0.108	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:54.199	https://fare.livejournal.com/data/atom	0	0	20.035	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://planet.lisp.org/
+2026-09-21T22:57:54.469	https://kdheepak.com/panvimdoc/	200	60741	0.130	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:54.791	http://enlivend.livejournal.com/	0	0	20.022	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://planet.lisp.org/
+2026-09-21T22:57:55.043	https://fare.livejournal.com/	0	0	20.021	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://planet.lisp.org/
+2026-09-21T22:57:55.453	https://paulohrpinheiro.xyz/	0	0	0.268	1.0000	1.0000	3	URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)'))	http://planet.python.org.br/
+2026-09-21T22:57:55.684	https://pythonclub.com.br/	200	36415	0.087	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:56.065	http://www.mysqlconf.com/	0	0	20.044	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://mysql-python.blogspot.com/
+2026-09-21T22:57:56.272	https://eduardoklosowski.github.io/blog/	200	24244	0.106	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:57:56.498	https://mayconbalves.com.br/3-algoritmos-para-voc%C3%AA-sua-l%C3%B3gica/	404	0	0.359	1.0000	1.0000	3	redirected to https://www.mayconbalves.com.br/3-algoritmos-para-voc%C3%AA-sua-l%C3%B3gica/	http://planet.python.org.br/
+2026-09-21T22:57:56.754	https://neovim.io/doc/user/lsp.html	200	866	0.105	1.0000	1.0000	3		http://planet.python.org.br/
+2026-09-21T22:58:00.817	http://chrismiles.livejournal.com/	0	0	20.036	1.0000	1.0000	3	URLError(TimeoutError('timed out'))	http://chris-miles-writes-python.blogspot.com/
+2026-09-21T22:58:01.419	https://luarocks.org/modules/neovim/nvim-lspconfig	200	12490	0.316	1.0000	1.0000	3		http://planet.python.org.br/
+# pages crawled	1000
+# requests made	1184
+# robots.txt fetched	1210
+# total bytes	176556029
+# total seconds	75.9
+# pages per second	13.18
+# requests per second	15.61
+# hosts reached	1098
+# superdomains reached	1036
+# 404 not found	36
+# 403 forbidden	30
+# 401 unauthorized	0
+# 429 or 503 rate limited	4
+# no response, transport failure	68
+# blocked by robots.txt	348
+# superdomain backoffs	4
+# thread seconds fetching	1241.8
+# thread seconds parsing	64.4
+# frontier queued at exit	49145
+# urls seen	51057
+# urls dropped, frontier full	0
+# frontier stalls	3
+# page budget	1000
+# threads	48
+# min delay per host	1.0
+# max depth	10
+# user agent	CS6913-Crawler/0.1
+# status 0	68
+# status 200	1042
+# status 301	1
+# status 302	1
+# status 400	1
+# status 403	30
+# status 404	36
+# status 429	3
+# status 502	1
+# status 503	1

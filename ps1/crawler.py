@@ -345,7 +345,7 @@ class Crawler:
     def __init__(
         self,
         *,
-        pages=1000,
+        pages=None,
         threads=16,
         delay=1.0,
         timeout=10.0,
@@ -354,7 +354,7 @@ class Crawler:
         log_path="crawl.log",
         progress_every=200,
     ):
-        self.pages = pages
+        self.pages = pages or math.inf
         self.threads = threads
         self.delay = delay
         self.timeout = timeout
@@ -510,7 +510,7 @@ class Crawler:
 
     def run(self, seeds) -> dict:
         """
-        Crawl until the page budget is met or the frontier runs dry
+        Crawl until the page budget is met, the frontier runs dry, or Ctrl+C
 
         One log line per request, then a summary block of "# label<TAB>value"
         lines at the end of the log. Everything a reader has to skip starts
@@ -581,7 +581,7 @@ class Crawler:
                 ("urls seen", len(self.seen)),
                 ("urls dropped, frontier full", self.dropped),
                 ("frontier stalls", self.stalls),
-                ("page budget", self.pages),
+                ("page budget", pages_label(self.pages)),
                 ("threads", self.threads),
                 ("min delay per host", self.delay),
                 ("max depth", self.max_depth),
@@ -845,9 +845,8 @@ def search(query: str, count: int, timeout: float) -> list[str]:
 @click.option(
     "--pages",
     type=click.IntRange(min=1),
-    default=1000,
-    show_default=True,
-    help="Stop after crawling this many pages.",
+    default=None,
+    help="Stop after crawling this many pages. Without it, crawl until Ctrl+C.",
 )
 @click.option(
     "--threads",
@@ -954,7 +953,7 @@ def main(
             )
 
     click.echo(
-        f"{len(seeds)} seed(s), {threads} threads, {pages} page budget", err=True
+        f"{len(seeds)} seed(s), {threads} threads, {pages_label(pages)} page budget", err=True
     )
     for url in seeds[:10]:
         click.echo(
@@ -1008,6 +1007,13 @@ def show_summary(stats: dict, log_file: str):
     click.echo("top superdomains:", err=True)
     for name, count in stats["top_superdomains"]:
         click.echo(f"  {count:>5}  {name}", err=True)
+
+
+def pages_label(pages) -> str:
+    """
+    A page budget as printed: the number, or "no" when the crawl runs until Ctrl+C
+    """
+    return "no" if pages in (None, math.inf) else str(pages)
 
 
 def row(label, value):

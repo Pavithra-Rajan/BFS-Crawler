@@ -1,0 +1,261 @@
+================================================================
+CS 6913, Fall 2026: Assignment #1
+How the crawler works
+================================================================
+
+HOW IT WORKS
+
+A crawl is one scheduler thread and a pool of fetchers. The
+scheduler owns every mutable structure: the frontier, the seen
+set, the per-host and per-domain counters, the politeness clock and
+the log. A fetcher only ever takes one URL, checks robots.txt,
+downloads it, pulls the links out, and hands back a record of what
+happened. The thread boundary is therefore crossed exactly twice
+per URL, and the program needs no locks except one around the
+robots.txt cache, the single structure workers write to.
+
+Its loop repeats three steps:
+  - give a URL to every idle thread
+  - wait for whichever download finishes first
+  - log that result, charge the page to its host and domain, and
+    offer its links to the frontier
+
+
+The frontier and the traversal order
+
+The frontier is a binary heap of
+(-(page priority + domain priority), counter, depth, url, parent)
+
+and that tuple is the whole scheduling policy, compared left to
+right:
+
+  - the score is compared first, and stored negated, so the
+    highest-scoring URL in the frontier comes out next: the
+    traversal is best-first
+  - the counter is a rising integer, which breaks ties in insertion
+    order and keeps the comparison from ever reaching the URL
+    strings
+  - depth rides along but is never compared: it bounds the crawl
+    through --max-depth and is logged, but does not order the
+    frontier
+
+page priority   = 1 / lg(2 + requests to this exact host)
+domain priority = 1 / lg(2 + requests to this registrable domain /
+                        distinct subdomains seen)
+
+Both fall as a site grows and neither reaches zero, so no part of
+the web starves. Dividing by the subdomain count is the point of
+the second term. Eg: 100 pages from one wikipedia.org host score 0.15,
+while the same 100 spread over 20 language wikis score 0.36, so a
+big site is pushed down as it grows but breadth inside it is
+rewarded. Registrable domains come from the public suffix list, so
+co.uk and github.io are handled correctly rather than by stripping
+labels.
+
+A URL is priced when it leaves the heap, not when it enters. One
+Wikipedia page contributes 300 links, all priced while Wikipedia
+had nothing crawled yet; without re-pricing all 300 would look
+maximally novel and be fetched back to back, which is what the
+priority function exists to prevent. If the recomputed score has
+fallen below what is now at the root, the entry is pushed back with
+its new key and the better entry taken instead.
+
+
+Politeness and robot exclusion
+
+One dictionary holds, per host and per registrable domain, the
+earliest time it may be asked for anything again. A host's
+next-allowed time is set when its URL is chosen, which also stops
+the same pass handing that host to a second thread, and set again
+on completion from the larger of the --delay floor and the site's
+own Crawl-delay.
+
+Politeness could be done by popping URLs off the heap until one
+turns up whose host is free, then pushing the rejected ones back.
+A host with 500 URLs queued and a second still to wait would cost
+500 pops and 500 pushes on every pass.
+
+Instead, a URL whose host is still inside its delay is parked:
+moved out of the heap into a list belonging to that host, with one
+(wake-up time, host) entry added to a second, much smaller heap.
+The first URL parked for a host creates both the list and that
+entry; later ones only join the list, so the 500th costs nothing
+extra. Each pass the scheduler looks at the earliest wake-up time
+only, and once it has passed, that host's whole list goes back
+into the frontier in one go.
+
+A sleeping host therefore costs one timestamp check per pass
+rather than one look per queued URL.
+
+A 429 or 503 parks not just the host but the whole registrable
+domain for ten times the delay, since the sites that rate-limit are
+usually spread over many subdomains behind one limiter.
+
+Robots is one parsed robots.txt per origin, fetched once and cached
+for the life of the process. A 401 or 403 puts the origin
+off-limits, because the file itself is behind authentication, and
+so does a 5xx. A 404 or an unreachable host leaves the site open,
+because nothing expires from this cache and one dead socket should
+not blacklist a domain for the whole run. Forbidden URLs are never
+requested, so they never appear in the log, only in the statistics.
+
+
+Fetching and parsing
+
+Downloading never raises. A refused connection, a DNS failure, a
+timeout and a malformed URL all come back as the same kind of
+result record, so the log can record it and the crawl carries on.
+Content type is checked before the body is read, so a PDF wearing a
+.php extension costs headers only. The body is read in 64 KB chunks
+against two ceilings, five megabytes and three times the socket
+timeout, and one that hits either is truncated and marked, so a
+stream cannot hold a thread forever. Redirects are followed by a
+handler that records every hop.
+
+Parsing uses the standard library HTML parser and takes hrefs from
+<a> and <area>. Decoding tries the declared charset, then a <meta
+charset> in the first 4 KB of raw bytes, then UTF-8, then UTF-8
+with replacement. Relative links resolve against the URL the page
+actually came from after redirects, and a <base href> overrides
+that.
+
+
+Which URLs are followed
+
+Every link is put into one canonical form or rejected, and every
+structure holds only canonical strings, which is what makes "have I
+seen this?" meaningful. Canonicalizing lowercases scheme and host,
+drops the default port, credentials and fragment, collapses . and
+.. segments, and blanks a trailing index.html and about a dozen
+similar names so /a/index.html and /a/ are one URL. Query strings
+are kept, because they identify a different page.
+
+A URL is rejected if:
+
+  - the scheme is not http or https, or the host has no dot in it
+  - it ends in one of about ninety blacklisted extensions
+  - it contains "cgi"
+  - it is longer than 512 characters, is more than twelve path
+    segments deep, or repeats any one path segment three or more
+    times
+
+The last group tests shape rather than syntax: those are the shapes
+a spider trap has, and they are what stops an infinite loop.
+
+
+What counts, and what stops the crawl
+
+A request counts against the --pages budget only if it returned
+200, the type was text/html, and the landing page was not already
+fetched. A 404, a login wall, a non-HTML file and a redirect onto a
+known page are all logged and all visible in the statistics, but
+none spends the budget, which is why a run makes more requests than
+it keeps pages. The crawl stops when the budget is met, when
+frontier and in-flight work are both empty, or when requests reach
+four times the budget, the escape hatch that keeps an
+unsatisfiable crawl from grinding on. Ctrl-C is caught, so an
+interrupted crawl still closes its log and prints its summary.
+
+
+BUGS AND KNOWN LIMITATIONS
+
+ 1. One request at a time per host is not enforced. --delay
+    guarantees a minimum gap between the moments requests to a
+    host begin. It does not wait for one to finish before starting
+    the next, because nothing records which hosts currently have a
+    request open. So if a host's pages take longer to download
+    than the delay, requests to it overlap:
+
+        --delay 0.5, pages taking 1.5s to download
+          t=0.0  A starts                 next allowed 0.5
+          t=0.5  B starts, A still open   next allowed 1.0
+          t=1.0  C starts, A and B still open
+          t=1.5  A finishes
+
+    Three connections to one host at t=1.0. No two starts were
+    ever closer than 0.5s, so the host is not being asked for
+    pages faster than --delay allows, but it is being asked
+    concurrently. Under the default --delay 1.0 typical
+    sub-second pages finish before the clock expires, so this
+    takes a deliberately slow server to reproduce.
+
+ 2. The 500,000-entry frontier cap counts only the runnable heap,
+    not URLs parked in delay buckets, so the real ceiling is above
+    500,000. A dropped URL is also not marked seen, so it can be
+    offered and dropped again. It is a memory guard, not an
+    accounting figure, and it is reached in practice.
+
+ 3. Spider traps are detected only in the path. A trap living
+    entirely in the query string (?date=... on an infinite
+    calendar) is not caught. Conversely the 512-character and
+    twelve-segment limits can reject a few legitimate URLs.
+
+ 4. The "cgi" test matches the substring anywhere in the URL, so a
+    host such as chicgirl.example is also refused. So there are some
+    false positives.
+
+ 5. A redirected request is charged to the host and domain
+    requested, not the one it landed on, so a site reached only
+    through redirects accrues no priority cost under its own name.
+
+ 6. Nothing expires from the robots.txt cache: a site that answered
+    5xx when first consulted stays off-limits for the run, and one
+    whose robots.txt was unreachable stays open. Separately, a
+    robots-forbidden URL resets that host's next-allowed time to
+    zero, since no request was made, which clears the host half of
+    any rate-limit backoff early. The domain half, which is what
+    actually guards a multi-subdomain site, survives.
+
+ 7. The request count, and so the requests-per-second figure, omits
+    robots.txt fetches. Total traffic is requests plus robots
+    fetches.
+    Also, a response skipped on content type logs its size from
+    Content-Length, which reads 0 when the server sent none.
+
+ 8. Duplicate detection is by URL, not content. Two URLs serving
+    byte-identical pages with no redirect between them are both
+    crawled and both counted. No checksum or shingling.
+
+ 9. Frontier, seen set and counters are in memory and die with the
+    process, so a crawl cannot be resumed. But Keyboard Interrupts
+    end gracefully.
+
+
+RESOURCES USED
+
+
+From PyPI, with the versions developed against:
+
+  click 8.5.0        command-line parsing
+  tldextract 5.3.2   the public suffix list, for the registrable
+                     domain of a host; named by the assignment.
+                     Configured with private suffixes included, so
+                     a github.io or s3.amazonaws.com site counts as
+                     its own domain. On first use it downloads the
+                     list from publicsuffix.org and caches it,
+                     falling back to a bundled snapshot.
+  pytest 9.1.1       the test suite; not used by the crawler
+
+Standard library for everything else: urllib.request (fetching and
+redirects), urllib.robotparser, urllib.parse, html.parser, heapq
+(both heaps), concurrent.futures (the pool), threading (the one
+lock), collections, dataclasses, itertools, functools, math,
+posixpath, re, ssl, time, datetime, base64, textwrap.
+
+Outside services, for seed URLs only, one request per crawl:
+DuckDuckGo's html and lite endpoints and old-search.marginalia.nu.
+
+
+EXTRA FEATURES
+
+
+ 1. Three ways to seed: a live query against three search endpoints
+    with retries, a results page saved out of a browser (how to
+    seed from Google, since it cannot be scraped), and a file of
+    URLs. At most one seed per registrable domain on every path.
+
+ 2. profile_crawl.py runs the same crawl at several thread counts
+    and reports where the time went.
+
+
+

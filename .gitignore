@@ -1,5 +1,11 @@
 **/__pycache__/
 **/.pytest_cache/
 **/crawl.log
+**/profile.log
+**/profile.log.*
 **/*.pyc
 **/.venv
+**/NOTES.md
+**/PLAN.md
+**/ps1.pdf
+**/crawl-report.html
